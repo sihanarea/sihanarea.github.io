@@ -200,7 +200,7 @@
             
               
                 
-                <a class="post-title-link" href="/2016/01/10/primeNuber/" itemprop="url">
+                <a class="post-title-link" href="/2015/03/12/primeNuber/" itemprop="url">
                   js-算出某值以内的质数
                 </a>
               
@@ -211,8 +211,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2016-01-10T22:11:44+08:00" content="2016-01-10">
-              2016-01-10
+            <time itemprop="dateCreated" datetime="2015-03-12T12:11:44+08:00" content="2015-03-12">
+              2015-03-12
             </time>
           </span>
 
@@ -253,12 +253,23 @@
         
           <span itemprop="articleBody">
             
-              <pre class="prettyprint linenums">
-    //算出 num 以内的所有质数
+              <pre><code class="prettyprint linenums">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head lang="en"&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;input type="text" placeholder="请输入正整数"/&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;script&gt;
+
+      //算出 num 以内的所有质数
 
 function prime(num){
     var list = [];
-    for(var i = 2; i <= num;="" i++){="" list.push(i);="" }="" create="" a="" array="" for(var="" i="0;" <="" list.length;="" j="2;" list[i];="" j++){="" if(list[i]="" %="" 0){="" list.splice(i,1);="" delete="" the="" non="" prime="" number.it="" will="" change="" index="" of="" other="" elements="" 由于splice导致list[i+1]的index变为i,因此把j置为2以便对list[i+1]进行重新计算="" pre=""></=></pre>
+    for(var i = 2; i <= num;="" i++){="" list.push(i);="" }="" create="" a="" array="" for(var="" i="0;" <="" list.length;="" j="2;" list[i];="" j++){="" if(list[i]="" %="" 0){="" list.splice(i,1);="" delete="" the="" non="" prime="" number.it="" will="" change="" index="" of="" other="" elements="" 由于splice导致list[i+1]的index变为i,因此把j置为2以便对list[i+1]进行重新计算="" &lt;="" script&gt;="" html&gt;<="" code=""></=></code></pre>
             
           </span>
         
@@ -316,6 +327,21 @@ function prime(num){
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/css/" itemprop="url" rel="index">
+                    <span itemprop="name">css</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -772,7 +798,7 @@ function prime(num){
 
           <div class="site-state-item site-state-categories">
             
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">分类</span>
               
           </div>
