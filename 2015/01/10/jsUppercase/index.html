@@ -51,37 +51,16 @@
 
 
 
-<meta name="description" content="js金额转大写&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html&amp;gt;
-&amp;lt;head lang=&quot;en&quot;&amp;gt;
-    &amp;lt;meta charset=&quot;UTF-8&quot;&amp;gt;
-    &amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-&amp;lt;input type=&quot;text&quot; placeholder=&quot;请输入正整数&quot;/">
+<meta name="description" content="js金额转大写12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667&amp;amp;lt;!DOCTYPE html&amp;amp;gt;&amp;amp;lt;html&amp;amp;gt;&amp;amp;lt;head lang=&quot;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="js金额转大写">
 <meta property="og:url" content="http://studyfrontend.com/2015/01/10/jsUppercase/index.html">
 <meta property="og:site_name" content="sihanarea">
-<meta property="og:description" content="js金额转大写&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html&amp;gt;
-&amp;lt;head lang=&quot;en&quot;&amp;gt;
-    &amp;lt;meta charset=&quot;UTF-8&quot;&amp;gt;
-    &amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-&amp;lt;input type=&quot;text&quot; placeholder=&quot;请输入正整数&quot;/">
-<meta property="og:updated_time" content="2016-01-10T13:49:50.000Z">
+<meta property="og:description" content="js金额转大写12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667&amp;amp;lt;!DOCTYPE html&amp;amp;gt;&amp;amp;lt;html&amp;amp;gt;&amp;amp;lt;head lang=&quot;">
+<meta property="og:updated_time" content="2016-01-10T14:58:58.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js金额转大写">
-<meta name="twitter:description" content="js金额转大写&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html&amp;gt;
-&amp;lt;head lang=&quot;en&quot;&amp;gt;
-    &amp;lt;meta charset=&quot;UTF-8&quot;&amp;gt;
-    &amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-&amp;lt;input type=&quot;text&quot; placeholder=&quot;请输入正整数&quot;/">
+<meta name="twitter:description" content="js金额转大写12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667&amp;amp;lt;!DOCTYPE html&amp;amp;gt;&amp;amp;lt;html&amp;amp;gt;&amp;amp;lt;head lang=&quot;">
 
 
 
@@ -291,74 +270,7 @@
       
 
       
-        <span itemprop="articleBody"><h2 id="js_u91D1_u989D_u8F6C_u5927_u5199"><a href="#js_u91D1_u989D_u8F6C_u5927_u5199" class="headerlink" title="js金额转大写"></a>js金额转大写</h2><pre><code class="prettyprint linenums">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head lang="en"&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;title&gt;&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;input type="text" placeholder="请输入正整数"/&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;/body&gt;
-&lt;script&gt;
-    function digit_uppercase(n) {
-
-        var digit = [
-
-            '零', '壹', '贰', '叁', '肆',
-
-            '伍', '陆', '柒', '捌', '玖'
-
-        ];
-
-        var unit = [
-
-            ['元', '万', '亿'],
-
-            ['', '拾', '佰', '仟']
-
-        ];
-        var s = '';
-
-        for (var i = 0; i &lt; unit[0].length &amp;&amp; n &gt; 0; i++) {
-
-            var p = '';
-
-            for (var j = 0; j &lt; unit[1].length &amp;&amp; n &gt; 0; j++) {
-
-                p = digit[n % 10] + unit[1][j] + p;
-
-                n = Math.floor(n / 10);
-
-            }
-
-            s = p.replace(/(零.)*零$/, '')
-
-                    .replace(/^$/, '零')
-
-            + unit[0][i] + s;
-
-        }
-
-        return s.replace(/(零.)*零元/, '元')
-
-                        .replace(/(零.)+/g, '零')
-
-                        .replace(/^$/, '零元') + '整';
-
-    }
-
-    var oInput =  document.getElementsByTagName("input")[0];
-    var oP =  document.getElementsByTagName("p")[0];
-
-    oInput.onkeyup = function(){
-        oP.innerHTML = digit_uppercase(oInput.value);
-    }
-
-&lt;/script&gt;
-&lt;/html&gt;</code></pre>
-
+        <span itemprop="articleBody"><h2 id="js_u91D1_u989D_u8F6C_u5927_u5199"><a href="#js_u91D1_u989D_u8F6C_u5927_u5199" class="headerlink" title="js金额转大写"></a>js金额转大写</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line">&amp;lt;!DOCTYPE html&amp;gt;</span><br><span class="line">&amp;lt;html&amp;gt;</span><br><span class="line">&amp;lt;head lang="en"&amp;gt;</span><br><span class="line">    &amp;lt;meta charset="UTF-8"&amp;gt;</span><br><span class="line">    &amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;</span><br><span class="line">&amp;lt;/head&amp;gt;</span><br><span class="line">&amp;lt;body&amp;gt;</span><br><span class="line">&amp;lt;input type="text" placeholder="请输入正整数"/&amp;gt;</span><br><span class="line">&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;</span><br><span class="line">&amp;lt;/body&amp;gt;</span><br><span class="line">&amp;lt;script&amp;gt;</span><br><span class="line">    function digit_uppercase(n) &#123;</span><br><span class="line"></span><br><span class="line">        var digit = [</span><br><span class="line"></span><br><span class="line">            '零', '壹', '贰', '叁', '肆',</span><br><span class="line"></span><br><span class="line">            '伍', '陆', '柒', '捌', '玖'</span><br><span class="line"></span><br><span class="line">        ];</span><br><span class="line"></span><br><span class="line">        var unit = [</span><br><span class="line"></span><br><span class="line">            ['元', '万', '亿'],</span><br><span class="line"></span><br><span class="line">            ['', '拾', '佰', '仟']</span><br><span class="line"></span><br><span class="line">        ];</span><br><span class="line">        var s = '';</span><br><span class="line"></span><br><span class="line">        for (var i = 0; i &amp;lt; unit[0].length &amp;amp;&amp;amp; n &amp;gt; 0; i++) &#123;</span><br><span class="line"></span><br><span class="line">            var p = '';</span><br><span class="line"></span><br><span class="line">            for (var j = 0; j &amp;lt; unit[1].length &amp;amp;&amp;amp; n &amp;gt; 0; j++) &#123;</span><br><span class="line"></span><br><span class="line">                p = digit[n % 10] + unit[1][j] + p;</span><br><span class="line"></span><br><span class="line">                n = Math.floor(n / 10);</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            s = p.replace(/(零.)*零$/, '')</span><br><span class="line"></span><br><span class="line">                    .replace(/^$/, '零')</span><br><span class="line"></span><br><span class="line">            + unit[0][i] + s;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return s.replace(/(零.)*零元/, '元')</span><br><span class="line"></span><br><span class="line">                        .replace(/(零.)+/g, '零')</span><br><span class="line"></span><br><span class="line">                        .replace(/^$/, '零元') + '整';</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    var oInput =  document.getElementsByTagName("input")[0];</span><br><span class="line">    var oP =  document.getElementsByTagName("p")[0];</span><br><span class="line"></span><br><span class="line">    oInput.onkeyup = function()&#123;</span><br><span class="line">        oP.innerHTML = digit_uppercase(oInput.value);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&amp;lt;/script&amp;gt;</span><br><span class="line">&amp;lt;/html&amp;gt;<span class="tag">&lt;/<span class="title">code</span>&gt;</span><span class="tag">&lt;/<span class="title">pre</span>&gt;</span></span><br></pre></td></tr></table></figure>
 </span>
       
     </div>
