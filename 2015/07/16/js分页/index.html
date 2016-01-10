@@ -51,16 +51,16 @@
 
 
 
-<meta name="description" content="1234567891011121314      //算出 num 以内的所有质数 function prime(num)&amp;#123;    var list = [];    for(var i = 2; i &amp;lt;= num; i++)&amp;#123; list.push(i); &amp;#125; //create a Array        for(var i = 0; i &amp;lt; list.">
+<meta name="description" content="1var Paginator = (function () &amp;#123;&amp;#10; var obj = null;&amp;#10; function Paginator(argument) &amp;#123;&amp;#10;  obj = obj ? obj : this;&amp;#10;  return obj;&amp;#10; &amp;#125;&amp;#10;&amp;#10; Paginator.prototype = &amp;#123;&amp;#1">
 <meta property="og:type" content="article">
-<meta property="og:title" content="js-算出某值以内的质数">
-<meta property="og:url" content="http://studyfrontend.com/2015/03/12/primeNuber/index.html">
+<meta property="og:title" content="js分页">
+<meta property="og:url" content="http://studyfrontend.com/2015/07/16/js分页/index.html">
 <meta property="og:site_name" content="sihanarea">
-<meta property="og:description" content="1234567891011121314      //算出 num 以内的所有质数 function prime(num)&amp;#123;    var list = [];    for(var i = 2; i &amp;lt;= num; i++)&amp;#123; list.push(i); &amp;#125; //create a Array        for(var i = 0; i &amp;lt; list.">
-<meta property="og:updated_time" content="2016-01-10T15:44:42.000Z">
+<meta property="og:description" content="1var Paginator = (function () &amp;#123;&amp;#10; var obj = null;&amp;#10; function Paginator(argument) &amp;#123;&amp;#10;  obj = obj ? obj : this;&amp;#10;  return obj;&amp;#10; &amp;#125;&amp;#10;&amp;#10; Paginator.prototype = &amp;#123;&amp;#1">
+<meta property="og:updated_time" content="2016-01-10T16:40:37.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="js-算出某值以内的质数">
-<meta name="twitter:description" content="1234567891011121314      //算出 num 以内的所有质数 function prime(num)&amp;#123;    var list = [];    for(var i = 2; i &amp;lt;= num; i++)&amp;#123; list.push(i); &amp;#125; //create a Array        for(var i = 0; i &amp;lt; list.">
+<meta name="twitter:title" content="js分页">
+<meta name="twitter:description" content="1var Paginator = (function () &amp;#123;&amp;#10; var obj = null;&amp;#10; function Paginator(argument) &amp;#123;&amp;#10;  obj = obj ? obj : this;&amp;#10;  return obj;&amp;#10; &amp;#125;&amp;#10;&amp;#10; Paginator.prototype = &amp;#123;&amp;#1">
 
 
 
@@ -72,7 +72,7 @@
   };
 </script>
 
-  <title> js-算出某值以内的质数 | sihanarea </title>
+  <title> js分页 | sihanarea </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -222,7 +222,7 @@
             
             
               
-                js-算出某值以内的质数
+                js分页
               
             
           </h1>
@@ -231,8 +231,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-03-12T12:11:44+08:00" content="2015-03-12">
-              2015-03-12
+            <time itemprop="dateCreated" datetime="2015-07-16T22:20:17+08:00" content="2015-07-16">
+              2015-07-16
             </time>
           </span>
 
@@ -270,7 +270,7 @@
       
 
       
-        <span itemprop="articleBody"><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">      <span class="comment">//算出 num 以内的所有质数</span></span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">prime</span>(<span class="params">num</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> list = [];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">2</span>; i &lt;= num; i++)&#123; list.push(i); &#125; <span class="comment">//create a Array</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; list.length; i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> j = <span class="number">2</span>; j &lt; list[i]; j++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(list[i] % j == <span class="number">0</span>)&#123;</span><br><span class="line">                list.splice(i,<span class="number">1</span>); <span class="comment">//delete the non prime number.it will change the index of other elements</span></span><br><span class="line">                j = <span class="number">2</span>; <span class="comment">//由于splice导致list[i+1]的index变为i,因此把j置为2以便对list[i+1]进行重新计算</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></span>
+        <span itemprop="articleBody"><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var Paginator = (function () &#123;&#10; var obj = null;&#10; function Paginator(argument) &#123;&#10;  obj = obj ? obj : this;&#10;  return obj;&#10; &#125;&#10;&#10; Paginator.prototype = &#123;&#10;&#10;  /**&#10;   * &#33719;&#21462;&#20998;&#39029;html&#10;   * @param  &#123;[type]&#125; total [&#24635;&#39029;&#25968;]&#10;   * @param  &#123;[type]&#125; iPage [&#24403;&#21069;&#26159;&#31532;&#20960;&#39029;&#65292;&#40664;&#35748;&#26159; 1 ]&#10;   * @return &#123;[type]&#125;       [description]&#10;   */&#10;  getHtml: function (total, iPage) &#123;&#10;   var self = this;&#10;   if( (self.total = total) &#60; 1 )return &#39;&#39;;&#10;   self.iPage = iPage || 1;&#10;&#10;   return self._getHead() + self._getPrev() + self._getCenter() + self._getNext() + self._getLast();&#10;  &#125;,&#10;&#10;  //&#39318;&#39029;&#10;  _getHead: function () &#123;&#10;   var res = &#39;&#39;, self = this;&#10;   res = self.iPage &#62; 1 ? &#39;&#39318;&#39029; &#39; : &#39;&#39;;&#10;   return res;&#10;  &#125;,&#10;&#10;&#10;  //&#19978;&#19968;&#39029;&#10;  _getPrev: function () &#123;&#10;   var res = &#39;&#39;, self = this;&#10;   res = self.iPage &#62; 2 ? &#39;&#19978;&#19968;&#39029; &#39; : &#39;&#39;;&#10;   return res;&#10;  &#125;,&#10;&#10;  //&#20013;&#38388;&#10;  _getCenter: function () &#123;&#10;   var res = &#39;&#39;,&#10;    self = this,&#10;    total = self.total,&#10;    iPage = self.iPage;&#10;   //&#23569;&#20110;10&#39029;&#10;   var len = total;&#10;   if( len &#60;= 10 )&#123;&#10;    for( var i=1; i&#60;=len; i++ )&#123;&#10;     res += &#39; &#39; + i;&#10;    &#125;&#10;   &#125;else&#123;&#10;    len = 10;&#10;    if( iPage &#60;=5 )&#123;&#10;     for( var i=1; i&#60;=len; i++ )&#123;&#9;//&#21069;10&#39029;&#10;      res += &#39; &#39; + i;&#10;     &#125;&#10;    &#125;else if( iPage+4 &#62;= total )&#123;&#9;//&#26368;&#21518;10&#39029;&#10;     for( var i=total-len; i&#60;=total; i++ )&#123;&#10;      res += &#39; &#39; + i;&#10;     &#125;&#10;    &#125;else&#123;&#9;//&#20013;&#38388;&#30340;&#39029;&#38754;&#10;     for( var i=iPage-len/2 + 1; i&#60;iPage; i++ )&#123;&#10;      res += &#39; &#39; + i;&#10;     &#125;&#10;     res += &#39; &#39; + iPage;&#10;     for( var j=iPage + 1; j&#60;iPage + len/2 + 1; j++ )&#123;&#10;      res += &#39; &#39; + j;&#10;     &#125;&#10;    &#125;&#10;&#10;   &#125;&#10;&#10;   return res;&#10;  &#125;,&#10;&#10;  //&#19979;&#19968;&#39029;&#10;  _getNext: function () &#123;&#10;   var res = &#39;&#39;, self = this;&#10;   res = self.iPage &#60;= self.total-2 ? &#39; &#19979;&#19968;&#39029;&#39; : &#39;&#39;;&#10;   return res;&#10;  &#125;,&#10;&#10;  //&#26368;&#21518;&#19968;&#39029;&#10;  _getLast: function () &#123;&#10;   var res = &#39;&#39;, self = this;&#10;   res = self.iPage &#60;= self.total-1 ? &#39; &#23614;&#39029;&#39; : &#39;&#39;;&#10;   return res;&#10;  &#125;,&#10;&#10;  constructor: Paginator&#10;&#10; &#125;;&#10;&#10; return Paginator;&#10;&#10;&#125;)();</span><br></pre></td></tr></table></figure></span>
       
     </div>
 
@@ -287,16 +287,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/03/05/canvas笔记/" rel="next" title="canvas笔记">
-                <i class="fa fa-chevron-left"></i> canvas笔记
+              <a href="/2015/07/13/缺德事/" rel="next" title="缺德事">
+                <i class="fa fa-chevron-left"></i> 缺德事
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/03/18/建造者模式/" rel="prev" title="建造者模式">
-                建造者模式 <i class="fa fa-chevron-right"></i>
+              <a href="/2015/08/12/鼠标的clientX-和-clientY-移动改变元素的位置大小等/" rel="prev" title="鼠标的clientX 和 clientY 移动改变元素的位置大小等">
+                鼠标的clientX 和 clientY 移动改变元素的位置大小等 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
