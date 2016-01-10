@@ -209,8 +209,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/01/10/hello-world/" itemprop="url">
-                  Hello World
+                <a class="post-title-link" href="/2015/02/17/cssTriangle/" itemprop="url">
+                  css triangle
                 </a>
               
             
@@ -220,8 +220,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2016-01-10T21:11:03+08:00" content="2016-01-10">
-              2016-01-10
+            <time itemprop="dateCreated" datetime="2015-02-17T11:37:14+08:00" content="2015-02-17">
+              2015-02-17
             </time>
           </span>
 
@@ -247,15 +247,265 @@
         
           <span itemprop="articleBody">
             
-              <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+              <p><img src="http://www.00lr.com/sihanarea/demo/img/catalog/sanjiaoxing.png" alt="robot"></p>
+<pre class="prettyprint linenums"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;style&gt;
+    .triangle_top{
+        width:0px;
+        height:0px;
+        border-left:150px solid transparent;
+        border-right:150px solid transparent;
+        border-bottom:150px solid green;
+        position:absolute;
+        top:160px;
+        left:7px;
+    }
+    .triangle_right{
+        width:0px;
+        height:0px;
+        border-left:150px solid gold;
+        border-top:150px solid transparent;
+        border-bottom:150px solid transparent;
+    }
+    .triangle_bottom{
+        width:0px;
+        height:0px;
+        border-left:150px solid transparent;
+        border-top:150px solid blue;
+        border-right:150px solid transparent;
+        position:absolute;
+        top:10px;
+        left:7px;
+    }
+    .triangle_left{
+        width:0px;
+        height:0px;
+        border-bottom:150px solid transparent;
+        border-top:150px solid transparent;
+        border-right:150px solid red;
+        position:absolute;
+        top:10px;
+        left:157px;
+    }
+    .zhengfangxing{
+        width:138px;
+        height:140px;
+        background:#000;
+        position:absolute;
+        top:90px;
+        left:88px;
+    }
+    .radius{
+        width:138px;
+        height:140px;
+        border-radius:50%;
+        background:#ccc;
+        position:absolute;
+        top:90px;
+        left:88px;
+    }
+    .triangle_center_top{
+        width:0px;
+        height:0px;
+        border-left:63px solid transparent;
+        border-right:63px solid transparent;
+        border-bottom:100px solid purple;
+        position:absolute;
+        top:90px;
+        left:95px;
+        opacity: 0.8;
+    }
+    .triangle_center_bottom{
+        width:0px;
+        height:0px;
+        border-left:63px solid transparent;
+        border-right:63px solid transparent;
+        border-top:100px solid yellow;
+        position:absolute;
+        opacity: 0.8;
+        top:130px;
+        left:95px;
+    }
+&lt;/style&gt;
+&lt;body&gt;
+    &lt;div class="triangle_top"&gt;&lt;/div&gt;
+    &lt;div class="triangle_right"&gt;&lt;/div&gt;
+    &lt;div class="triangle_bottom"&gt;&lt;/div&gt;
+    &lt;div class="triangle_left"&gt;&lt;/div&gt;
+    &lt;div class="zhengfangxing"&gt;&lt;/div&gt;
+    &lt;div class="radius"&gt;&lt;/div&gt;
+    &lt;div class="triangle_center_top"&gt;&lt;/div&gt;
+    &lt;div class="triangle_center_bottom"&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/01/10/jsUppercase/" itemprop="url">
+                  js金额转大写
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-01-10T10:17:46+08:00" content="2015-01-10">
+              2015-01-10
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/js/" itemprop="url" rel="index">
+                    <span itemprop="name">js</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <h2 id="js_u91D1_u989D_u8F6C_u5927_u5199"><a href="#js_u91D1_u989D_u8F6C_u5927_u5199" class="headerlink" title="js金额转大写"></a>js金额转大写</h2><pre><code class="prettyprint linenums">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head lang="en"&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;input type="text" placeholder="请输入正整数"/&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;script&gt;
+    function digit_uppercase(n) {
+
+        var digit = [
+
+            '零', '壹', '贰', '叁', '肆',
+
+            '伍', '陆', '柒', '捌', '玖'
+
+        ];
+
+        var unit = [
+
+            ['元', '万', '亿'],
+
+            ['', '拾', '佰', '仟']
+
+        ];
+        var s = '';
+
+        for (var i = 0; i &lt; unit[0].length &amp;&amp; n &gt; 0; i++) {
+
+            var p = '';
+
+            for (var j = 0; j &lt; unit[1].length &amp;&amp; n &gt; 0; j++) {
+
+                p = digit[n % 10] + unit[1][j] + p;
+
+                n = Math.floor(n / 10);
+
+            }
+
+            s = p.replace(/(零.)*零$/, '')
+
+                    .replace(/^$/, '零')
+
+            + unit[0][i] + s;
+
+        }
+
+        return s.replace(/(零.)*零元/, '元')
+
+                        .replace(/(零.)+/g, '零')
+
+                        .replace(/^$/, '零元') + '整';
+
+    }
+
+    var oInput =  document.getElementsByTagName("input")[0];
+    var oP =  document.getElementsByTagName("p")[0];
+
+    oInput.onkeyup = function(){
+        oP.innerHTML = digit_uppercase(oInput.value);
+    }
+
+&lt;/script&gt;
+&lt;/html&gt;</code></pre>
+
 
             
           </span>
@@ -333,7 +583,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
