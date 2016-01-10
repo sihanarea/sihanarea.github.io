@@ -51,40 +51,25 @@
 
 
 
-<meta name="description" content="&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html&amp;gt;
-&amp;lt;head lang=&quot;en&quot;&amp;gt;
-    &amp;lt;meta charset=&quot;UTF-8&quot;&amp;gt;
-    &amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-&amp;lt;input type=&quot;text&quot; placeholder=&quot;请输入正整数&quot;/&amp;gt;
-&amp;l">
+<meta name="description" content="```javascript      //算出 num 以内的所有质数
+function prime(num){    var list = [];    for(var i = 2; i &amp;lt;= num; i++){ list.push(i); } //create a Array
+for(var i = 0; i &amp;lt; list.length; i++){
+    for(var j">
 <meta property="og:type" content="article">
 <meta property="og:title" content="js-算出某值以内的质数">
 <meta property="og:url" content="http://studyfrontend.com/2015/03/12/primeNuber/index.html">
 <meta property="og:site_name" content="sihanarea">
-<meta property="og:description" content="&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html&amp;gt;
-&amp;lt;head lang=&quot;en&quot;&amp;gt;
-    &amp;lt;meta charset=&quot;UTF-8&quot;&amp;gt;
-    &amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-&amp;lt;input type=&quot;text&quot; placeholder=&quot;请输入正整数&quot;/&amp;gt;
-&amp;l">
-<meta property="og:updated_time" content="2016-01-10T14:15:12.000Z">
+<meta property="og:description" content="```javascript      //算出 num 以内的所有质数
+function prime(num){    var list = [];    for(var i = 2; i &amp;lt;= num; i++){ list.push(i); } //create a Array
+for(var i = 0; i &amp;lt; list.length; i++){
+    for(var j">
+<meta property="og:updated_time" content="2016-01-10T14:26:28.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js-算出某值以内的质数">
-<meta name="twitter:description" content="&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html&amp;gt;
-&amp;lt;head lang=&quot;en&quot;&amp;gt;
-    &amp;lt;meta charset=&quot;UTF-8&quot;&amp;gt;
-    &amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-&amp;lt;input type=&quot;text&quot; placeholder=&quot;请输入正整数&quot;/&amp;gt;
-&amp;l">
+<meta name="twitter:description" content="```javascript      //算出 num 以内的所有质数
+function prime(num){    var list = [];    for(var i = 2; i &amp;lt;= num; i++){ list.push(i); } //create a Array
+for(var i = 0; i &amp;lt; list.length; i++){
+    for(var j">
 
 
 
@@ -264,23 +249,17 @@
       
 
       
-        <span itemprop="articleBody"><pre><code class="prettyprint linenums">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head lang="en"&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;title&gt;&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;input type="text" placeholder="请输入正整数"/&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;/body&gt;
-&lt;script&gt;
-
-      //算出 num 以内的所有质数
-
-function prime(num){
-    var list = [];
-    for(var i = 2; i <= num;="" i++){="" list.push(i);="" }="" create="" a="" array="" for(var="" i="0;" <="" list.length;="" j="2;" list[i];="" j++){="" if(list[i]="" %="" 0){="" list.splice(i,1);="" delete="" the="" non="" prime="" number.it="" will="" change="" index="" of="" other="" elements="" 由于splice导致list[i+1]的index变为i,因此把j置为2以便对list[i+1]进行重新计算="" &lt;="" script&gt;="" html&gt;<="" code=""></=></code></pre></span>
+        <span itemprop="articleBody"><p>```javascript<br>      //算出 num 以内的所有质数</p>
+<p>function prime(num){<br>    var list = [];<br>    for(var i = 2; i &lt;= num; i++){ list.push(i); } //create a Array</p>
+<pre><code>for(var i = 0; i &lt; list.length; i++){
+    for(var j = 2; j &lt; list[i]; j++){
+        if(list[i] % j == 0){
+            list.splice(i,1); //delete the non prime number.it will change the index of other elements
+            j = 2; //由于splice导致list[i+1]的index变为i,因此把j置为2以便对list[i+1]进行重新计算
+    }
+}
+</code></pre><p>}</p>
+</span>
       
     </div>
 
