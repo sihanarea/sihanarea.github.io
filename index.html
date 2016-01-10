@@ -239,6 +239,197 @@
             
               
                 
+                <a class="post-title-link" href="/2016/01/10/隐藏手机浏览器地址栏/" itemprop="url">
+                  隐藏手机浏览器地址栏
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-01-10T23:34:02+08:00" content="2016-01-10">
+              2016-01-10
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/js/" itemprop="url" rel="index">
+                    <span itemprop="name">js</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <h3 id="u4EE3_u7801_u7247_u6BB5"><a href="#u4EE3_u7801_u7247_u6BB5" class="headerlink" title="代码片段"></a>代码片段</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 隐藏手机浏览器地址栏</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">hideAddressBar</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">document</span>.documentElement.scrollHeight&lt;<span class="built_in">window</span>.outerHeight/<span class="built_in">window</span>.devicePixelRatio)</span><br><span class="line">        <span class="built_in">document</span>.documentElement.style.height=(<span class="built_in">window</span>.outerHeight/<span class="built_in">window</span>.devicePixelRatio)+<span class="string">'px'</span>;</span><br><span class="line">    setTimeout(<span class="built_in">window</span>.scrollTo(<span class="number">1</span>,<span class="number">1</span>),<span class="number">0</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (navigator.userAgent.match(<span class="regexp">/Android/i</span>)) &#123;</span><br><span class="line">    hideAddressBar();</span><br><span class="line">    <span class="built_in">window</span>.addEventListener(<span class="string">"load"</span>,hideAddressBar);</span><br><span class="line">    <span class="built_in">window</span>.addEventListener(<span class="string">"orientationchange"</span>,hideAddressBar);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span> (navigator.userAgent.match(<span class="regexp">/(iPad|iPhone|iPod)/g</span>)) &#123;</span><br><span class="line">    <span class="built_in">window</span>.scrollTo(<span class="number">0</span>,<span class="number">1</span>);     </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/06/15/检测pc和移动浏览器/" itemprop="url">
+                  检测pc和移动浏览器
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-06-15T21:31:53+08:00" content="2015-06-15">
+              2015-06-15
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/js/" itemprop="url" rel="index">
+                    <span itemprop="name">js</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <h3 id="u5F88_u5E38_u7528_uFF0C_u5F53_u4EE3_u7801_u7247_u6BB5_u5427"><a href="#u5F88_u5E38_u7528_uFF0C_u5F53_u4EE3_u7801_u7247_u6BB5_u5427" class="headerlink" title="很常用，当代码片段吧"></a>很常用，当代码片段吧</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">browserRedirect</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> sUserAgent = navigator.userAgent.toLowerCase();</span><br><span class="line">            <span class="keyword">var</span> bIsIpad = sUserAgent.match(<span class="regexp">/ipad/i</span>) == <span class="string">"ipad"</span>;</span><br><span class="line">            <span class="keyword">var</span> bIsIphoneOs = sUserAgent.match(<span class="regexp">/iphone os/i</span>) == <span class="string">"iphone os"</span>;</span><br><span class="line">            <span class="keyword">var</span> bIsMidp = sUserAgent.match(<span class="regexp">/midp/i</span>) == <span class="string">"midp"</span>;</span><br><span class="line">            <span class="keyword">var</span> bIsUc7 = sUserAgent.match(<span class="regexp">/rv:1.2.3.4/i</span>) == <span class="string">"rv:1.2.3.4"</span>;</span><br><span class="line">            <span class="keyword">var</span> bIsUc = sUserAgent.match(<span class="regexp">/ucweb/i</span>) == <span class="string">"ucweb"</span>;</span><br><span class="line">            <span class="keyword">var</span> bIsAndroid = sUserAgent.match(<span class="regexp">/android/i</span>) == <span class="string">"android"</span>;</span><br><span class="line">            <span class="keyword">var</span> bIsCE = sUserAgent.match(<span class="regexp">/windows ce/i</span>) == <span class="string">"windows ce"</span>;</span><br><span class="line">            <span class="keyword">var</span> bIsWM = sUserAgent.match(<span class="regexp">/windows mobile/i</span>) == <span class="string">"windows mobile"</span>;</span><br><span class="line">            <span class="built_in">document</span>.writeln(<span class="string">"您的浏览设备为："</span>);</span><br><span class="line">            <span class="keyword">if</span> (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) &#123;</span><br><span class="line">                <span class="built_in">document</span>.writeln(<span class="string">"phone"</span>);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="built_in">document</span>.writeln(<span class="string">"pc"</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        browserRedirect();</span><br></pre></td></tr></table></figure>
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2015/05/20/多行文本居中兼容IE8/" itemprop="url">
                   多行文本居中兼容IE8
                 </a>
@@ -388,6 +579,101 @@
           <span itemprop="articleBody">
             
               <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">&lt;VirtualHost *:<span class="number">80</span>&gt;</span><br><span class="line"></span><br><span class="line">ServerAdmin test@localhost</span><br><span class="line"></span><br><span class="line">DocumentRoot <span class="string">"G:/xampp/htdocs/tp"</span></span><br><span class="line"></span><br><span class="line">ServerName tp.localhost</span><br><span class="line"></span><br><span class="line">&lt;/VirtualHost&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">mac</span><br><span class="line"></span><br><span class="line">&lt;virtualhost *:<span class="number">80</span>&gt;</span><br><span class="line"></span><br><span class="line">    ServerName mysite.local</span><br><span class="line"></span><br><span class="line">    DocumentRoot <span class="string">"/Users/yourusername/path/to/your/site"</span></span><br><span class="line"></span><br><span class="line">    &lt;directory <span class="string">"/Users/yourusername/path/to/your/site"</span>&gt;</span><br><span class="line"></span><br><span class="line">        Options Indexes FollowSymLinks Includes ExecCGI</span><br><span class="line"></span><br><span class="line">        AllowOverride All</span><br><span class="line"></span><br><span class="line">        <span class="keyword">Require</span> all granted</span><br><span class="line"></span><br><span class="line">    &lt;/directory&gt;</span><br><span class="line"></span><br><span class="line">    ErrorLog <span class="string">"logs/mysite.local-error_log"</span></span><br><span class="line"></span><br><span class="line">&lt;/virtualhost&gt;</span><br></pre></td></tr></table></figure>
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/04/20/把webapp保存到桌面/" itemprop="url">
+                  把webapp保存到桌面
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-04-20T11:12:19+08:00" content="2015-04-20">
+              2015-04-20
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/html/" itemprop="url" rel="index">
+                    <span itemprop="name">html</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <h3 id="u867D_u7136_u8FD9_u529F_u80FD_u6CA1_u5565_u7528_uFF0C_u81EA_u5DF1_u597D_u5947_u73A9_u4E86_u4E00_u4E0B"><a href="#u867D_u7136_u8FD9_u529F_u80FD_u6CA1_u5565_u7528_uFF0C_u81EA_u5DF1_u597D_u5947_u73A9_u4E86_u4E00_u4E0B" class="headerlink" title="虽然这功能没啥用，自己好奇玩了一下"></a>虽然这功能没啥用，自己好奇玩了一下</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">meta</span> <span class="attribute">name</span>=<span class="value">"apple-mobile-web-app-capable"</span> <span class="attribute">content</span>=<span class="value">"yes"</span>&gt;</span><span class="comment">&lt;!-- ios中，webApp功能--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">meta</span> <span class="attribute">name</span>=<span class="value">"mobile-web-app-capable"</span> <span class="attribute">content</span>=<span class="value">"yes"</span>&gt;</span><span class="comment">&lt;!--chrome检测的meta --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">meta</span> <span class="attribute">name</span>=<span class="value">"apple-mobile-web-app-status-bar-style"</span> <span class="attribute">content</span>=<span class="value">"black"</span>&gt;</span><span class="comment">&lt;!-- ios中，状态条背景色--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"shortcut icon"</span> <span class="attribute">sizes</span>=<span class="value">"144x144"</span> <span class="attribute">href</span>=<span class="value">"images/icon175x175.png"</span>&gt;</span><span class="comment">&lt;!--android及pc系统添加到webApp的icon --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"apple-touch-icon"</span> <span class="attribute">href</span>=<span class="value">"images/icon175x175.png"</span>&gt;</span><span class="comment">&lt;!-- ios系统添加到webApp的icon --&gt;</span></span><br></pre></td></tr></table></figure>
             
           </span>
         
@@ -619,6 +905,109 @@
             
               
                 
+                <a class="post-title-link" href="/2015/03/05/canvas笔记/" itemprop="url">
+                  canvas笔记
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-03-05T22:35:07+08:00" content="2015-03-05">
+              2015-03-05
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/js/" itemprop="url" rel="index">
+                    <span itemprop="name">js</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <h3 id="getContext__u8FD4_u56DEcanvas_u4E0A_u4E0B_u6587_u5BF9_u8C61_uFF0C_u53EF_u4EE5_u5728canvas_u4E0A_u4F5C_u753B"><a href="#getContext__u8FD4_u56DEcanvas_u4E0A_u4E0B_u6587_u5BF9_u8C61_uFF0C_u53EF_u4EE5_u5728canvas_u4E0A_u4F5C_u753B" class="headerlink" title="getContext  返回canvas上下文对象，可以在canvas上作画"></a>getContext  返回canvas上下文对象，可以在canvas上作画</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">例   oC  = <span class="built_in">document</span>.getElementById(‘canvas1’)</span><br><span class="line">     Var oGc = oC.getContext(‘<span class="number">2</span>d’)   <span class="comment">//获得canvas的2d对象</span></span><br><span class="line"><span class="string">``</span><span class="string">`   </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">### strockRect(‘左’，‘上’,‘宽’，‘高’) //   描边一个矩形    Rect(矩形)</span><br><span class="line">`</span><span class="string">``</span>javascript</span><br><span class="line">例  oGc.strockRect(<span class="number">50.5</span>,<span class="number">50.5</span>,<span class="number">100</span>,<span class="number">100</span>)    <span class="comment">//注：50.5 只有给0.5才能得到1px。不然是2px</span></span><br></pre></td></tr></table></figure>
+<h3 id="strockStyle_//_u987E_u540D_u601D_u4E49_uFF0C_u7ED9_u63CF_u8FB9_u51FA_u6765_u7684_u77E9_u5F62_u52A0_u6837_u5F0F_u7684_uFF0C_u8FB9_u6846_u6837_u5F0F"><a href="#strockStyle_//_u987E_u540D_u601D_u4E49_uFF0C_u7ED9_u63CF_u8FB9_u51FA_u6765_u7684_u77E9_u5F62_u52A0_u6837_u5F0F_u7684_uFF0C_u8FB9_u6846_u6837_u5F0F" class="headerlink" title="strockStyle    //顾名思义，给描边出来的矩形加样式的，边框样式"></a>strockStyle    //顾名思义，给描边出来的矩形加样式的，边框样式</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">例  oGc.strockStyle = ‘red’   <span class="comment">//加红色边框</span></span><br></pre></td></tr></table></figure>
+<h3 id="lineWidth_//_u8FB9_u6846_u7684_u7C97_u7EC6"><a href="#lineWidth_//_u8FB9_u6846_u7684_u7C97_u7EC6" class="headerlink" title="lineWidth  //边框的粗细"></a>lineWidth  //边框的粗细</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">oGc.lineWidth = <span class="number">10</span>;   <span class="comment">//边框10像素</span></span><br></pre></td></tr></table></figure>
+<h3 id="fillRect_28_u2018_u5DE6_u2019_uFF0C_u2018_u4E0A_u2019_2C_u2018_u5BBD_u2019_uFF0C_u2018_u9AD8_u2019_29_//_u586B_u5145_u4E00_u4E2A_u77E9_u5F62"><a href="#fillRect_28_u2018_u5DE6_u2019_uFF0C_u2018_u4E0A_u2019_2C_u2018_u5BBD_u2019_uFF0C_u2018_u9AD8_u2019_29_//_u586B_u5145_u4E00_u4E2A_u77E9_u5F62" class="headerlink" title="fillRect(‘左’，‘上’,‘宽’，‘高’)  //填充一个矩形"></a>fillRect(‘左’，‘上’,‘宽’，‘高’)  //填充一个矩形</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">例 oGc.fillRect(<span class="number">50.5</span>,<span class="number">50.5</span>,<span class="number">100</span>,<span class="number">100</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="fillStyle__u586B_u5145_u989C_u8272"><a href="#fillStyle__u586B_u5145_u989C_u8272" class="headerlink" title="fillStyle  填充颜色"></a>fillStyle  填充颜色</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">例 oGc.fillStyle = ‘green’   <span class="comment">//填充一个绿色</span></span><br></pre></td></tr></table></figure>
+<h3 id="lineJoin_3D_u201Dbevel__7C_round__7C_miter_u201D__u521B_u5EFA__u659C_u89D2__7C__u5706_u89D2__7C__u5C16_u89D2"><a href="#lineJoin_3D_u201Dbevel__7C_round__7C_miter_u201D__u521B_u5EFA__u659C_u89D2__7C__u5706_u89D2__7C__u5C16_u89D2" class="headerlink" title="lineJoin=”bevel | round | miter”  创建  斜角 | 圆角 | 尖角"></a>lineJoin=”bevel | round | miter”  创建  斜角 | 圆角 | 尖角</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">例 oGc.lineJoin = “bevel”;  <span class="comment">//创建斜角</span></span><br></pre></td></tr></table></figure>
+<h3 id="beginPath_28_29__u5F00_u59CB_u7ED8_u5236"><a href="#beginPath_28_29__u5F00_u59CB_u7ED8_u5236" class="headerlink" title="beginPath() 开始绘制"></a>beginPath() 开始绘制</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">例 oGc.beginPath();   <span class="comment">//开始绘制图形</span></span><br></pre></td></tr></table></figure>
+<h3 id="moveTo_uFF08x_2Cy_uFF09__u7B2C_u4E00_u4E2A_u70B9_uFF0C"><a href="#moveTo_uFF08x_2Cy_uFF09__u7B2C_u4E00_u4E2A_u70B9_uFF0C" class="headerlink" title="moveTo（x,y） 第一个点，"></a>moveTo（x,y） 第一个点，</h3><h3 id="lineTo_28x_2Cy_29__u540E_u7EED_u7684_u70B9"><a href="#lineTo_28x_2Cy_29__u540E_u7EED_u7684_u70B9" class="headerlink" title="lineTo(x,y) 后续的点"></a>lineTo(x,y) 后续的点</h3><h3 id="closePath_28_29_u95ED_u5408"><a href="#closePath_28_29_u95ED_u5408" class="headerlink" title="closePath()闭合"></a>closePath()闭合</h3><h3 id="stroke_28_29_u63CF_u8FB9"><a href="#stroke_28_29_u63CF_u8FB9" class="headerlink" title="stroke()描边"></a>stroke()描边</h3><h3 id="oGC-fill_28_29_3B__u586B_u5145"><a href="#oGC-fill_28_29_3B__u586B_u5145" class="headerlink" title="oGC.fill(); 填充"></a>oGC.fill(); 填充</h3> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">例 oGC.beginPath(); </span><br><span class="line">    oGC.moveTo(<span class="number">100</span>,<span class="number">100</span>); </span><br><span class="line">    oGC.lineTo(<span class="number">200</span>,<span class="number">200</span>);</span><br><span class="line">    oGC.lineTo(<span class="number">300</span>,<span class="number">200</span>);</span><br><span class="line">    oGC.closePath();</span><br><span class="line">    oGC.stroke();</span><br><span class="line">oGC.fill();</span><br></pre></td></tr></table></figure>
+
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2015/02/17/cssTriangle/" itemprop="url">
                   css triangle
                 </a>
@@ -800,106 +1189,14 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/01/10/jsUppercase/" itemprop="url">
-                  js金额转大写
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2015-01-10T10:17:46+08:00" content="2015-01-10">
-              2015-01-10
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/js/" itemprop="url" rel="index">
-                    <span itemprop="name">js</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-              <h2 id="js_u91D1_u989D_u8F6C_u5927_u5199"><a href="#js_u91D1_u989D_u8F6C_u5927_u5199" class="headerlink" title="js金额转大写"></a>js金额转大写</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">digit_uppercase</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> digit = [</span><br><span class="line"></span><br><span class="line">        <span class="string">'零'</span>, <span class="string">'壹'</span>, <span class="string">'贰'</span>, <span class="string">'叁'</span>, <span class="string">'肆'</span>,</span><br><span class="line"></span><br><span class="line">        <span class="string">'伍'</span>, <span class="string">'陆'</span>, <span class="string">'柒'</span>, <span class="string">'捌'</span>, <span class="string">'玖'</span></span><br><span class="line"></span><br><span class="line">    ];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> unit = [</span><br><span class="line"></span><br><span class="line">        [<span class="string">'元'</span>, <span class="string">'万'</span>, <span class="string">'亿'</span>],</span><br><span class="line"></span><br><span class="line">        [<span class="string">''</span>, <span class="string">'拾'</span>, <span class="string">'佰'</span>, <span class="string">'仟'</span>]</span><br><span class="line"></span><br><span class="line">    ];</span><br><span class="line">    <span class="keyword">var</span> s = <span class="string">''</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &amp;lt; unit[<span class="number">0</span>].length &amp;amp;&amp;amp; n &amp;gt; <span class="number">0</span>; i++) &#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">var</span> p = <span class="string">''</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> j = <span class="number">0</span>; j &amp;lt; unit[<span class="number">1</span>].length &amp;amp;&amp;amp; n &amp;gt; <span class="number">0</span>; j++) &#123;</span><br><span class="line"></span><br><span class="line">            p = digit[n % <span class="number">10</span>] + unit[<span class="number">1</span>][j] + p;</span><br><span class="line"></span><br><span class="line">            n = <span class="built_in">Math</span>.floor(n / <span class="number">10</span>);</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        s = p.replace(<span class="regexp">/(零.)*零$/</span>, <span class="string">''</span>)</span><br><span class="line"></span><br><span class="line">                .replace(<span class="regexp">/^$/</span>, <span class="string">'零'</span>)</span><br><span class="line"></span><br><span class="line">        + unit[<span class="number">0</span>][i] + s;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> s.replace(<span class="regexp">/(零.)*零元/</span>, <span class="string">'元'</span>)</span><br><span class="line"></span><br><span class="line">                    .replace(<span class="regexp">/(零.)+/g</span>, <span class="string">'零'</span>)</span><br><span class="line"></span><br><span class="line">                    .replace(<span class="regexp">/^$/</span>, <span class="string">'零元'</span>) + <span class="string">'整'</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> oInput =  <span class="built_in">document</span>.getElementsByTagName(<span class="string">"input"</span>)[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">var</span> oP =  <span class="built_in">document</span>.getElementsByTagName(<span class="string">"p"</span>)[<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line">oInput.onkeyup = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    oP.innerHTML = digit_uppercase(oInput.value);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-            
-          </span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
 
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
         </div>
@@ -938,7 +1235,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-count">11</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -952,7 +1249,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-count">9</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
