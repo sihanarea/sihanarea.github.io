@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="webapp," />
+  <meta name="keywords" content="javascript," />
 
 
 
@@ -51,16 +51,19 @@
 
 
 
-<meta name="description" content="虽然这功能没啥用，自己好奇玩了一下12345&amp;lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&amp;gt;&amp;lt;!-- ios中，webApp功能--&amp;gt;&amp;lt;meta name=&quot;mobile-web-app-capable&quot; content=&quot;yes&quot;&amp;gt;&amp;lt;!--chrome检测的meta --&amp;gt;&amp;lt;me">
+<meta name="description" content="表达式需要经常看，经常复习一、元字符元字符对应说明.    匹配除换行符之外的任意字符\w匹配字母数字下划线，等同于：[a-zA-Z0-9_]\s匹配任意空白符\d    匹配数字，等同于[0-9]\b    匹配单词边界|    或匹配，如 /x|y/ 正则可匹配x或y两个字符^    匹配字符串的开始$    匹配字符串的结束
+二、反义字符反义字符对应说明[^x]    匹配除“x”之外的所有">
 <meta property="og:type" content="article">
-<meta property="og:title" content="把webapp保存到桌面">
-<meta property="og:url" content="http://studyfrontend.com/2015/04/20/把webapp保存到桌面/index.html">
+<meta property="og:title" content="正则表达式规则">
+<meta property="og:url" content="http://studyfrontend.com/2015/09/01/正则表达式规则/index.html">
 <meta property="og:site_name" content="sihanarea">
-<meta property="og:description" content="虽然这功能没啥用，自己好奇玩了一下12345&amp;lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&amp;gt;&amp;lt;!-- ios中，webApp功能--&amp;gt;&amp;lt;meta name=&quot;mobile-web-app-capable&quot; content=&quot;yes&quot;&amp;gt;&amp;lt;!--chrome检测的meta --&amp;gt;&amp;lt;me">
-<meta property="og:updated_time" content="2016-01-10T15:30:16.000Z">
+<meta property="og:description" content="表达式需要经常看，经常复习一、元字符元字符对应说明.    匹配除换行符之外的任意字符\w匹配字母数字下划线，等同于：[a-zA-Z0-9_]\s匹配任意空白符\d    匹配数字，等同于[0-9]\b    匹配单词边界|    或匹配，如 /x|y/ 正则可匹配x或y两个字符^    匹配字符串的开始$    匹配字符串的结束
+二、反义字符反义字符对应说明[^x]    匹配除“x”之外的所有">
+<meta property="og:updated_time" content="2016-01-10T16:37:18.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="把webapp保存到桌面">
-<meta name="twitter:description" content="虽然这功能没啥用，自己好奇玩了一下12345&amp;lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&amp;gt;&amp;lt;!-- ios中，webApp功能--&amp;gt;&amp;lt;meta name=&quot;mobile-web-app-capable&quot; content=&quot;yes&quot;&amp;gt;&amp;lt;!--chrome检测的meta --&amp;gt;&amp;lt;me">
+<meta name="twitter:title" content="正则表达式规则">
+<meta name="twitter:description" content="表达式需要经常看，经常复习一、元字符元字符对应说明.    匹配除换行符之外的任意字符\w匹配字母数字下划线，等同于：[a-zA-Z0-9_]\s匹配任意空白符\d    匹配数字，等同于[0-9]\b    匹配单词边界|    或匹配，如 /x|y/ 正则可匹配x或y两个字符^    匹配字符串的开始$    匹配字符串的结束
+二、反义字符反义字符对应说明[^x]    匹配除“x”之外的所有">
 
 
 
@@ -72,7 +75,7 @@
   };
 </script>
 
-  <title> 把webapp保存到桌面 | sihanarea </title>
+  <title> 正则表达式规则 | sihanarea </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -222,7 +225,7 @@
             
             
               
-                把webapp保存到桌面
+                正则表达式规则
               
             
           </h1>
@@ -231,8 +234,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-04-20T11:12:19+08:00" content="2015-04-20">
-              2015-04-20
+            <time itemprop="dateCreated" datetime="2015-09-01T01:31:47+08:00" content="2015-09-01">
+              2015-09-01
             </time>
           </span>
 
@@ -241,8 +244,8 @@
               &nbsp; | &nbsp; 分类于
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/html/" itemprop="url" rel="index">
-                    <span itemprop="name">html</span>
+                  <a href="/categories/js/" itemprop="url" rel="index">
+                    <span itemprop="name">js</span>
                   </a>
                 </span>
 
@@ -270,7 +273,17 @@
       
 
       
-        <span itemprop="articleBody"><h3 id="u867D_u7136_u8FD9_u529F_u80FD_u6CA1_u5565_u7528_uFF0C_u81EA_u5DF1_u597D_u5947_u73A9_u4E86_u4E00_u4E0B"><a href="#u867D_u7136_u8FD9_u529F_u80FD_u6CA1_u5565_u7528_uFF0C_u81EA_u5DF1_u597D_u5947_u73A9_u4E86_u4E00_u4E0B" class="headerlink" title="虽然这功能没啥用，自己好奇玩了一下"></a>虽然这功能没啥用，自己好奇玩了一下</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">meta</span> <span class="attribute">name</span>=<span class="value">"apple-mobile-web-app-capable"</span> <span class="attribute">content</span>=<span class="value">"yes"</span>&gt;</span><span class="comment">&lt;!-- ios中，webApp功能--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">meta</span> <span class="attribute">name</span>=<span class="value">"mobile-web-app-capable"</span> <span class="attribute">content</span>=<span class="value">"yes"</span>&gt;</span><span class="comment">&lt;!--chrome检测的meta --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">meta</span> <span class="attribute">name</span>=<span class="value">"apple-mobile-web-app-status-bar-style"</span> <span class="attribute">content</span>=<span class="value">"black"</span>&gt;</span><span class="comment">&lt;!-- ios中，状态条背景色--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"shortcut icon"</span> <span class="attribute">sizes</span>=<span class="value">"144x144"</span> <span class="attribute">href</span>=<span class="value">"images/icon175x175.png"</span>&gt;</span><span class="comment">&lt;!--android及pc系统添加到webApp的icon --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"apple-touch-icon"</span> <span class="attribute">href</span>=<span class="value">"images/icon175x175.png"</span>&gt;</span><span class="comment">&lt;!-- ios系统添加到webApp的icon --&gt;</span></span><br></pre></td></tr></table></figure></span>
+        <span itemprop="articleBody"><h3 id="u8868_u8FBE_u5F0F_u9700_u8981_u7ECF_u5E38_u770B_uFF0C_u7ECF_u5E38_u590D_u4E60"><a href="#u8868_u8FBE_u5F0F_u9700_u8981_u7ECF_u5E38_u770B_uFF0C_u7ECF_u5E38_u590D_u4E60" class="headerlink" title="表达式需要经常看，经常复习"></a>表达式需要经常看，经常复习</h3><h3 id="u4E00_u3001_u5143_u5B57_u7B26"><a href="#u4E00_u3001_u5143_u5B57_u7B26" class="headerlink" title="一、元字符"></a>一、元字符</h3><p>元字符<br>对应说明<br>.    匹配除换行符之外的任意字符<br>\w<br>匹配字母数字下划线，等同于：[a-zA-Z0-9_]<br>\s<br>匹配任意空白符<br>\d    匹配数字，等同于[0-9]<br>\b    匹配单词边界<br>|    或匹配，如 /x|y/ 正则可匹配x或y两个字符<br>^    匹配字符串的开始<br>$    匹配字符串的结束</p>
+<h3 id="u4E8C_u3001_u53CD_u4E49_u5B57_u7B26"><a href="#u4E8C_u3001_u53CD_u4E49_u5B57_u7B26" class="headerlink" title="二、反义字符"></a>二、反义字符</h3><p>反义字符<br>对应说明<br>[^x]    匹配除“x”之外的所有字符，其中“x”可以为任意字符<br>[^xyz]    同上，匹配除“x、y、z”之外的任意字符<br>\W    匹配除了字母、数字、下划线之外的所有字符，等同于：[^\w]<br>\S    匹配除空白符之外的任意字符，等同于：[^\s]<br>\B    匹配不是单词边界的字符，等同于：[^\b]<br>\D    匹配不是数字的所有字符，等同于：[^\d]</p>
+<h3 id="u4E09_u3001_u8F6C_u4E49_u5B57_u7B26"><a href="#u4E09_u3001_u8F6C_u4E49_u5B57_u7B26" class="headerlink" title="三、转义字符"></a>三、转义字符</h3><p>转义字符<br>对应说明<br>\xnn    匹配十六进制数<br>\f    匹配换页符，等同于：\x0c<br>\n    匹配换行符，等同于：\x0a<br>\r    匹配回车符，等同于：\x0d<br>\t    匹配水平制表符，等同于：\x09<br>\v<br>匹配垂直制表符，等同于：\x0b<br>\unnnn    匹配Unicode字符，如：\u00A0</p>
+<h3 id="u56DB_u3001_u91CD_u590D_u5339_u914D"><a href="#u56DB_u3001_u91CD_u590D_u5339_u914D" class="headerlink" title="四、重复匹配"></a>四、重复匹配</h3><p>匹配字符<br>对应说明<br>*<br>重复出现零次或多次</p>
+<ul>
+<li>重复出现一次或多次<br>？    重复出现零次或一次<br>{n}    重复出现n次<br>{n,}    至少重复出现n次<br>{m,n}    重复重现m到n次，其中，m&lt;n</li>
+</ul>
+<h3 id="u4E94_u3001_u5206_u7EC4/_u6355_u83B7"><a href="#u4E94_u3001_u5206_u7EC4/_u6355_u83B7" class="headerlink" title="五、分组/捕获"></a>五、分组/捕获</h3><p>分组字符<br>对应说明<br>(exp)    用小圆括号进行分组，如日期中年月日的分组：/(\d{5})-(\d{1,2})-(\d{1,2})/<br>每个分组将产生分组号，从第一个括号开始，可以使用\n的形式在正则中使用分组号，<br>如匹配成对出现的HTML标签，可以写成：/&lt;(\w+)&gt;&lt;\/\1&gt;/<br>(?:exp)    匹配exp正则，但不产生分组号<br>exp1(?=exp2)    前瞻断言，匹配exp1，但后面必须是exp2<br>如匹配名字叫xianlie，但不姓zhao的人：/zhao(?=xianlie)/<br>exp1(?!=exp2)    后瞻断言，匹配exp1，但后面不能是exp2<br>如匹配姓zhao，但名字不叫xianlie的人：/zhao(?!xianlie)/</p>
+<h3 id="u516D_u3001_u8D2A_u5A6A_u4E0E_u60F0_u6027"><a href="#u516D_u3001_u8D2A_u5A6A_u4E0E_u60F0_u6027" class="headerlink" title="六、贪婪与惰性"></a>六、贪婪与惰性</h3><p>相关字符<br>对应说明<br>*?<br>重复任意次，但尽可能少的重复<br>+?    重复一次或多次，但尽可能少的重复<br>??    重复零次或一次，但尽可能少的重复<br>{m,n}?    重复m到n次，但尽可能少的重复<br>{n,}?    重复n次以上，但尽可能少的重复<br>{n}?<br>重复n次，但尽可能少的重复</p>
+<h3 id="u4E03_u3001_u4FEE_u9970_u7B26"><a href="#u4E03_u3001_u4FEE_u9970_u7B26" class="headerlink" title="七、修饰符"></a>七、修饰符</h3><p>修饰符<br>对应说明<br>i<br>ignoreCase的缩写，表示忽略字母的大小写<br>m<br>multiline的缩写，更改^和$的含义，使它们分别在任意一行的行首和行尾匹配<br>，而不仅仅在整个字符串的开头和结尾匹配。<br>(在此模式下,$的精确含意是:匹配\n之前的位置以及字符串结束前的位置.)<br>g    global的缩写，进行全局匹配，即对字符串进行全文匹配，直到字符串遍历结束</p>
+</span>
       
     </div>
 
@@ -278,7 +291,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/webapp/" rel="tag">#webapp</a>
+            <a href="/tags/javascript/" rel="tag">#javascript</a>
           
         </div>
       
@@ -287,17 +300,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/03/25/［转］关键词高亮/" rel="next" title="[转]关键词高亮">
-                <i class="fa fa-chevron-left"></i> [转]关键词高亮
+              <a href="/2015/08/12/鼠标的clientX-和-clientY-移动改变元素的位置大小等/" rel="next" title="鼠标的clientX 和 clientY 移动改变元素的位置大小等">
+                <i class="fa fa-chevron-left"></i> 鼠标的clientX 和 clientY 移动改变元素的位置大小等
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/05/10/apacheVirtualhost/" rel="prev" title="apacheVirtualhost">
-                apacheVirtualhost <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -411,7 +420,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u867D_u7136_u8FD9_u529F_u80FD_u6CA1_u5565_u7528_uFF0C_u81EA_u5DF1_u597D_u5947_u73A9_u4E86_u4E00_u4E0B"><span class="nav-number">1.</span> <span class="nav-text">虽然这功能没啥用，自己好奇玩了一下</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u8868_u8FBE_u5F0F_u9700_u8981_u7ECF_u5E38_u770B_uFF0C_u7ECF_u5E38_u590D_u4E60"><span class="nav-number">1.</span> <span class="nav-text">表达式需要经常看，经常复习</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E00_u3001_u5143_u5B57_u7B26"><span class="nav-number">2.</span> <span class="nav-text">一、元字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E8C_u3001_u53CD_u4E49_u5B57_u7B26"><span class="nav-number">3.</span> <span class="nav-text">二、反义字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E09_u3001_u8F6C_u4E49_u5B57_u7B26"><span class="nav-number">4.</span> <span class="nav-text">三、转义字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u56DB_u3001_u91CD_u590D_u5339_u914D"><span class="nav-number">5.</span> <span class="nav-text">四、重复匹配</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E94_u3001_u5206_u7EC4/_u6355_u83B7"><span class="nav-number">6.</span> <span class="nav-text">五、分组/捕获</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u516D_u3001_u8D2A_u5A6A_u4E0E_u60F0_u6027"><span class="nav-number">7.</span> <span class="nav-text">六、贪婪与惰性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E03_u3001_u4FEE_u9970_u7B26"><span class="nav-number">8.</span> <span class="nav-text">七、修饰符</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
