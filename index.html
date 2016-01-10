@@ -200,6 +200,196 @@
             
               
                 
+                <a class="post-title-link" href="/2015/05/20/多行文本居中兼容IE8/" itemprop="url">
+                  多行文本居中兼容IE8
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-05-20T15:13:30+08:00" content="2015-05-20">
+              2015-05-20
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/html/" itemprop="url" rel="index">
+                    <span itemprop="name">html</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">head</span> <span class="attribute">lang</span>=<span class="value">"en"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">title</span>&gt;</span><span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span><br><span class="line">    <span class="class">.container</span><span class="rules">&#123;</span><br><span class="line">        <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">100px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">border</span>:<span class="value"> <span class="number">1px</span> solid red</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line"></span><br><span class="line">    &#125;</span></span><br><span class="line"></span><br><span class="line">    <span class="class">.ivan</span><span class="rules">&#123;</span><br><span class="line">        <span class="comment">/*content: '';*/</span></span><br><span class="line">        <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">vertical-align</span>:<span class="value"> middle</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">100%</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">line-height</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">font-size</span>:<span class="value"><span class="number">0</span></span></span>;</span><br><span class="line">        *<span class="rule"><span class="attribute">zoom</span>:<span class="value"> <span class="number">1</span></span></span>;</span><br><span class="line">        *<span class="rule"><span class="attribute">display</span>:<span class="value"> inline</span></span>;</span><br><span class="line"></span><br><span class="line">    &#125;</span></span><br><span class="line">    <span class="class">.text</span><span class="rules">&#123;</span><br><span class="line">        <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">vertical-align</span>:<span class="value"> middle</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">12px</span></span></span>;</span><br><span class="line">        *<span class="rule"><span class="attribute">zoom</span>:<span class="value"> <span class="number">1</span></span></span>;</span><br><span class="line">        *<span class="rule"><span class="attribute">display</span>:<span class="value"> inline</span></span>;</span><br><span class="line">    &#125;</span></span><br><span class="line"></span><br><span class="line"></span><span class="tag">&lt;/<span class="title">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"container"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ivan"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"text"</span>&gt;</span></span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line">    这是一个多行的文本</span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/05/10/apacheVirtualhost/" itemprop="url">
+                  apacheVirtualhost
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-05-10T13:41:42+08:00" content="2015-05-10">
+              2015-05-10
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/php/" itemprop="url" rel="index">
+                    <span itemprop="name">php</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">&lt;VirtualHost *:<span class="number">80</span>&gt;</span><br><span class="line"></span><br><span class="line">ServerAdmin test@localhost</span><br><span class="line"></span><br><span class="line">DocumentRoot <span class="string">"G:/xampp/htdocs/tp"</span></span><br><span class="line"></span><br><span class="line">ServerName tp.localhost</span><br><span class="line"></span><br><span class="line">&lt;/VirtualHost&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">mac</span><br><span class="line"></span><br><span class="line">&lt;virtualhost *:<span class="number">80</span>&gt;</span><br><span class="line"></span><br><span class="line">    ServerName mysite.local</span><br><span class="line"></span><br><span class="line">    DocumentRoot <span class="string">"/Users/yourusername/path/to/your/site"</span></span><br><span class="line"></span><br><span class="line">    &lt;directory <span class="string">"/Users/yourusername/path/to/your/site"</span>&gt;</span><br><span class="line"></span><br><span class="line">        Options Indexes FollowSymLinks Includes ExecCGI</span><br><span class="line"></span><br><span class="line">        AllowOverride All</span><br><span class="line"></span><br><span class="line">        <span class="keyword">Require</span> all granted</span><br><span class="line"></span><br><span class="line">    &lt;/directory&gt;</span><br><span class="line"></span><br><span class="line">    ErrorLog <span class="string">"logs/mysite.local-error_log"</span></span><br><span class="line"></span><br><span class="line">&lt;/virtualhost&gt;</span><br></pre></td></tr></table></figure>
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2015/03/18/建造者模式/" itemprop="url">
                   建造者模式
                 </a>
@@ -870,21 +1060,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">分类</span>
               
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

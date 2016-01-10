@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="javascript,算法," />
+  <meta name="keywords" content="php," />
 
 
 
@@ -51,16 +51,16 @@
 
 
 
-<meta name="description" content="1234567891011121314      //算出 num 以内的所有质数 function prime(num)&amp;#123;    var list = [];    for(var i = 2; i &amp;lt;= num; i++)&amp;#123; list.push(i); &amp;#125; //create a Array        for(var i = 0; i &amp;lt; list.">
+<meta name="description" content="1234567891011121314151617181920212223242526272829303132&amp;lt;VirtualHost *:80&amp;gt;ServerAdmin test@localhostDocumentRoot &quot;G:/xampp/htdocs/tp&quot;ServerName tp.localhost&amp;lt;/VirtualHost&amp;gt;mac&amp;lt;virtualhost">
 <meta property="og:type" content="article">
-<meta property="og:title" content="js-算出某值以内的质数">
-<meta property="og:url" content="http://studyfrontend.com/2015/03/12/primeNuber/index.html">
+<meta property="og:title" content="apacheVirtualhost">
+<meta property="og:url" content="http://studyfrontend.com/2015/05/10/apacheVirtualhost/index.html">
 <meta property="og:site_name" content="sihanarea">
-<meta property="og:description" content="1234567891011121314      //算出 num 以内的所有质数 function prime(num)&amp;#123;    var list = [];    for(var i = 2; i &amp;lt;= num; i++)&amp;#123; list.push(i); &amp;#125; //create a Array        for(var i = 0; i &amp;lt; list.">
-<meta property="og:updated_time" content="2016-01-10T14:27:01.000Z">
+<meta property="og:description" content="1234567891011121314151617181920212223242526272829303132&amp;lt;VirtualHost *:80&amp;gt;ServerAdmin test@localhostDocumentRoot &quot;G:/xampp/htdocs/tp&quot;ServerName tp.localhost&amp;lt;/VirtualHost&amp;gt;mac&amp;lt;virtualhost">
+<meta property="og:updated_time" content="2016-01-10T14:40:30.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="js-算出某值以内的质数">
-<meta name="twitter:description" content="1234567891011121314      //算出 num 以内的所有质数 function prime(num)&amp;#123;    var list = [];    for(var i = 2; i &amp;lt;= num; i++)&amp;#123; list.push(i); &amp;#125; //create a Array        for(var i = 0; i &amp;lt; list.">
+<meta name="twitter:title" content="apacheVirtualhost">
+<meta name="twitter:description" content="1234567891011121314151617181920212223242526272829303132&amp;lt;VirtualHost *:80&amp;gt;ServerAdmin test@localhostDocumentRoot &quot;G:/xampp/htdocs/tp&quot;ServerName tp.localhost&amp;lt;/VirtualHost&amp;gt;mac&amp;lt;virtualhost">
 
 
 
@@ -72,7 +72,7 @@
   };
 </script>
 
-  <title> js-算出某值以内的质数 | sihanarea </title>
+  <title> apacheVirtualhost | sihanarea </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -192,7 +192,7 @@
             
             
               
-                js-算出某值以内的质数
+                apacheVirtualhost
               
             
           </h1>
@@ -201,8 +201,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-03-12T12:11:44+08:00" content="2015-03-12">
-              2015-03-12
+            <time itemprop="dateCreated" datetime="2015-05-10T13:41:42+08:00" content="2015-05-10">
+              2015-05-10
             </time>
           </span>
 
@@ -211,8 +211,8 @@
               &nbsp; | &nbsp; 分类于
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/js/" itemprop="url" rel="index">
-                    <span itemprop="name">js</span>
+                  <a href="/categories/php/" itemprop="url" rel="index">
+                    <span itemprop="name">php</span>
                   </a>
                 </span>
 
@@ -240,7 +240,7 @@
       
 
       
-        <span itemprop="articleBody"><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">      <span class="comment">//算出 num 以内的所有质数</span></span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">prime</span>(<span class="params">num</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> list = [];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">2</span>; i &lt;= num; i++)&#123; list.push(i); &#125; <span class="comment">//create a Array</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; list.length; i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> j = <span class="number">2</span>; j &lt; list[i]; j++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(list[i] % j == <span class="number">0</span>)&#123;</span><br><span class="line">                list.splice(i,<span class="number">1</span>); <span class="comment">//delete the non prime number.it will change the index of other elements</span></span><br><span class="line">                j = <span class="number">2</span>; <span class="comment">//由于splice导致list[i+1]的index变为i,因此把j置为2以便对list[i+1]进行重新计算</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></span>
+        <span itemprop="articleBody"><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">&lt;VirtualHost *:<span class="number">80</span>&gt;</span><br><span class="line"></span><br><span class="line">ServerAdmin test@localhost</span><br><span class="line"></span><br><span class="line">DocumentRoot <span class="string">"G:/xampp/htdocs/tp"</span></span><br><span class="line"></span><br><span class="line">ServerName tp.localhost</span><br><span class="line"></span><br><span class="line">&lt;/VirtualHost&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">mac</span><br><span class="line"></span><br><span class="line">&lt;virtualhost *:<span class="number">80</span>&gt;</span><br><span class="line"></span><br><span class="line">    ServerName mysite.local</span><br><span class="line"></span><br><span class="line">    DocumentRoot <span class="string">"/Users/yourusername/path/to/your/site"</span></span><br><span class="line"></span><br><span class="line">    &lt;directory <span class="string">"/Users/yourusername/path/to/your/site"</span>&gt;</span><br><span class="line"></span><br><span class="line">        Options Indexes FollowSymLinks Includes ExecCGI</span><br><span class="line"></span><br><span class="line">        AllowOverride All</span><br><span class="line"></span><br><span class="line">        <span class="keyword">Require</span> all granted</span><br><span class="line"></span><br><span class="line">    &lt;/directory&gt;</span><br><span class="line"></span><br><span class="line">    ErrorLog <span class="string">"logs/mysite.local-error_log"</span></span><br><span class="line"></span><br><span class="line">&lt;/virtualhost&gt;</span><br></pre></td></tr></table></figure></span>
       
     </div>
 
@@ -248,9 +248,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/javascript/" rel="tag">#javascript</a>
-          
-            <a href="/tags/算法/" rel="tag">#算法</a>
+            <a href="/tags/php/" rel="tag">#php</a>
           
         </div>
       
@@ -259,16 +257,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/02/17/cssTriangle/" rel="next" title="css triangle">
-                <i class="fa fa-chevron-left"></i> css triangle
+              <a href="/2015/03/18/建造者模式/" rel="next" title="建造者模式">
+                <i class="fa fa-chevron-left"></i> 建造者模式
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/03/18/建造者模式/" rel="prev" title="建造者模式">
-                建造者模式 <i class="fa fa-chevron-right"></i>
+              <a href="/2015/05/20/多行文本居中兼容IE8/" rel="prev" title="多行文本居中兼容IE8">
+                多行文本居中兼容IE8 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
