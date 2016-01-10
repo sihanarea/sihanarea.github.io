@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="js," />
+  <meta name="keywords" content="javascript,算法," />
 
 
 
@@ -51,37 +51,28 @@
 
 
 
-<meta name="description" content="js金额转大写&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html&amp;gt;
-&amp;lt;head lang=&quot;en&quot;&amp;gt;
-    &amp;lt;meta charset=&quot;UTF-8&quot;&amp;gt;
-    &amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-&amp;lt;input type=&quot;text&quot; placeholder=&quot;请输入正整数&quot;/">
+<meta name="description" content="//算出 num 以内的所有质数
+
+function prime(num){
+    var list = [];
+    for(var i = 2; i &amp;lt;= num;=&quot;&quot; i++){=&quot;&quot; list.push(i);=&quot;&quot; }=&quot;&quot; create=&quot;&quot; a=&quot;&quot; array=&quot;&quot; for(var=&quot;&quot; i=&quot;0;&quot; &amp;lt;=&quot;&quot; list.length;=&quot;&quot; j=&quot;2;&quot; list[i];=">
 <meta property="og:type" content="article">
-<meta property="og:title" content="js金额转大写">
-<meta property="og:url" content="http://studyfrontend.com/2015/01/10/jsUppercase/index.html">
+<meta property="og:title" content="js-算出某值以内的质数">
+<meta property="og:url" content="http://studyfrontend.com/2016/01/10/primeNuber/index.html">
 <meta property="og:site_name" content="sihanarea">
-<meta property="og:description" content="js金额转大写&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html&amp;gt;
-&amp;lt;head lang=&quot;en&quot;&amp;gt;
-    &amp;lt;meta charset=&quot;UTF-8&quot;&amp;gt;
-    &amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-&amp;lt;input type=&quot;text&quot; placeholder=&quot;请输入正整数&quot;/">
-<meta property="og:updated_time" content="2016-01-10T13:49:50.000Z">
+<meta property="og:description" content="//算出 num 以内的所有质数
+
+function prime(num){
+    var list = [];
+    for(var i = 2; i &amp;lt;= num;=&quot;&quot; i++){=&quot;&quot; list.push(i);=&quot;&quot; }=&quot;&quot; create=&quot;&quot; a=&quot;&quot; array=&quot;&quot; for(var=&quot;&quot; i=&quot;0;&quot; &amp;lt;=&quot;&quot; list.length;=&quot;&quot; j=&quot;2;&quot; list[i];=">
+<meta property="og:updated_time" content="2016-01-10T14:12:41.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="js金额转大写">
-<meta name="twitter:description" content="js金额转大写&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html&amp;gt;
-&amp;lt;head lang=&quot;en&quot;&amp;gt;
-    &amp;lt;meta charset=&quot;UTF-8&quot;&amp;gt;
-    &amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-&amp;lt;input type=&quot;text&quot; placeholder=&quot;请输入正整数&quot;/">
+<meta name="twitter:title" content="js-算出某值以内的质数">
+<meta name="twitter:description" content="//算出 num 以内的所有质数
+
+function prime(num){
+    var list = [];
+    for(var i = 2; i &amp;lt;= num;=&quot;&quot; i++){=&quot;&quot; list.push(i);=&quot;&quot; }=&quot;&quot; create=&quot;&quot; a=&quot;&quot; array=&quot;&quot; for(var=&quot;&quot; i=&quot;0;&quot; &amp;lt;=&quot;&quot; list.length;=&quot;&quot; j=&quot;2;&quot; list[i];=">
 
 
 
@@ -93,7 +84,7 @@
   };
 </script>
 
-  <title> js金额转大写 | sihanarea </title>
+  <title> js-算出某值以内的质数 | sihanarea </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -213,7 +204,7 @@
             
             
               
-                js金额转大写
+                js-算出某值以内的质数
               
             
           </h1>
@@ -222,8 +213,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-01-10T10:17:46+08:00" content="2015-01-10">
-              2015-01-10
+            <time itemprop="dateCreated" datetime="2016-01-10T22:11:44+08:00" content="2016-01-10">
+              2016-01-10
             </time>
           </span>
 
@@ -261,75 +252,12 @@
       
 
       
-        <span itemprop="articleBody"><h2 id="js_u91D1_u989D_u8F6C_u5927_u5199"><a href="#js_u91D1_u989D_u8F6C_u5927_u5199" class="headerlink" title="js金额转大写"></a>js金额转大写</h2><pre><code class="prettyprint linenums">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head lang="en"&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;title&gt;&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;input type="text" placeholder="请输入正整数"/&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;/body&gt;
-&lt;script&gt;
-    function digit_uppercase(n) {
+        <span itemprop="articleBody"><pre class="prettyprint linenums">
+    //算出 num 以内的所有质数
 
-        var digit = [
-
-            '零', '壹', '贰', '叁', '肆',
-
-            '伍', '陆', '柒', '捌', '玖'
-
-        ];
-
-        var unit = [
-
-            ['元', '万', '亿'],
-
-            ['', '拾', '佰', '仟']
-
-        ];
-        var s = '';
-
-        for (var i = 0; i &lt; unit[0].length &amp;&amp; n &gt; 0; i++) {
-
-            var p = '';
-
-            for (var j = 0; j &lt; unit[1].length &amp;&amp; n &gt; 0; j++) {
-
-                p = digit[n % 10] + unit[1][j] + p;
-
-                n = Math.floor(n / 10);
-
-            }
-
-            s = p.replace(/(零.)*零$/, '')
-
-                    .replace(/^$/, '零')
-
-            + unit[0][i] + s;
-
-        }
-
-        return s.replace(/(零.)*零元/, '元')
-
-                        .replace(/(零.)+/g, '零')
-
-                        .replace(/^$/, '零元') + '整';
-
-    }
-
-    var oInput =  document.getElementsByTagName("input")[0];
-    var oP =  document.getElementsByTagName("p")[0];
-
-    oInput.onkeyup = function(){
-        oP.innerHTML = digit_uppercase(oInput.value);
-    }
-
-&lt;/script&gt;
-&lt;/html&gt;</code></pre>
-
-</span>
+function prime(num){
+    var list = [];
+    for(var i = 2; i <= num;="" i++){="" list.push(i);="" }="" create="" a="" array="" for(var="" i="0;" <="" list.length;="" j="2;" list[i];="" j++){="" if(list[i]="" %="" 0){="" list.splice(i,1);="" delete="" the="" non="" prime="" number.it="" will="" change="" index="" of="" other="" elements="" 由于splice导致list[i+1]的index变为i,因此把j置为2以便对list[i+1]进行重新计算="" pre=""></=></pre></span>
       
     </div>
 
@@ -337,7 +265,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/js/" rel="tag">#js</a>
+            <a href="/tags/javascript/" rel="tag">#javascript</a>
+          
+            <a href="/tags/算法/" rel="tag">#算法</a>
           
         </div>
       
@@ -346,13 +276,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2015/02/17/cssTriangle/" rel="next" title="css triangle">
+                <i class="fa fa-chevron-left"></i> css triangle
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/01/11/sshkey/" rel="prev" title="sshkey">
-                sshkey <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -466,7 +396,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#js_u91D1_u989D_u8F6C_u5927_u5199"><span class="nav-number">1.</span> <span class="nav-text">js金额转大写</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
