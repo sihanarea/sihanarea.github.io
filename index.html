@@ -230,6 +230,139 @@
             
               
                 
+                <a class="post-title-link" href="/2016/01/11/webpack入门/" itemprop="url">
+                  webpack入门
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-01-11T14:32:46+08:00" content="2016-01-11">
+              2016-01-11
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/工具/" itemprop="url" rel="index">
+                    <span itemprop="name">工具</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <p>###webpack 入门</p>
+<h4 id="u4E00_u3001_u4EC0_u4E48_u662Fwebpack"><a href="#u4E00_u3001_u4EC0_u4E48_u662Fwebpack" class="headerlink" title="一、什么是webpack"></a>一、什么是webpack</h4><blockquote>
+<p><a href="https://github.com/webpack" target="_blank" rel="external">webpack</a>是近期最火的一款模块加载器兼打包工具，支持commonJS和AMD模块。 支持很多模块加载器的调用，可以使模块加载器灵活定制，比如babel-loader加载器，该加载器能使我们使用ES6的语法来编写代码。 可以通过配置打包成多个文件，有效的利用浏览器的缓存功能提升性能。 使用模块加载器，可以支持sass，less等处理器进行打包且支持静态资源样式及图片进行打包。</p>
+</blockquote>
+<h4 id="u4E8C_u3001_u5B89_u88C5_u548C_u914D_u7F6E"><a href="#u4E8C_u3001_u5B89_u88C5_u548C_u914D_u7F6E" class="headerlink" title="二、安装和配置"></a>二、安装和配置</h4><h4 id="u5B89_u88C5"><a href="#u5B89_u88C5" class="headerlink" title="安装"></a>安装</h4><p>-<strong>在项目里安装</strong>  ：<code>npm install webpack --save-dev</code><br>-<strong>全局安装</strong>  ：<code>npm install webpack -g</code></p>
+<h4 id="u914D_u7F6E"><a href="#u914D_u7F6E" class="headerlink" title="配置"></a>配置</h4><p>来一个例子<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> webpack = <span class="built_in">require</span>(<span class="string">'webpack'</span>);</span><br><span class="line"><span class="keyword">var</span> commonsPlugin = <span class="keyword">new</span> webpack.optimize.CommonsChunkPlugin(<span class="string">'common.js'</span>);</span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line"> <span class="comment">//插件项</span></span><br><span class="line"> plugins: [commonsPlugin],</span><br><span class="line"> <span class="comment">//页面入口文件配置</span></span><br><span class="line"> entry: &#123;</span><br><span class="line">  index : <span class="string">'./src/js/page/index.js'</span></span><br><span class="line"> &#125;,</span><br><span class="line"> <span class="comment">//入口文件输出配置</span></span><br><span class="line"> output: &#123;</span><br><span class="line">  path: <span class="string">'dist/js/page'</span>,</span><br><span class="line">  filename: <span class="string">'[name].js'</span></span><br><span class="line"> &#125;,</span><br><span class="line"> <span class="built_in">module</span>: &#123;</span><br><span class="line">  <span class="comment">//加载器配置</span></span><br><span class="line">  loaders: [</span><br><span class="line">   &#123; test: <span class="regexp">/\.css$/</span>, loader: <span class="string">'style-loader!css-loader'</span> &#125;,</span><br><span class="line">   &#123; test: <span class="regexp">/\.js$/</span>, loader: <span class="string">'jsx-loader?harmony'</span> &#125;,</span><br><span class="line">   &#123; test: <span class="regexp">/\.scss$/</span>, loader: <span class="string">'style!css!sass?sourceMap'</span>&#125;,</span><br><span class="line">   &#123; test: <span class="regexp">/\.(png|jpg)$/</span>, loader: <span class="string">'url-loader?limit=8192'</span>&#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure></p>
+<p>每个项目下都必须配置有一个 webpack.config.js ，它的作用如同常规的 gulpfile.js/Gruntfile.js ，就是一个配置项，告诉 webpack 它需要做什么。</p>
+<p> <code>plugins</code> 是插件项，这里我们使用了一个 CommonsChunkPlugin的插件，它用于提取多个入口文件的公共脚本部分，然后生成一个 common.js 来方便多页面之间进行复用。</p>
+<p> <code>entry</code>  入口文件，是页面入口文件配置，output 是对应输出项配置 （即入口文件最终要生成什么名字的文件、存放到哪里）<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">entry: &#123;</span><br><span class="line"> page1: <span class="string">"./page1"</span>,</span><br><span class="line"> <span class="comment">//支持数组形式，将加载数组中的所有模块，但以最后一个模块作为输出</span></span><br><span class="line"> page2: [<span class="string">"./entry1"</span>, <span class="string">"./entry2"</span>]</span><br><span class="line">    &#125;,</span><br><span class="line">output: &#123;</span><br><span class="line"> path: <span class="string">"dist/js/page"</span>,    <span class="comment">//输出文件目录</span></span><br><span class="line"> filename: <span class="string">"[name].bundle.js"</span>   <span class="comment">//输出文件命名</span></span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>该段代码最终会生成一个 page1.bundle.js 和 page2.bundle.js，并存放到 ./dist/js/page 文件夹下。</p>
+<p><code>module</code> 指各种资源文件，如js、css、图片、svg、scss、less等等，一切资源皆被当做模块,它告知 webpack 每一种文件都需要使用什么加载器来处理。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>: &#123;</span><br><span class="line"> <span class="comment">//加载器配置</span></span><br><span class="line"> loaders: [</span><br><span class="line">  <span class="comment">//.css 文件使用 style-loader 和 css-loader 来处理</span></span><br><span class="line">  &#123; test: <span class="regexp">/\.css$/</span>, loader: <span class="string">'style-loader!css-loader'</span> &#125;,</span><br><span class="line">  <span class="comment">//.js 文件使用 jsx-loader 来编译处理</span></span><br><span class="line">  &#123; test: <span class="regexp">/\.js$/</span>, loader: <span class="string">'jsx-loader?harmony'</span> &#125;,</span><br><span class="line">  <span class="comment">//.scss 文件使用 style-loader、css-loader 和 sass-loader 来编译处理</span></span><br><span class="line">  &#123; test: <span class="regexp">/\.scss$/</span>, loader: <span class="string">'style!css!sass?sourceMap'</span>&#125;,</span><br><span class="line">  <span class="comment">//图片文件使用 url-loader 来处理，小于8kb的直接转为base64</span></span><br><span class="line">  &#123; test: <span class="regexp">/\.(png|jpg)$/</span>, loader: <span class="string">'url-loader?limit=8192'</span>&#125;</span><br><span class="line"> ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>-loader</code>其实是可以省略不写的，多个loader之间用“!”连接起来。</p>
+<p>所有的加载器都需要通过 npm 来加载<br>比如 url-loader 它会将样式中引用到的图片转为模块来处理，使用该加载器需要先进行安装：</p>
+<p><code>npm install url-loader -save-dev</code></p>
+<p>配置信息的参数<code>?limit=8192</code>表示将所有小于8kb的图片都转为base64形式 （其实应该说超过8kb的才使用 url-loader 来映射到文件，否则转为data url形式） 。</p>
+<p>Webpack 是类似 Browserify 那样在本地按目录对依赖进行查找的,可以构造一个例子， 用 <code>--display-error-details</code> 查看查找过程，例子当中 <code>resolve.extensions</code> 用于指明程序自动补全识别哪些后缀,,注意一下，<code>extensions</code> 第一个是空字符串! 对应不需要后缀的情况。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">resolve: &#123;</span><br><span class="line"> <span class="comment">//查找module的话从这里开始查找</span></span><br><span class="line"> root: <span class="string">'E:\racing\biketo_racing\www\source\vendor'</span>, <span class="comment">//绝对路径</span></span><br><span class="line"> <span class="comment">//自动扩展文件后缀名，意味着我们require模块可以省略不写后缀名</span></span><br><span class="line"> extensions: [<span class="string">''</span>, <span class="string">'.js'</span>, <span class="string">'.json'</span>, <span class="string">'.less'</span>],</span><br><span class="line"> <span class="comment">//模块别名定义，方便后续直接引用别名，无须多写长长的地址</span></span><br><span class="line"> alias: &#123;</span><br><span class="line">  dialog: <span class="string">'js/artDialog/dialog-min.js'</span>,<span class="comment">//后续直接 require('dialog') 即可</span></span><br><span class="line">  jquery: <span class="string">'js/jquery/jquery.min.js'</span>,</span><br><span class="line">  kindeditor: <span class="string">'js/kindeditor/kindeditor-min.js'</span></span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="u4E09_u3001_u8FD0_u884C"><a href="#u4E09_u3001_u8FD0_u884C" class="headerlink" title="三、运行"></a>三、运行</h4><p>运行webpack<br><code>$ webpack --display-error-details</code><br>后面的参数<code>--display-error-details</code>是推荐加上的，方便出错时能查阅更详尽的信息（比如 webpack 寻找模块的过程），从而更好定位到问题。</p>
+<p>其他参数</p>
+<blockquote>
+<p><code>$ webpack --config XXX.js</code> //使用另一份配置文件（比如webpack.config2.js）来打包<br><code>$ webpack --watch</code> //监听变动并自动打包<br><code>$ webpack -p</code> //压缩混淆脚本<br><code>$ webpack -d</code> //生成map映射文件，告知哪些模块被最终打包到哪里了</p>
+</blockquote>
+<h4 id="u56DB_u3001_u600E_u4E48_u7528"><a href="#u56DB_u3001_u600E_u4E48_u7528" class="headerlink" title="四、怎么用"></a>四、怎么用</h4><p>直接引入webpack最终生成的脚本就好，不用再写什么 data-main 或seajs.use 了</p>
+<p>来个例子  html<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">html</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"bundle.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">htmL</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>打包后连样式都不用引入，执行<code>bundle.js</code>会动态生成<code>&lt;style&gt;</code>标签并插入到head里</p>
+<p>js</p>
+<p>各脚本模块可以直接使用 commonJS 来书写，并可以直接引入未经编译的模块，比如less，jsx等（只要你在 webpack.config.js 里配置好了对应的加载器）。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">mport React from <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; render &#125; <span class="keyword">from</span> <span class="string">'react-dom'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; Router, Route, Link, IndexRoute &#125; <span class="keyword">from</span> <span class="string">'react-router'</span>;</span><br><span class="line"><span class="keyword">import</span> createBrowserHistory <span class="keyword">from</span> <span class="string">'history/lib/createBrowserHistory'</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">require</span>(<span class="string">'./app.css'</span>);	<span class="comment">//引入样式</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> App = React.createClass(&#123;…</span><br><span class="line"><span class="keyword">var</span> Dashboard = React.createClass(&#123;…</span><br><span class="line"><span class="keyword">var</span> Inbox = React.createClass(&#123;…</span><br><span class="line"><span class="keyword">var</span> Calendar = React.createClass(&#123;…</span><br><span class="line"><span class="keyword">let</span> history = createBrowserHistory();</span><br><span class="line"></span><br><span class="line">render((</span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="title">Router</span> <span class="attribute">history</span>=<span class="value">&#123;history&#125;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">Route</span> <span class="attribute">path</span>=<span class="value">"/"</span> <span class="attribute">component</span>=<span class="value">&#123;App&#125;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">IndexRoute</span> <span class="attribute">component</span>=<span class="value">&#123;Dashboard&#125;</span>/&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">Route</span> <span class="attribute">path</span>=<span class="value">"app"</span> <span class="attribute">component</span>=<span class="value">&#123;Dashboard&#125;</span>/&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">Route</span> <span class="attribute">path</span>=<span class="value">"inbox"</span> <span class="attribute">component</span>=<span class="value">&#123;Inbox&#125;</span>/&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">Route</span> <span class="attribute">path</span>=<span class="value">"calendar"</span> <span class="attribute">component</span>=<span class="value">&#123;Calendar&#125;</span>/&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">Route</span> <span class="attribute">path</span>=<span class="value">"*"</span> <span class="attribute">component</span>=<span class="value">&#123;Dashboard&#125;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">Route</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">Router</span>&gt;</span></span><br><span class="line">)</span>, <span class="built_in">document</span>.body);</span><br></pre></td></tr></table></figure>
+<p>在 AMD/CMD 中，我们需要对不符合规范的模块（比如一些直接返回全局变量的插件）进行 shim 处理，这时候我们需要使用 exports-loader 来帮忙：</p>
+<p><code>{ test: require.resolve(&quot;./src/js/tool/swipe.js&quot;), loader: &quot;exports?swipe&quot;}</code><br>之后在脚本中需要引用该模块的时候，这么简单地来使用就可以了：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">require</span>(<span class="string">'./tool/swipe.js'</span>);</span><br><span class="line">swipe();</span><br></pre></td></tr></table></figure></p>
+<h5 id="u72EC_u7ACB_u6253_u5305_u6837_u5F0F"><a href="#u72EC_u7ACB_u6253_u5305_u6837_u5F0F" class="headerlink" title="独立打包样式"></a>独立打包样式</h5><p>有时候可能希望项目的样式能不要被打包到脚本中，而是独立出来作为.css，然后在页面中以<link>标签引入。这时候我们需要<code>extract-text-webpack-plugin</code>来帮忙：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> webpack = <span class="built_in">require</span>(<span class="string">'webpack'</span>);</span><br><span class="line"><span class="keyword">var</span> commonsPlugin = <span class="keyword">new</span> webpack.optimize.CommonsChunkPlugin(<span class="string">'common.js'</span>);</span><br><span class="line"><span class="keyword">var</span> ExtractTextPlugin = <span class="built_in">require</span>(<span class="string">"extract-text-webpack-plugin"</span>);</span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">plugins: [commonsPlugin, <span class="keyword">new</span> ExtractTextPlugin(<span class="string">"[name].css"</span>)],</span><br><span class="line">entry: &#123;</span><br><span class="line"><span class="comment">//...省略其它配置</span></span><br></pre></td></tr></table></figure>
+<p>webpack会把样式文件提取出来</p>
+<h4 id="u4E94_u3001_u4E0Egulp_u6DF7_u642D"><a href="#u4E94_u3001_u4E0Egulp_u6DF7_u642D" class="headerlink" title="五、与gulp混搭"></a>五、与gulp混搭</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">gulp.task(<span class="string">"webpack"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">callback</span>) </span>&#123;</span><br><span class="line"> <span class="comment">// 运行webpack</span></span><br><span class="line"> webpack(&#123;</span><br><span class="line">  <span class="comment">// webpack配置文件</span></span><br><span class="line"> &#125;, <span class="function"><span class="keyword">function</span>(<span class="params">err, stats</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(err) <span class="keyword">throw</span> <span class="keyword">new</span> gutil.PluginError(<span class="string">"webpack"</span>, err);</span><br><span class="line">  gutil.log(<span class="string">"[webpack]"</span>, stats.toString(&#123;</span><br><span class="line">   <span class="comment">// output options</span></span><br><span class="line"> &#125;));</span><br><span class="line"> callback();</span><br><span class="line"> &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>这样子不需要写webapck.config.js了，直接写在task回调函数里。</p>
+<h4 id="u516D_u3001_u5B9E_u6218"><a href="#u516D_u3001_u5B9E_u6218" class="headerlink" title="六、实战"></a>六、实战</h4><p>这里是引用阮老师的一个入门demo，基本上够用了<br><a href="https://github.com/ruanyf/webpack-demos" target="_blank" rel="external">https://github.com/ruanyf/webpack-demos</a></p>
+<p>开发中遇到的问题，可以去扫文档<br><a href="http://webpack.github.io/docs/" target="_blank" rel="external">http://webpack.github.io/docs/</a></p>
+
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/01/11/移动端下拉加载/" itemprop="url">
                   移动端下拉加载
                 </a>
@@ -599,101 +732,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/07/16/js分页/" itemprop="url">
-                  js分页
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2015-07-16T22:20:17+08:00" content="2015-07-16">
-              2015-07-16
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/js/" itemprop="url" rel="index">
-                    <span itemprop="name">js</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-              <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> Paginator = (<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"> <span class="keyword">var</span> obj = <span class="literal">null</span>;</span><br><span class="line"> <span class="function"><span class="keyword">function</span> <span class="title">Paginator</span>(<span class="params">argument</span>) </span>&#123;</span><br><span class="line">  obj = obj ? obj : <span class="keyword">this</span>;</span><br><span class="line">  <span class="keyword">return</span> obj;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> Paginator.prototype = &#123;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span><br><span class="line">   * 获取分页html</span><br><span class="line">   * @param  &#123;[type]&#125; total [总页数]</span><br><span class="line">   * @param  &#123;[type]&#125; iPage [当前是第几页，默认是 1 ]</span><br><span class="line">   * @return &#123;[type]&#125;       [description]</span><br><span class="line">   */</span></span><br><span class="line">  getHtml: <span class="function"><span class="keyword">function</span> (<span class="params">total, iPage</span>) </span>&#123;</span><br><span class="line">   <span class="keyword">var</span> self = <span class="keyword">this</span>;</span><br><span class="line">   <span class="keyword">if</span>( (self.total = total) &lt; <span class="number">1</span> )<span class="keyword">return</span> <span class="string">''</span>;</span><br><span class="line">   self.iPage = iPage || <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">return</span> self._getHead() + self._getPrev() + self._getCenter() + self._getNext() + self._getLast();</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">//首页</span></span><br><span class="line">  _getHead: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">   <span class="keyword">var</span> res = <span class="string">''</span>, self = <span class="keyword">this</span>;</span><br><span class="line">   res = self.iPage &gt; <span class="number">1</span> ? <span class="string">'首页 '</span> : <span class="string">''</span>;</span><br><span class="line">   <span class="keyword">return</span> res;</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  <span class="comment">//上一页</span></span><br><span class="line">  _getPrev: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">   <span class="keyword">var</span> res = <span class="string">''</span>, self = <span class="keyword">this</span>;</span><br><span class="line">   res = self.iPage &gt; <span class="number">2</span> ? <span class="string">'上一页 '</span> : <span class="string">''</span>;</span><br><span class="line">   <span class="keyword">return</span> res;</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">//中间</span></span><br><span class="line">  _getCenter: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">   <span class="keyword">var</span> res = <span class="string">''</span>,</span><br><span class="line">    self = <span class="keyword">this</span>,</span><br><span class="line">    total = self.total,</span><br><span class="line">    iPage = self.iPage;</span><br><span class="line">   <span class="comment">//少于10页</span></span><br><span class="line">   <span class="keyword">var</span> len = total;</span><br><span class="line">   <span class="keyword">if</span>( len &lt;= <span class="number">10</span> )&#123;</span><br><span class="line">    <span class="keyword">for</span>( <span class="keyword">var</span> i=<span class="number">1</span>; i&lt;=len; i++ )&#123;</span><br><span class="line">     res += <span class="string">' '</span> + i;</span><br><span class="line">    &#125;</span><br><span class="line">   &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    len = <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">if</span>( iPage &lt;=<span class="number">5</span> )&#123;</span><br><span class="line">     <span class="keyword">for</span>( <span class="keyword">var</span> i=<span class="number">1</span>; i&lt;=len; i++ )&#123;	<span class="comment">//前10页</span></span><br><span class="line">      res += <span class="string">' '</span> + i;</span><br><span class="line">     &#125;</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>( iPage+<span class="number">4</span> &gt;= total )&#123;	<span class="comment">//最后10页</span></span><br><span class="line">     <span class="keyword">for</span>( <span class="keyword">var</span> i=total-len; i&lt;=total; i++ )&#123;</span><br><span class="line">      res += <span class="string">' '</span> + i;</span><br><span class="line">     &#125;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;	<span class="comment">//中间的页面</span></span><br><span class="line">     <span class="keyword">for</span>( <span class="keyword">var</span> i=iPage-len/<span class="number">2</span> + <span class="number">1</span>; i&lt;iPage; i++ )&#123;</span><br><span class="line">      res += <span class="string">' '</span> + i;</span><br><span class="line">     &#125;</span><br><span class="line">     res += <span class="string">' '</span> + iPage;</span><br><span class="line">     <span class="keyword">for</span>( <span class="keyword">var</span> j=iPage + <span class="number">1</span>; j&lt;iPage + len/<span class="number">2</span> + <span class="number">1</span>; j++ )&#123;</span><br><span class="line">      res += <span class="string">' '</span> + j;</span><br><span class="line">     &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">return</span> res;</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">//下一页</span></span><br><span class="line">  _getNext: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">   <span class="keyword">var</span> res = <span class="string">''</span>, self = <span class="keyword">this</span>;</span><br><span class="line">   res = self.iPage &lt;= self.total-<span class="number">2</span> ? <span class="string">' 下一页'</span> : <span class="string">''</span>;</span><br><span class="line">   <span class="keyword">return</span> res;</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="comment">//最后一页</span></span><br><span class="line">  _getLast: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">   <span class="keyword">var</span> res = <span class="string">''</span>, self = <span class="keyword">this</span>;</span><br><span class="line">   res = self.iPage &lt;= self.total-<span class="number">1</span> ? <span class="string">' 尾页'</span> : <span class="string">''</span>;</span><br><span class="line">   <span class="keyword">return</span> res;</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  constructor: Paginator</span><br><span class="line"></span><br><span class="line"> &#125;;</span><br><span class="line"></span><br><span class="line"> <span class="keyword">return</span> Paginator;</span><br><span class="line"></span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
-            
-          </span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
 
   </section>
 
@@ -740,7 +778,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">21</span>
+              <span class="site-state-item-count">22</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

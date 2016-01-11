@@ -230,6 +230,111 @@
             
               
                 
+                <a class="post-title-link" href="/2015/01/11/sshkey/" itemprop="url">
+                  sshkey
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-01-11T22:07:36+08:00" content="2015-01-11">
+              2015-01-11
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/工具/" itemprop="url" rel="index">
+                    <span itemprop="name">工具</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <h1 id="u5173_u4E8Egit_ssh_keys_u7684_u8BBE_u7F6E"><a href="#u5173_u4E8Egit_ssh_keys_u7684_u8BBE_u7F6E" class="headerlink" title="关于git ssh keys的设置"></a>关于git ssh keys的设置</h1><hr>
+<p>之前在开始学习使用git的时候，每次都用的https的方式来操作git，那样的话提交都需要输入一次密码，效率很低，现在总结一下怎么生成ssh key，用这种方式就无需每次都要输入密码了。</p>
+<ul>
+<li><p>第一步 先到c盘<code>C:\Users\你的计算机名</code>里看看是否存在<code>.ssh</code>这个文件夹，如果存在，先备份删除。</p>
+</li>
+<li><p>第二步 打开git bash，在里面输入<code>ssh-keygen -t rsa -C &quot;358379803@qq.com&quot;</code>这里替换成你自己的git注册邮箱，然后连续按三个回车。这样子你的c盘<code>C:\Users\你的计算机名</code>里就生成一个<code>.ssh</code>的文件夹，里面有个两个文件，分别是<code>id_rsa</code>和<code>id_rsa.pub</code>,用记事本类工具打开<code>id_rsa.pub</code>这个文件，全选复制。</p>
+</li>
+<li><p>第三步 打开github网站登入你的账号，点击右上角齿轮按钮，进入设置页面，再点击左侧的<code>SSH keys</code>然后点击右边的<code>ADD SSH key</code>下面会出现一个表单，这里的title随便填，自己记得住就行，下面的Key就是第二步复制的<code>id_rsa.pub</code>里的内容，填上，确定，就ok了。下次就可以用SSH的方式来推送你的文件了。不需要每次输入密码那么麻烦了。</p>
+</li>
+</ul>
+
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2015/01/10/jsUppercase/" itemprop="url">
                   js金额转大写
                 </a>
@@ -351,7 +456,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">21</span>
+              <span class="site-state-item-count">22</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
