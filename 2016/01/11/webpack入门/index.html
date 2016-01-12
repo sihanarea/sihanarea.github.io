@@ -59,7 +59,7 @@ webpack是近期最火的一款模块加载器兼打包工具，支持commonJS�
 <meta property="og:site_name" content="sihanarea">
 <meta property="og:description" content="webpack 入门一、什么是webpack
 webpack是近期最火的一款模块加载器兼打包工具，支持commonJS和AMD模块。 支持很多模块加载器的调用，可以使模块加载器灵活定制，比如babel-loader加载器，该加载器能使我们使用ES6的语法来编写代码。 可以通过配置打包成多个文件，有效的利用浏览器的缓存功能提升性能。 使用模块加载器，可以支持sass，less等处理器进行打包且支持静">
-<meta property="og:updated_time" content="2016-01-11T06:37:59.000Z">
+<meta property="og:updated_time" content="2016-01-12T14:00:32.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="webpack入门">
 <meta name="twitter:description" content="webpack 入门一、什么是webpack
@@ -310,6 +310,10 @@ webpack是近期最火的一款模块加载器兼打包工具，支持commonJS�
 <p>这样子不需要写webapck.config.js了，直接写在task回调函数里。</p>
 <h4 id="u516D_u3001_u5B9E_u6218"><a href="#u516D_u3001_u5B9E_u6218" class="headerlink" title="六、实战"></a>六、实战</h4><p>这里是引用阮老师的一个入门demo，基本上够用了<br><a href="https://github.com/ruanyf/webpack-demos" target="_blank" rel="external">https://github.com/ruanyf/webpack-demos</a></p>
 <p>开发中遇到的问题，可以去扫文档<br><a href="http://webpack.github.io/docs/" target="_blank" rel="external">http://webpack.github.io/docs/</a></p>
+<h4 id="u4E03_u3001_u5176_u4ED6"><a href="#u4E03_u3001_u5176_u4ED6" class="headerlink" title="七、其他"></a>七、其他</h4><p>做移动应用我们可以用webpack-dev-server来更改ip地址和端口</p>
+<p>webpack-dev-server 默认是localhost:8080</p>
+<p>可以通过<code>--host</code> 和<code>--port</code>来分别设置ip和端口</p>
+<p>webpack-dev-server –host 172.16.0.213 –port 9090</p>
 </span>
       
     </div>
@@ -441,7 +445,7 @@ webpack是近期最火的一款模块加载器兼打包工具，支持commonJS�
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#webpack__u5165_u95E8"><span class="nav-number">1.</span> <span class="nav-text">webpack 入门</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u4E00_u3001_u4EC0_u4E48_u662Fwebpack"><span class="nav-number">1.1.</span> <span class="nav-text">一、什么是webpack</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u4E8C_u3001_u5B89_u88C5_u548C_u914D_u7F6E"><span class="nav-number">1.2.</span> <span class="nav-text">二、安装和配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5B89_u88C5"><span class="nav-number">1.3.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u914D_u7F6E"><span class="nav-number">1.4.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u4E09_u3001_u8FD0_u884C"><span class="nav-number">1.5.</span> <span class="nav-text">三、运行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u56DB_u3001_u600E_u4E48_u7528"><span class="nav-number">1.6.</span> <span class="nav-text">四、怎么用</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#u72EC_u7ACB_u6253_u5305_u6837_u5F0F"><span class="nav-number">1.6.1.</span> <span class="nav-text">独立打包样式</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u4E94_u3001_u4E0Egulp_u6DF7_u642D"><span class="nav-number">1.7.</span> <span class="nav-text">五、与gulp混搭</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u516D_u3001_u5B9E_u6218"><span class="nav-number">1.8.</span> <span class="nav-text">六、实战</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#webpack__u5165_u95E8"><span class="nav-number">1.</span> <span class="nav-text">webpack 入门</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u4E00_u3001_u4EC0_u4E48_u662Fwebpack"><span class="nav-number">1.1.</span> <span class="nav-text">一、什么是webpack</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u4E8C_u3001_u5B89_u88C5_u548C_u914D_u7F6E"><span class="nav-number">1.2.</span> <span class="nav-text">二、安装和配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5B89_u88C5"><span class="nav-number">1.3.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u914D_u7F6E"><span class="nav-number">1.4.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u4E09_u3001_u8FD0_u884C"><span class="nav-number">1.5.</span> <span class="nav-text">三、运行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u56DB_u3001_u600E_u4E48_u7528"><span class="nav-number">1.6.</span> <span class="nav-text">四、怎么用</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#u72EC_u7ACB_u6253_u5305_u6837_u5F0F"><span class="nav-number">1.6.1.</span> <span class="nav-text">独立打包样式</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u4E94_u3001_u4E0Egulp_u6DF7_u642D"><span class="nav-number">1.7.</span> <span class="nav-text">五、与gulp混搭</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u516D_u3001_u5B9E_u6218"><span class="nav-number">1.8.</span> <span class="nav-text">六、实战</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u4E03_u3001_u5176_u4ED6"><span class="nav-number">1.9.</span> <span class="nav-text">七、其他</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
