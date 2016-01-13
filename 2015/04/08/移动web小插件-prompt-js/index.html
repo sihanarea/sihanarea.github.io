@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="js," />
+  <meta name="keywords" content="webapp," />
 
 
 
@@ -51,16 +51,16 @@
 
 
 
-<meta name="description" content="很常用，当代码片段吧12345678910111213141516171819function browserRedirect() &amp;#123;            var sUserAgent = navigator.userAgent.toLowerCase();            var bIsIpad = sUserAgent.match(/ipad/i) == &quot;ipad&quot;;">
+<meta name="description" content="功能很简单，很轻。1&amp;#9;function _Prompt(w,h,o,t,p,text,callback)&amp;#123;&amp;#10;    /*&amp;#10;     w:&amp;#23485;&amp;#24230;,&amp;#10;     h:&amp;#39640;&amp;#24230;,&amp;#10;     o:&amp;#36879;&amp;#26126;&amp;#24230;,&amp;#10;     t:&amp;#26102;&amp;#38388;&amp;#652">
 <meta property="og:type" content="article">
-<meta property="og:title" content="检测pc和移动浏览器">
-<meta property="og:url" content="http://studyfrontend.com/2015/06/15/检测pc和移动浏览器/index.html">
+<meta property="og:title" content="移动web小插件 prompt.js">
+<meta property="og:url" content="http://studyfrontend.com/2015/04/08/移动web小插件-prompt-js/index.html">
 <meta property="og:site_name" content="sihanarea">
-<meta property="og:description" content="很常用，当代码片段吧12345678910111213141516171819function browserRedirect() &amp;#123;            var sUserAgent = navigator.userAgent.toLowerCase();            var bIsIpad = sUserAgent.match(/ipad/i) == &quot;ipad&quot;;">
-<meta property="og:updated_time" content="2016-01-10T15:33:11.000Z">
+<meta property="og:description" content="功能很简单，很轻。1&amp;#9;function _Prompt(w,h,o,t,p,text,callback)&amp;#123;&amp;#10;    /*&amp;#10;     w:&amp;#23485;&amp;#24230;,&amp;#10;     h:&amp;#39640;&amp;#24230;,&amp;#10;     o:&amp;#36879;&amp;#26126;&amp;#24230;,&amp;#10;     t:&amp;#26102;&amp;#38388;&amp;#652">
+<meta property="og:updated_time" content="2016-01-13T15:06:20.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="检测pc和移动浏览器">
-<meta name="twitter:description" content="很常用，当代码片段吧12345678910111213141516171819function browserRedirect() &amp;#123;            var sUserAgent = navigator.userAgent.toLowerCase();            var bIsIpad = sUserAgent.match(/ipad/i) == &quot;ipad&quot;;">
+<meta name="twitter:title" content="移动web小插件 prompt.js">
+<meta name="twitter:description" content="功能很简单，很轻。1&amp;#9;function _Prompt(w,h,o,t,p,text,callback)&amp;#123;&amp;#10;    /*&amp;#10;     w:&amp;#23485;&amp;#24230;,&amp;#10;     h:&amp;#39640;&amp;#24230;,&amp;#10;     o:&amp;#36879;&amp;#26126;&amp;#24230;,&amp;#10;     t:&amp;#26102;&amp;#38388;&amp;#652">
 
 
 
@@ -72,7 +72,7 @@
   };
 </script>
 
-  <title> 检测pc和移动浏览器 | sihanarea </title>
+  <title> 移动web小插件 prompt.js | sihanarea </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -222,7 +222,7 @@
             
             
               
-                检测pc和移动浏览器
+                移动web小插件 prompt.js
               
             
           </h1>
@@ -231,8 +231,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-06-15T21:31:53+08:00" content="2015-06-15">
-              2015-06-15
+            <time itemprop="dateCreated" datetime="2015-04-08T21:03:27+08:00" content="2015-04-08">
+              2015-04-08
             </time>
           </span>
 
@@ -270,7 +270,7 @@
       
 
       
-        <span itemprop="articleBody"><h3 id="u5F88_u5E38_u7528_uFF0C_u5F53_u4EE3_u7801_u7247_u6BB5_u5427"><a href="#u5F88_u5E38_u7528_uFF0C_u5F53_u4EE3_u7801_u7247_u6BB5_u5427" class="headerlink" title="很常用，当代码片段吧"></a>很常用，当代码片段吧</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">browserRedirect</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> sUserAgent = navigator.userAgent.toLowerCase();</span><br><span class="line">            <span class="keyword">var</span> bIsIpad = sUserAgent.match(<span class="regexp">/ipad/i</span>) == <span class="string">"ipad"</span>;</span><br><span class="line">            <span class="keyword">var</span> bIsIphoneOs = sUserAgent.match(<span class="regexp">/iphone os/i</span>) == <span class="string">"iphone os"</span>;</span><br><span class="line">            <span class="keyword">var</span> bIsMidp = sUserAgent.match(<span class="regexp">/midp/i</span>) == <span class="string">"midp"</span>;</span><br><span class="line">            <span class="keyword">var</span> bIsUc7 = sUserAgent.match(<span class="regexp">/rv:1.2.3.4/i</span>) == <span class="string">"rv:1.2.3.4"</span>;</span><br><span class="line">            <span class="keyword">var</span> bIsUc = sUserAgent.match(<span class="regexp">/ucweb/i</span>) == <span class="string">"ucweb"</span>;</span><br><span class="line">            <span class="keyword">var</span> bIsAndroid = sUserAgent.match(<span class="regexp">/android/i</span>) == <span class="string">"android"</span>;</span><br><span class="line">            <span class="keyword">var</span> bIsCE = sUserAgent.match(<span class="regexp">/windows ce/i</span>) == <span class="string">"windows ce"</span>;</span><br><span class="line">            <span class="keyword">var</span> bIsWM = sUserAgent.match(<span class="regexp">/windows mobile/i</span>) == <span class="string">"windows mobile"</span>;</span><br><span class="line">            <span class="built_in">document</span>.writeln(<span class="string">"您的浏览设备为："</span>);</span><br><span class="line">            <span class="keyword">if</span> (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) &#123;</span><br><span class="line">                <span class="built_in">document</span>.writeln(<span class="string">"phone"</span>);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="built_in">document</span>.writeln(<span class="string">"pc"</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        browserRedirect();</span><br></pre></td></tr></table></figure></span>
+        <span itemprop="articleBody"><h5 id="u529F_u80FD_u5F88_u7B80_u5355_uFF0C_u5F88_u8F7B_u3002"><a href="#u529F_u80FD_u5F88_u7B80_u5355_uFF0C_u5F88_u8F7B_u3002" class="headerlink" title="功能很简单，很轻。"></a>功能很简单，很轻。</h5><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#9;function _Prompt(w,h,o,t,p,text,callback)&#123;&#10;    /*&#10;     w:&#23485;&#24230;,&#10;     h:&#39640;&#24230;,&#10;     o:&#36879;&#26126;&#24230;,&#10;     t:&#26102;&#38388;&#65292;&#21333;&#20301;&#27627;&#31186;,&#10;     p:&#20301;&#32622;&#65292;middle&#20013;&#38388;&#65292;bottom&#19979;&#38754;,&#10;     text:&#25552;&#31034;&#25991;&#23383;&#10;     */&#10;&#10;    /*&#21019;&#24314;div*/&#10;    this.oDiv = document.createElement(&#39;div&#39;);&#10;    document.body.appendChild(this.oDiv);&#10;&#10;&#10;    /*&#26500;&#36896;&#20989;&#25968;&#23646;&#24615;*/&#10;    this.oDiv._width = w + &#39;px&#39;;&#10;    this.oDiv._height  = h + &#39;px&#39;;&#10;    this.oDiv._opacity = o;&#10;    this.oDiv._timer = t;&#10;    this.oDiv._position = p;&#10;    this.oDiv._text = text;&#10;    this.oDiv._callback = callback;&#10;&#10;&#10;    /*&#33719;&#21462;&#21021;&#22987;&#20301;&#32622;*/&#10;    var cLeft = (document.documentElement.clientWidth - parseInt(this.oDiv._width))/2 + &#39;px&#39;;&#10;    var cTop =  (document.documentElement.clientHeight - this.oDiv.offsetHeight)/2 + &#39;px&#39;&#10;    var bTop =  document.documentElement.clientHeight - this.oDiv.offsetHeight+ &#39;px&#39;&#10;&#10;    /*&#21028;&#26029;&#21442;&#25968;&#65292;&#32473;&#30456;&#24212;&#30340;&#26679;&#24335;*/&#10;    if(this.oDiv._position == &#39;middle&#39;)&#123;&#10;        this.oDiv.style.cssText = &#39;background:#000;color:#fff;text-align:center;opacity:0.5;position:fixed;top:&#39;+ cTop +&#39;;left:&#39;+cLeft+&#39;;border-radius:3px;box-shadow:1px 1px 6px #000;&#39;;&#10;    &#125;else&#123;&#10;        this.oDiv.style.cssText = &#39;background:#000;color:#fff;text-align:center;opacity:0.5;position:fixed;top:&#39;+ bTop +&#39;;left:&#39;+cLeft+&#39;;border-radius:3px;box-shadow:1px 1px 6px #000;&#39;;&#10;    &#125;&#10;&#10;&#10;&#125;&#10;&#10;_Prompt.prototype.start = function()&#123;&#10;    /*&#33719;&#21462;&#20301;&#32622;*/&#10;    var _Left = (document.documentElement.clientWidth - parseInt(this.oDiv._width))/2 + &#39;px&#39;;&#10;    var _Top = (document.documentElement.clientHeight - parseInt(this.oDiv._height))/2 ;&#10;    this.oDiv.innerHTML = this.oDiv._text;&#10;&#10;    /*&#20256;&#36882;&#20301;&#32622;*/&#10;    this.oDiv.oLeft = _Left;&#10;    this.oDiv.oTop = _Top;&#10;    this.oDiv.oMiddle = _Top - parseInt(this.oDiv._height)/2 + &#39;px&#39;;&#10;    this.oDiv.oBottom = document.documentElement.clientHeight-parseInt(this.oDiv._height)*2 + &#39;px&#39;;&#10;&#10;    /*&#20256;&#36882;&#26679;&#24335;*/&#10;    this.oDiv.style.width = this.oDiv._width;&#10;    this.oDiv.style.height = this.oDiv._height;&#10;    this.oDiv.style.lineHeight = this.oDiv._height;&#10;    this.oDiv.style.opacity = this.oDiv._opacity;&#10;&#10;    /*&#21028;&#26029;&#21442;&#25968;&#65292;&#32473;&#30456;&#24212;&#30340;&#20301;&#32622;*/&#10;    if(this.oDiv._position == &#39;middle&#39;)&#123;&#10;        this.oDiv.style.transition = &#39;all 0.3s&#39;;&#10;        this.oDiv.style.left = this.oDiv.oLeft ;&#10;        this.oDiv.style.top = this.oDiv.oMiddle;&#10;&#10;    &#125;else if(this.oDiv._position == &#39;bottom&#39;)&#123;&#10;        this.oDiv.style.transition = &#39;all 0.3s&#39;;&#10;        this.oDiv.style.left = this.oDiv.oLeft;&#10;        this.oDiv.style.top = this.oDiv.oBottom;&#10;    &#125;else&#123;&#10;        this.oDiv.style.transition = &#39;all 0.3s&#39;;&#10;        this.oDiv.style.left = this.oDiv.oLeft;&#10;        this.oDiv.style.top = this.oDiv.oTop;&#10;    &#125;&#10;    var _this = this;&#10;    /*&#23450;&#26102;&#22120;&#25191;&#34892;&#21160;&#30011;*/&#10;    setTimeout(function()&#123;&#10;        _this.oDiv.style.transform = &#34;translate3d(0px,-50px,0px)&#34;;&#10;        _this.oDiv.style.MozTransform = &#34;translate3d(0px,-50px,0px)&#34;;&#10;        _this.oDiv.style.WebkitTransform = &#34;translate3d(0px,-50px,0px)&#34;;&#10;        _this.oDiv.style.opacity = 0;&#10;&#10;    &#125;,this.oDiv._timer);&#10;    //&#21024;&#38500;&#24403;&#21069;div&#10;    setTimeout(function()&#123;&#10;        document.body.removeChild(_this.oDiv);&#10;        _this.oDiv._callback &#38;&#38; _this.oDiv._callback();&#10;    &#125;,this.oDiv._timer + 1000);&#10;&#10;&#125;</span><br></pre></td></tr></table></figure></span>
       
     </div>
 
@@ -278,7 +278,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/js/" rel="tag">#js</a>
+            <a href="/tags/webapp/" rel="tag">#webapp</a>
           
         </div>
       
@@ -287,16 +287,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/05/25/隐藏手机浏览器地址栏/" rel="next" title="隐藏手机浏览器地址栏">
-                <i class="fa fa-chevron-left"></i> 隐藏手机浏览器地址栏
+              <a href="/2015/03/31/滚动到指定位置和添加class/" rel="next" title="滚动到指定位置和添加class  ">
+                <i class="fa fa-chevron-left"></i> 滚动到指定位置和添加class  
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/07/11/获取url中参数/" rel="prev" title="获取url中参数">
-                获取url中参数 <i class="fa fa-chevron-right"></i>
+              <a href="/2015/04/20/把webapp保存到桌面/" rel="prev" title="把webapp保存到桌面">
+                把webapp保存到桌面 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -411,7 +411,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u5F88_u5E38_u7528_uFF0C_u5F53_u4EE3_u7801_u7247_u6BB5_u5427"><span class="nav-number">1.</span> <span class="nav-text">很常用，当代码片段吧</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#u529F_u80FD_u5F88_u7B80_u5355_uFF0C_u5F88_u8F7B_u3002"><span class="nav-number">1.</span> <span class="nav-text">功能很简单，很轻。</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
