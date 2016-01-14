@@ -54,7 +54,7 @@
 <meta name="description" content="知识总结，技术梳理，平时感想">
 <meta property="og:type" content="website">
 <meta property="og:title" content="sihanarea">
-<meta property="og:url" content="http://studyfrontend.com/archives/2015/page/5/index.html">
+<meta property="og:url" content="http://studyfrontend.com/page/6/index.html">
 <meta property="og:site_name" content="sihanarea">
 <meta property="og:description" content="知识总结，技术梳理，平时感想">
 <meta name="twitter:card" content="summary">
@@ -71,7 +71,7 @@
   };
 </script>
 
-  <title> 归档 | sihanarea </title>
+  <title> sihanarea </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -92,7 +92,9 @@
 
 
 
-  <div class="container one-column  page-archive ">
+  <div class="container one-column 
+   page-home 
+">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -199,133 +201,107 @@
       <div class="main-inner">
         <div id="content" class="content">
           
-
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 26 篇日志。 继续努力。
-    </span>
+  <section id="posts" class="posts-expand">
 
     
 
-      
-      
+    
+    
+
+    
       
 
-      
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2015">2015</h2>
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/01/10/jsUppercase/" itemprop="url">
+                  js金额转大写
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-01-10T10:17:46+08:00" content="2015-01-10">
+              2015-01-10
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">javascript</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
         </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2015/02/17/cssTriangle/" itemprop="url">
-              
-                <span itemprop="name">css triangle</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2015-02-17T11:37:14+08:00"
-              content="2015-02-17" >
-          02-17
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
+      </header>
     
 
-      
-      
-      
+
+    <div class="post-body">
 
       
       
 
       
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
         
-            <a class="post-title-link" href="/2015/01/11/sshkey/" itemprop="url">
-              
-                <span itemprop="name">sshkey</span>
-              
-            </a>
+          <span itemprop="articleBody">
+            
+              <h2 id="js_u91D1_u989D_u8F6C_u5927_u5199"><a href="#js_u91D1_u989D_u8F6C_u5927_u5199" class="headerlink" title="js金额转大写"></a>js金额转大写</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">digit_uppercase</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> digit = [</span><br><span class="line"></span><br><span class="line">        <span class="string">'零'</span>, <span class="string">'壹'</span>, <span class="string">'贰'</span>, <span class="string">'叁'</span>, <span class="string">'肆'</span>,</span><br><span class="line"></span><br><span class="line">        <span class="string">'伍'</span>, <span class="string">'陆'</span>, <span class="string">'柒'</span>, <span class="string">'捌'</span>, <span class="string">'玖'</span></span><br><span class="line"></span><br><span class="line">    ];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> unit = [</span><br><span class="line"></span><br><span class="line">        [<span class="string">'元'</span>, <span class="string">'万'</span>, <span class="string">'亿'</span>],</span><br><span class="line"></span><br><span class="line">        [<span class="string">''</span>, <span class="string">'拾'</span>, <span class="string">'佰'</span>, <span class="string">'仟'</span>]</span><br><span class="line"></span><br><span class="line">    ];</span><br><span class="line">    <span class="keyword">var</span> s = <span class="string">''</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &amp;lt; unit[<span class="number">0</span>].length &amp;amp;&amp;amp; n &amp;gt; <span class="number">0</span>; i++) &#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">var</span> p = <span class="string">''</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> j = <span class="number">0</span>; j &amp;lt; unit[<span class="number">1</span>].length &amp;amp;&amp;amp; n &amp;gt; <span class="number">0</span>; j++) &#123;</span><br><span class="line"></span><br><span class="line">            p = digit[n % <span class="number">10</span>] + unit[<span class="number">1</span>][j] + p;</span><br><span class="line"></span><br><span class="line">            n = <span class="built_in">Math</span>.floor(n / <span class="number">10</span>);</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        s = p.replace(<span class="regexp">/(零.)*零$/</span>, <span class="string">''</span>)</span><br><span class="line"></span><br><span class="line">                .replace(<span class="regexp">/^$/</span>, <span class="string">'零'</span>)</span><br><span class="line"></span><br><span class="line">        + unit[<span class="number">0</span>][i] + s;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> s.replace(<span class="regexp">/(零.)*零元/</span>, <span class="string">'元'</span>)</span><br><span class="line"></span><br><span class="line">                    .replace(<span class="regexp">/(零.)+/g</span>, <span class="string">'零'</span>)</span><br><span class="line"></span><br><span class="line">                    .replace(<span class="regexp">/^$/</span>, <span class="string">'零元'</span>) + <span class="string">'整'</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> oInput =  <span class="built_in">document</span>.getElementsByTagName(<span class="string">"input"</span>)[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">var</span> oP =  <span class="built_in">document</span>.getElementsByTagName(<span class="string">"p"</span>)[<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line">oInput.onkeyup = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    oP.innerHTML = digit_uppercase(oInput.value);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+            
+          </span>
         
-      </h1>
+      
+    </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2015-01-11T22:07:36+08:00"
-              content="2015-01-11" >
-          01-11
-        </time>
-      </div>
+    <footer class="post-footer">
+      
 
-    </header>
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2015/01/10/jsUppercase/" itemprop="url">
-              
-                <span itemprop="name">js金额转大写</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2015-01-10T10:17:46+08:00"
-              content="2015-01-10" >
-          01-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
 
 
     
@@ -334,9 +310,8 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/2015/page/4/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/archives/2015/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/2015/page/4/">4</a><span class="page-number current">5</span>
+    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span>
   </nav>
-
 
 
 
@@ -456,12 +431,6 @@
 
   
   
-  
-    <script type="text/javascript">
-      postMotionOptions = {stagger: 100, drag: true};
-    </script>
-  
-
 
   
     
@@ -488,12 +457,6 @@
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
-
 
   <script type="text/javascript" src="/js/bootstrap.js"></script>
 

@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="webapp," />
+  <meta name="keywords" content="nodejs," />
 
 
 
@@ -51,16 +51,16 @@
 
 
 
-<meta name="description" content="代码片段123456789101112131415// 隐藏手机浏览器地址栏function hideAddressBar()&amp;#123;    if(document.documentElement.scrollHeight&amp;lt;window.outerHeight/window.devicePixelRatio)        document.documentElement.style.h">
+<meta name="description" content="1111">
 <meta property="og:type" content="article">
-<meta property="og:title" content="隐藏手机浏览器地址栏">
-<meta property="og:url" content="http://studyfrontend.com/2015/05/25/隐藏手机浏览器地址栏/index.html">
+<meta property="og:title" content="exports与module.exports的区别">
+<meta property="og:url" content="http://studyfrontend.com/2016/01/14/exports与module-exports的区别/index.html">
 <meta property="og:site_name" content="sihanarea">
-<meta property="og:description" content="代码片段123456789101112131415// 隐藏手机浏览器地址栏function hideAddressBar()&amp;#123;    if(document.documentElement.scrollHeight&amp;lt;window.outerHeight/window.devicePixelRatio)        document.documentElement.style.h">
-<meta property="og:updated_time" content="2016-01-10T15:46:24.000Z">
+<meta property="og:description" content="1111">
+<meta property="og:updated_time" content="2016-01-14T15:17:40.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="隐藏手机浏览器地址栏">
-<meta name="twitter:description" content="代码片段123456789101112131415// 隐藏手机浏览器地址栏function hideAddressBar()&amp;#123;    if(document.documentElement.scrollHeight&amp;lt;window.outerHeight/window.devicePixelRatio)        document.documentElement.style.h">
+<meta name="twitter:title" content="exports与module.exports的区别">
+<meta name="twitter:description" content="1111">
 
 
 
@@ -72,7 +72,7 @@
   };
 </script>
 
-  <title> 隐藏手机浏览器地址栏 | sihanarea </title>
+  <title> exports与module.exports的区别 | sihanarea </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -222,7 +222,7 @@
             
             
               
-                隐藏手机浏览器地址栏
+                exports与module.exports的区别
               
             
           </h1>
@@ -231,8 +231,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-05-25T23:34:02+08:00" content="2015-05-25">
-              2015-05-25
+            <time itemprop="dateCreated" datetime="2016-01-14T23:15:59+08:00" content="2016-01-14">
+              2016-01-14
             </time>
           </span>
 
@@ -270,7 +270,7 @@
       
 
       
-        <span itemprop="articleBody"><h3 id="u4EE3_u7801_u7247_u6BB5"><a href="#u4EE3_u7801_u7247_u6BB5" class="headerlink" title="代码片段"></a>代码片段</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 隐藏手机浏览器地址栏</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">hideAddressBar</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">document</span>.documentElement.scrollHeight&lt;<span class="built_in">window</span>.outerHeight/<span class="built_in">window</span>.devicePixelRatio)</span><br><span class="line">        <span class="built_in">document</span>.documentElement.style.height=(<span class="built_in">window</span>.outerHeight/<span class="built_in">window</span>.devicePixelRatio)+<span class="string">'px'</span>;</span><br><span class="line">    setTimeout(<span class="built_in">window</span>.scrollTo(<span class="number">1</span>,<span class="number">1</span>),<span class="number">0</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (navigator.userAgent.match(<span class="regexp">/Android/i</span>)) &#123;</span><br><span class="line">    hideAddressBar();</span><br><span class="line">    <span class="built_in">window</span>.addEventListener(<span class="string">"load"</span>,hideAddressBar);</span><br><span class="line">    <span class="built_in">window</span>.addEventListener(<span class="string">"orientationchange"</span>,hideAddressBar);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span> (navigator.userAgent.match(<span class="regexp">/(iPad|iPhone|iPod)/g</span>)) &#123;</span><br><span class="line">    <span class="built_in">window</span>.scrollTo(<span class="number">0</span>,<span class="number">1</span>);     </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <span itemprop="articleBody"><p>1111    </p>
 </span>
       
     </div>
@@ -279,7 +279,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/webapp/" rel="tag">#webapp</a>
+            <a href="/tags/nodejs/" rel="tag">#nodejs</a>
           
         </div>
       
@@ -288,17 +288,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/05/20/多行文本居中兼容IE8/" rel="next" title="多行文本居中兼容IE8">
-                <i class="fa fa-chevron-left"></i> 多行文本居中兼容IE8
+              <a href="/2016/01/11/webpack入门/" rel="next" title="webpack入门">
+                <i class="fa fa-chevron-left"></i> webpack入门
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/06/15/检测pc和移动浏览器/" rel="prev" title="检测pc和移动浏览器">
-                检测pc和移动浏览器 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -412,7 +408,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u4EE3_u7801_u7247_u6BB5"><span class="nav-number">1.</span> <span class="nav-text">代码片段</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
