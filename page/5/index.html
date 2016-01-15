@@ -230,6 +230,101 @@
             
               
                 
+                <a class="post-title-link" href="/2015/03/18/建造者模式/" itemprop="url">
+                  建造者模式
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-03-18T19:11:44+08:00" content="2015-03-18">
+              2015-03-18
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/js/" itemprop="url" rel="index">
+                    <span itemprop="name">js</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br></pre></td><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">title</span>&gt;</span>建造者模式<span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span><br><span class="line">    <span class="comment">//创建一位人类</span></span><br><span class="line">    <span class="keyword">var</span> Human = <span class="function"><span class="keyword">function</span>(<span class="params">param</span>)</span>&#123;</span><br><span class="line">        <span class="comment">//技能</span></span><br><span class="line">        <span class="keyword">this</span>.skill = param &amp;&amp; param.skill || <span class="string">'保密'</span>;</span><br><span class="line">        <span class="comment">//兴趣爱好</span></span><br><span class="line">        <span class="keyword">this</span>.hobby = param &amp;&amp; param.hobby || <span class="string">'保密'</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//类人原型方法</span></span><br><span class="line">    Human.prototype = &#123;</span><br><span class="line">        getSkill:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">this</span>.skill;</span><br><span class="line">        &#125;,</span><br><span class="line">        getHobby:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">this</span>.hobby;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//实例化姓名类</span></span><br><span class="line">    <span class="keyword">var</span> Named = <span class="function"><span class="keyword">function</span>(<span class="params">name</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> that = <span class="keyword">this</span>;</span><br><span class="line">        <span class="comment">//构造器</span></span><br><span class="line">        <span class="comment">//构造器函数解析姓名的姓与名</span></span><br><span class="line">        (<span class="function"><span class="keyword">function</span>(<span class="params">name,that</span>)</span>&#123;</span><br><span class="line">            that.wholeName = name;</span><br><span class="line">            <span class="keyword">if</span>(name.indexOf(<span class="string">' '</span>) &gt; -<span class="number">1</span>)&#123;</span><br><span class="line">                that.Firstname = name.slice(<span class="number">0</span>,name.indexOf(<span class="string">' '</span>));</span><br><span class="line">                that.secendName = name.slice(name.indexOf(<span class="string">' '</span>));</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)(name,that);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//实例化职位类</span></span><br><span class="line">    <span class="keyword">var</span> Work = <span class="function"><span class="keyword">function</span>(<span class="params">work</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> that = <span class="keyword">this</span>;</span><br><span class="line">        <span class="comment">//构造器</span></span><br><span class="line">        <span class="comment">//构造器函数通过传入的职位特征来设置相应职位以及描述</span></span><br><span class="line">        (<span class="function"><span class="keyword">function</span>(<span class="params">work,that</span>)</span>&#123;</span><br><span class="line">            <span class="keyword">switch</span> (work)&#123;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">'code'</span>:</span><br><span class="line">                    that.work = <span class="string">'工程师'</span>;</span><br><span class="line">                    that.workDescript = <span class="string">'每天写代码'</span>;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">'UI'</span>:</span><br><span class="line">                <span class="keyword">case</span> <span class="string">'UE'</span>:</span><br><span class="line">                    that.work = <span class="string">'设计师'</span>;</span><br><span class="line">                    that.workDescript = <span class="string">'每天做设计'</span>;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">'teach'</span>:</span><br><span class="line">                    that.work = <span class="string">'教师'</span>;</span><br><span class="line">                    that.workDescript = <span class="string">'分享也是一种快乐'</span>;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">default</span>:</span><br><span class="line">                    that.work = work;</span><br><span class="line">                    that.workDescript = <span class="string">'对不起，没有你这个职位'</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)(work,that);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//更换期望的职位</span></span><br><span class="line">    Work.prototype.changeWork = <span class="function"><span class="keyword">function</span>(<span class="params">work</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.work = work;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//添加对职位的描述</span></span><br><span class="line">    Work.prototype.changeDescript = <span class="function"><span class="keyword">function</span>(<span class="params">setence</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.workDescript = setence;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/*</span><br><span class="line">    *</span><br><span class="line">    * 应聘者建造者</span><br><span class="line">    * 参数 name : 姓名(全名)</span><br><span class="line">    * 参数 work : 期望职位</span><br><span class="line">    * */</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> Person = <span class="function"><span class="keyword">function</span>(<span class="params">name,work</span>)</span>&#123;</span><br><span class="line">        <span class="comment">//创建应聘者缓存对象</span></span><br><span class="line">        <span class="keyword">var</span> _person = <span class="keyword">new</span> Human();</span><br><span class="line">        <span class="comment">//创建应聘者姓名解析对象</span></span><br><span class="line">        _person.name = <span class="keyword">new</span> Named(name);</span><br><span class="line">        <span class="comment">//创建应聘者期望职位</span></span><br><span class="line">        _person.work = <span class="keyword">new</span> Work(work);</span><br><span class="line">        <span class="comment">//将创建的应聘者对象返回</span></span><br><span class="line">        <span class="keyword">return</span> _person;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> person  = <span class="keyword">new</span> Person (<span class="string">'liu sihan'</span>,<span class="string">'UI'</span>);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">document</span>.write(person.skill + <span class="string">'&lt;br/&gt;'</span>);</span><br><span class="line">    <span class="built_in">document</span>.write(person.name.Firstname + <span class="string">'&lt;br/&gt;'</span>);</span><br><span class="line">    <span class="built_in">document</span>.write(person.name.secendName + <span class="string">'&lt;br/&gt;'</span>);</span><br><span class="line">    <span class="built_in">document</span>.write(person.work.work + <span class="string">'&lt;br/&gt;'</span>);</span><br><span class="line">    <span class="built_in">document</span>.write(person.work.workDescript + <span class="string">'&lt;br/&gt;'</span>);</span><br><span class="line"></span><br><span class="line"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2015/03/12/primeNuber/" itemprop="url">
                   js-算出某值以内的质数
                 </a>
@@ -599,111 +694,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/01/11/sshkey/" itemprop="url">
-                  sshkey
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2015-01-11T22:07:36+08:00" content="2015-01-11">
-              2015-01-11
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/工具/" itemprop="url" rel="index">
-                    <span itemprop="name">工具</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-              <h1 id="u5173_u4E8Egit_ssh_keys_u7684_u8BBE_u7F6E"><a href="#u5173_u4E8Egit_ssh_keys_u7684_u8BBE_u7F6E" class="headerlink" title="关于git ssh keys的设置"></a>关于git ssh keys的设置</h1><hr>
-<p>之前在开始学习使用git的时候，每次都用的https的方式来操作git，那样的话提交都需要输入一次密码，效率很低，现在总结一下怎么生成ssh key，用这种方式就无需每次都要输入密码了。</p>
-<ul>
-<li><p>第一步 先到c盘<code>C:\Users\你的计算机名</code>里看看是否存在<code>.ssh</code>这个文件夹，如果存在，先备份删除。</p>
-</li>
-<li><p>第二步 打开git bash，在里面输入<code>ssh-keygen -t rsa -C &quot;358379803@qq.com&quot;</code>这里替换成你自己的git注册邮箱，然后连续按三个回车。这样子你的c盘<code>C:\Users\你的计算机名</code>里就生成一个<code>.ssh</code>的文件夹，里面有个两个文件，分别是<code>id_rsa</code>和<code>id_rsa.pub</code>,用记事本类工具打开<code>id_rsa.pub</code>这个文件，全选复制。</p>
-</li>
-<li><p>第三步 打开github网站登入你的账号，点击右上角齿轮按钮，进入设置页面，再点击左侧的<code>SSH keys</code>然后点击右边的<code>ADD SSH key</code>下面会出现一个表单，这里的title随便填，自己记得住就行，下面的Key就是第二步复制的<code>id_rsa.pub</code>里的内容，填上，确定，就ok了。下次就可以用SSH的方式来推送你的文件了。不需要每次输入密码那么麻烦了。</p>
-</li>
-</ul>
-
-            
-          </span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
 
   </section>
 
@@ -750,7 +740,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">26</span>
+              <span class="site-state-item-count">27</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
