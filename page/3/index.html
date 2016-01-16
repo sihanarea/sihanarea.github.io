@@ -230,6 +230,101 @@
             
               
                 
+                <a class="post-title-link" href="/2015/07/11/获取url中参数/" itemprop="url">
+                  获取url中参数
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-07-11T00:21:27+08:00" content="2015-07-11">
+              2015-07-11
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/js/" itemprop="url" rel="index">
+                    <span itemprop="name">js</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 获取url中的参数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getParameter</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">    name = name.replace(<span class="regexp">/[\[]/</span>, <span class="string">'\\['</span>).replace(<span class="regexp">/[\]]/</span>, <span class="string">'\\]'</span>);</span><br><span class="line">    <span class="keyword">var</span> regex = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">'[\\?&amp;]'</span> + name + <span class="string">'=([^&amp;#]*)'</span>),</span><br><span class="line">        results = regex.exec(location.search);</span><br><span class="line">    <span class="keyword">return</span> results === <span class="literal">null</span> ? <span class="string">''</span> : <span class="built_in">decodeURIComponent</span>(results[<span class="number">1</span>].replace(<span class="regexp">/\+/g</span>, <span class="string">' '</span>));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2015/06/15/检测pc和移动浏览器/" itemprop="url">
                   检测pc和移动浏览器
                 </a>
@@ -590,101 +685,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/05/10/apacheVirtualhost/" itemprop="url">
-                  apacheVirtualhost
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2015-05-10T13:41:42+08:00" content="2015-05-10">
-              2015-05-10
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/php/" itemprop="url" rel="index">
-                    <span itemprop="name">php</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-              <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">&lt;VirtualHost *:<span class="number">80</span>&gt;</span><br><span class="line"></span><br><span class="line">ServerAdmin test@localhost</span><br><span class="line"></span><br><span class="line">DocumentRoot <span class="string">"G:/xampp/htdocs/tp"</span></span><br><span class="line"></span><br><span class="line">ServerName tp.localhost</span><br><span class="line"></span><br><span class="line">&lt;/VirtualHost&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">mac</span><br><span class="line"></span><br><span class="line">&lt;virtualhost *:<span class="number">80</span>&gt;</span><br><span class="line"></span><br><span class="line">    ServerName mysite.local</span><br><span class="line"></span><br><span class="line">    DocumentRoot <span class="string">"/Users/yourusername/path/to/your/site"</span></span><br><span class="line"></span><br><span class="line">    &lt;directory <span class="string">"/Users/yourusername/path/to/your/site"</span>&gt;</span><br><span class="line"></span><br><span class="line">        Options Indexes FollowSymLinks Includes ExecCGI</span><br><span class="line"></span><br><span class="line">        AllowOverride All</span><br><span class="line"></span><br><span class="line">        <span class="keyword">Require</span> all granted</span><br><span class="line"></span><br><span class="line">    &lt;/directory&gt;</span><br><span class="line"></span><br><span class="line">    ErrorLog <span class="string">"logs/mysite.local-error_log"</span></span><br><span class="line"></span><br><span class="line">&lt;/virtualhost&gt;</span><br></pre></td></tr></table></figure>
-            
-          </span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
 
   </section>
 
@@ -731,7 +731,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">27</span>
+              <span class="site-state-item-count">28</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
