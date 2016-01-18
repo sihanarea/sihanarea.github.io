@@ -240,8 +240,8 @@
             
               
                 
-                <a class="post-title-link" href="/2015/08/18/title2/" itemprop="url">
-                  title2
+                <a class="post-title-link" href="/2015/08/18/thinkphp数据操作/" itemprop="url">
+                  thinkphp数据操作
                 </a>
               
             
@@ -256,6 +256,21 @@
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/php/" itemprop="url" rel="index">
+                    <span itemprop="name">php</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -278,7 +293,33 @@
         
           <span itemprop="articleBody">
             
-              
+              <p>查询方法：<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$db</span>-&gt;table(<span class="string">'user'</span>)-&gt;limit(<span class="number">10</span>)-&gt;order(<span class="string">'id desc'</span>)-&gt;select();</span><br></pre></td></tr></table></figure></p>
+<p>相当于执行下面的sql语句，并返回二维数组。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM `user` ORDER BY id desc LIMIT <span class="number">10</span> </span><br><span class="line"><span class="variable">$where</span>[<span class="string">'user_name'</span>] = <span class="keyword">array</span>(<span class="string">'like'</span>,<span class="string">'%ly%'</span>);  </span><br><span class="line"><span class="variable">$where</span>[<span class="string">'credit'</span>] = <span class="keyword">array</span>(<span class="string">'gt'</span>,<span class="number">100</span>);  </span><br><span class="line"><span class="variable">$db</span>-&gt;table(<span class="string">'user'</span>)-&gt;where(<span class="variable">$where</span>)-&gt;limit(<span class="number">10</span>)-&gt;select();</span><br></pre></td></tr></table></figure>
+<p>相当于执行下面的sql语句，并返回二维数组。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM `user` WHERE ( `user_name` LIKE <span class="string">'%ly%'</span> ) <span class="keyword">AND</span> ( `credit` &gt; <span class="number">100</span> ) LIMIT <span class="number">10</span> </span><br><span class="line"><span class="variable">$where</span>[<span class="string">'credit'</span>] = <span class="keyword">array</span>(<span class="keyword">array</span>(<span class="string">'gt'</span>,<span class="number">100</span>),<span class="keyword">array</span>(<span class="string">'eq'</span>,<span class="number">0</span>),<span class="string">'or'</span>);  </span><br><span class="line"><span class="variable">$db</span>-&gt;table(<span class="string">'user'</span>)-&gt;where(<span class="variable">$where</span>)-&gt;limit(<span class="number">10</span>)-&gt;select();</span><br></pre></td></tr></table></figure>
+<p>相当于执行下面的sql语句，并返回二维数组。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM `user` WHERE ( (`credit` &gt; <span class="number">100</span>) <span class="keyword">OR</span> (`credit` = <span class="number">0</span>) ) LIMIT <span class="number">10</span> </span><br><span class="line"><span class="variable">$where</span>[<span class="string">'_string'</span>] = <span class="string">'credit&gt;100 and credit&lt;200'</span>;  </span><br><span class="line"><span class="variable">$db</span>-&gt;table(<span class="string">'user'</span>)-&gt;where(<span class="variable">$where</span>)-&gt;limit(<span class="number">10</span>)-&gt;select();</span><br></pre></td></tr></table></figure>
+<p>相当于执行下面的sql语句，并返回二维数组。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM `user` WHERE ( credit&gt;<span class="number">100</span> <span class="keyword">and</span> credit&lt;<span class="number">200</span> ) LIMIT <span class="number">10</span> </span><br><span class="line"><span class="variable">$where</span>[<span class="string">'user_name'</span>] = <span class="string">'lyly'</span>;  </span><br><span class="line"><span class="variable">$db</span>-&gt;table(<span class="string">'user'</span>)-&gt;field(<span class="string">'credit'</span>)-&gt;where(<span class="variable">$where</span>)-&gt;find();</span><br></pre></td></tr></table></figure>
+<p>相当于执行下面的sql语句，并返回一维数组。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT `credit` FROM `user` WHERE ( `user_name` = <span class="string">'lyly'</span> ) LIMIT <span class="number">0</span>,<span class="number">1</span> </span><br><span class="line"><span class="variable">$db</span>-&gt;table(<span class="string">'user'</span>)-&gt;where(<span class="string">'id=2'</span>)-&gt;find();</span><br></pre></td></tr></table></figure>
+<p>相当于执行下面的sql语句，并返回一维数组。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM `user` WHERE id=<span class="number">2</span> LIMIT <span class="number">0</span>,<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>再来看看更新语句：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$where</span>[<span class="string">'user_name'</span>] = <span class="string">'lyly'</span>;  </span><br><span class="line"><span class="variable">$data</span>[<span class="string">'credit'</span>] = <span class="number">100</span>;  </span><br><span class="line"><span class="variable">$db</span>-&gt;table(<span class="string">'user'</span>)-&gt;data(<span class="variable">$data</span>)-&gt;where(<span class="variable">$where</span>)-&gt;update();</span><br></pre></td></tr></table></figure>
+<p>相当于执行下面的sql语句，并返回影响行数。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">UPDATE `user` SET `credit`=<span class="number">100</span> WHERE ( `user_name` = <span class="string">'lyly'</span> ) </span><br><span class="line"><span class="variable">$where</span>[<span class="string">'credit'</span>] = <span class="keyword">array</span>(<span class="string">'elt'</span>,<span class="number">100</span>);  </span><br><span class="line"><span class="variable">$data</span>[<span class="string">'credit'</span>] = <span class="keyword">array</span>(<span class="string">'exp'</span>,<span class="string">'credit+1'</span>);  </span><br><span class="line"><span class="variable">$db</span>-&gt;table(<span class="string">'user'</span>)-&gt;data(<span class="variable">$data</span>)-&gt;where(<span class="variable">$where</span>)-&gt;update();</span><br></pre></td></tr></table></figure>
+<p>相当于执行下面的sql语句，并返回影响行数。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UPDATE `user` SET `credit`=credit+<span class="number">1</span> WHERE ( `credit` &lt;= <span class="number">100</span> )</span><br></pre></td></tr></table></figure>
+<p>再来看看新增语句：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$data</span>[<span class="string">'user_name'</span>] = <span class="string">'hoho'</span>;  </span><br><span class="line"><span class="variable">$data</span>[<span class="string">'credit'</span>] = <span class="number">100</span>;  </span><br><span class="line"><span class="variable">$db</span>-&gt;table(<span class="string">'user'</span>)-&gt;data(<span class="variable">$data</span>)-&gt;insert();</span><br></pre></td></tr></table></figure>
+<p>相当于执行下面的sql语句，并返回自增ID。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO `user` (`user_name`,`credit`) VALUES (<span class="string">'hoho'</span>,<span class="number">100</span>)</span><br></pre></td></tr></table></figure>
+<p>最后看看删除语句：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$where</span>[<span class="string">'credit'</span>] = <span class="number">0</span>;  </span><br><span class="line"><span class="variable">$db</span>-&gt;table(<span class="string">'user'</span>)-&gt;where(<span class="variable">$where</span>)-&gt;delete();</span><br></pre></td></tr></table></figure>
+<p>相当于执行下面的sql语句，并返回影响行数。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DELETE FROM `user` WHERE ( `credit` = <span class="number">0</span> )</span><br></pre></td></tr></table></figure>
             
           </span>
         
@@ -724,7 +765,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-count">9</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
