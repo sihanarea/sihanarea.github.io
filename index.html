@@ -692,8 +692,8 @@
             
               
                 
-                <a class="post-title-link" href="/2015/09/01/正则表达式规则/" itemprop="url">
-                  正则表达式规则
+                <a class="post-title-link" href="/2015/11/19/something/" itemprop="url">
+                  something
                 </a>
               
             
@@ -703,26 +703,11 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-09-01T01:31:47+08:00" content="2015-09-01">
-              2015-09-01
+            <time itemprop="dateCreated" datetime="2015-11-19T22:47:42+08:00" content="2015-11-19">
+              2015-11-19
             </time>
           </span>
 
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/js/" itemprop="url" rel="index">
-                    <span itemprop="name">js</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
           
 
           
@@ -745,17 +730,7 @@
         
           <span itemprop="articleBody">
             
-              <h3 id="u8868_u8FBE_u5F0F_u9700_u8981_u7ECF_u5E38_u770B_uFF0C_u7ECF_u5E38_u590D_u4E60"><a href="#u8868_u8FBE_u5F0F_u9700_u8981_u7ECF_u5E38_u770B_uFF0C_u7ECF_u5E38_u590D_u4E60" class="headerlink" title="表达式需要经常看，经常复习"></a>表达式需要经常看，经常复习</h3><h3 id="u4E00_u3001_u5143_u5B57_u7B26"><a href="#u4E00_u3001_u5143_u5B57_u7B26" class="headerlink" title="一、元字符"></a>一、元字符</h3><p>元字符<br>对应说明<br>.    匹配除换行符之外的任意字符<br>\w<br>匹配字母数字下划线，等同于：[a-zA-Z0-9_]<br>\s<br>匹配任意空白符<br>\d    匹配数字，等同于[0-9]<br>\b    匹配单词边界<br>|    或匹配，如 /x|y/ 正则可匹配x或y两个字符<br>^    匹配字符串的开始<br>$    匹配字符串的结束</p>
-<h3 id="u4E8C_u3001_u53CD_u4E49_u5B57_u7B26"><a href="#u4E8C_u3001_u53CD_u4E49_u5B57_u7B26" class="headerlink" title="二、反义字符"></a>二、反义字符</h3><p>反义字符<br>对应说明<br>[^x]    匹配除“x”之外的所有字符，其中“x”可以为任意字符<br>[^xyz]    同上，匹配除“x、y、z”之外的任意字符<br>\W    匹配除了字母、数字、下划线之外的所有字符，等同于：[^\w]<br>\S    匹配除空白符之外的任意字符，等同于：[^\s]<br>\B    匹配不是单词边界的字符，等同于：[^\b]<br>\D    匹配不是数字的所有字符，等同于：[^\d]</p>
-<h3 id="u4E09_u3001_u8F6C_u4E49_u5B57_u7B26"><a href="#u4E09_u3001_u8F6C_u4E49_u5B57_u7B26" class="headerlink" title="三、转义字符"></a>三、转义字符</h3><p>转义字符<br>对应说明<br>\xnn    匹配十六进制数<br>\f    匹配换页符，等同于：\x0c<br>\n    匹配换行符，等同于：\x0a<br>\r    匹配回车符，等同于：\x0d<br>\t    匹配水平制表符，等同于：\x09<br>\v<br>匹配垂直制表符，等同于：\x0b<br>\unnnn    匹配Unicode字符，如：\u00A0</p>
-<h3 id="u56DB_u3001_u91CD_u590D_u5339_u914D"><a href="#u56DB_u3001_u91CD_u590D_u5339_u914D" class="headerlink" title="四、重复匹配"></a>四、重复匹配</h3><p>匹配字符<br>对应说明<br>*<br>重复出现零次或多次</p>
-<ul>
-<li>重复出现一次或多次<br>？    重复出现零次或一次<br>{n}    重复出现n次<br>{n,}    至少重复出现n次<br>{m,n}    重复重现m到n次，其中，m&lt;n</li>
-</ul>
-<h3 id="u4E94_u3001_u5206_u7EC4/_u6355_u83B7"><a href="#u4E94_u3001_u5206_u7EC4/_u6355_u83B7" class="headerlink" title="五、分组/捕获"></a>五、分组/捕获</h3><p>分组字符<br>对应说明<br>(exp)    用小圆括号进行分组，如日期中年月日的分组：/(\d{5})-(\d{1,2})-(\d{1,2})/<br>每个分组将产生分组号，从第一个括号开始，可以使用\n的形式在正则中使用分组号，<br>如匹配成对出现的HTML标签，可以写成：/&lt;(\w+)&gt;&lt;\/\1&gt;/<br>(?:exp)    匹配exp正则，但不产生分组号<br>exp1(?=exp2)    前瞻断言，匹配exp1，但后面必须是exp2<br>如匹配名字叫xianlie，但不姓zhao的人：/zhao(?=xianlie)/<br>exp1(?!=exp2)    后瞻断言，匹配exp1，但后面不能是exp2<br>如匹配姓zhao，但名字不叫xianlie的人：/zhao(?!xianlie)/</p>
-<h3 id="u516D_u3001_u8D2A_u5A6A_u4E0E_u60F0_u6027"><a href="#u516D_u3001_u8D2A_u5A6A_u4E0E_u60F0_u6027" class="headerlink" title="六、贪婪与惰性"></a>六、贪婪与惰性</h3><p>相关字符<br>对应说明<br>*?<br>重复任意次，但尽可能少的重复<br>+?    重复一次或多次，但尽可能少的重复<br>??    重复零次或一次，但尽可能少的重复<br>{m,n}?    重复m到n次，但尽可能少的重复<br>{n,}?    重复n次以上，但尽可能少的重复<br>{n}?<br>重复n次，但尽可能少的重复</p>
-<h3 id="u4E03_u3001_u4FEE_u9970_u7B26"><a href="#u4E03_u3001_u4FEE_u9970_u7B26" class="headerlink" title="七、修饰符"></a>七、修饰符</h3><p>修饰符<br>对应说明<br>i<br>ignoreCase的缩写，表示忽略字母的大小写<br>m<br>multiline的缩写，更改^和$的含义，使它们分别在任意一行的行首和行尾匹配<br>，而不仅仅在整个字符串的开头和结尾匹配。<br>(在此模式下,$的精确含意是:匹配\n之前的位置以及字符串结束前的位置.)<br>g    global的缩写，进行全局匹配，即对字符串进行全文匹配，直到字符串遍历结束</p>
-
+              
             
           </span>
         
@@ -781,7 +756,7 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -822,7 +797,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">30</span>
+              <span class="site-state-item-count">31</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
