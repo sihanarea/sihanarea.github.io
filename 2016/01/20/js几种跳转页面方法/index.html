@@ -52,21 +52,21 @@
 
 
 <meta name="description" content="第一种：12window.location.href=&quot;index.php&quot;; //比较常用的方法，没什么可解释的，后面直接跟指定要跳转的地方。
-第二种：12345	alert(&quot;返回&quot;);	window.history.back(-1);    //类似于按钮，参数是负几，就后退几次。`
-第三种：123window.navigate(&quot;index.jsp&quot;);   //navigate对象包含有">
+第二种：123alert(&quot;返回&quot;);window.history.back(-1);   //类似于按钮，参数是负几，就后退几次。
+第三种：123window.navigate(&quot;index.jsp&quot;);   //navigate对象包含有关浏览器的信">
 <meta property="og:type" content="article">
 <meta property="og:title" content="js几种跳转页面方法">
 <meta property="og:url" content="http://studyfrontend.com/2016/01/20/js几种跳转页面方法/index.html">
 <meta property="og:site_name" content="sihanarea">
 <meta property="og:description" content="第一种：12window.location.href=&quot;index.php&quot;; //比较常用的方法，没什么可解释的，后面直接跟指定要跳转的地方。
-第二种：12345	alert(&quot;返回&quot;);	window.history.back(-1);    //类似于按钮，参数是负几，就后退几次。`
-第三种：123window.navigate(&quot;index.jsp&quot;);   //navigate对象包含有">
-<meta property="og:updated_time" content="2016-01-19T16:28:52.000Z">
+第二种：123alert(&quot;返回&quot;);window.history.back(-1);   //类似于按钮，参数是负几，就后退几次。
+第三种：123window.navigate(&quot;index.jsp&quot;);   //navigate对象包含有关浏览器的信">
+<meta property="og:updated_time" content="2016-01-19T16:36:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js几种跳转页面方法">
 <meta name="twitter:description" content="第一种：12window.location.href=&quot;index.php&quot;; //比较常用的方法，没什么可解释的，后面直接跟指定要跳转的地方。
-第二种：12345	alert(&quot;返回&quot;);	window.history.back(-1);    //类似于按钮，参数是负几，就后退几次。`
-第三种：123window.navigate(&quot;index.jsp&quot;);   //navigate对象包含有">
+第二种：123alert(&quot;返回&quot;);window.history.back(-1);   //类似于按钮，参数是负几，就后退几次。
+第三种：123window.navigate(&quot;index.jsp&quot;);   //navigate对象包含有关浏览器的信">
 
 
 
@@ -287,7 +287,7 @@
 
       
         <span itemprop="articleBody"><h4 id="u7B2C_u4E00_u79CD_uFF1A"><a href="#u7B2C_u4E00_u79CD_uFF1A" class="headerlink" title="第一种："></a>第一种：</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.location.href=<span class="string">"index.php"</span>; </span><br><span class="line"><span class="comment">//比较常用的方法，没什么可解释的，后面直接跟指定要跳转的地方。</span></span><br></pre></td></tr></table></figure>
-<h4 id="u7B2C_u4E8C_u79CD_uFF1A"><a href="#u7B2C_u4E8C_u79CD_uFF1A" class="headerlink" title="第二种："></a>第二种：</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">	alert(<span class="string">"返回"</span>);</span><br><span class="line">	<span class="built_in">window</span>.history.back(-<span class="number">1</span>);</span><br><span class="line">    <span class="comment">//类似于按钮，参数是负几，就后退几次。</span></span><br><span class="line"></span><br><span class="line"><span class="string">`</span></span><br></pre></td></tr></table></figure>
+<h4 id="u7B2C_u4E8C_u79CD_uFF1A"><a href="#u7B2C_u4E8C_u79CD_uFF1A" class="headerlink" title="第二种："></a>第二种：</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">alert(<span class="string">"返回"</span>);</span><br><span class="line"><span class="built_in">window</span>.history.back(-<span class="number">1</span>);</span><br><span class="line">   <span class="comment">//类似于按钮，参数是负几，就后退几次。</span></span><br></pre></td></tr></table></figure>
 <h4 id="u7B2C_u4E09_u79CD_uFF1A"><a href="#u7B2C_u4E09_u79CD_uFF1A" class="headerlink" title="第三种："></a>第三种：</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.navigate(<span class="string">"index.jsp"</span>);</span><br><span class="line">   <span class="comment">//navigate对象包含有关浏览器的信息，也可以作为页面跳转，后面直接加要跳转的地方。</span></span><br><span class="line">  <span class="comment">//没有应用于 navigator 对象的公开标准，不过所有浏览器都支持该对象。</span></span><br></pre></td></tr></table></figure>
 <h4 id="u7B2C_u56DB_u79CD_uFF1A"><a href="#u7B2C_u56DB_u79CD_uFF1A" class="headerlink" title="第四种："></a>第四种：</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> self.location.href=index.htm;</span><br><span class="line"> <span class="comment">//self指代当前窗口对象,属于window最上层的对象;</span></span><br><span class="line"> <span class="comment">//location.href 指的是某window对象的URL地址.</span></span><br><span class="line"><span class="comment">//self.location.href指当前窗口的URL地址,去掉self默认为当前窗口的URL地址.</span></span><br></pre></td></tr></table></figure>
 <h4 id="u7B2C_u4E94_u79CD_uFF1A"><a href="#u7B2C_u4E94_u79CD_uFF1A" class="headerlink" title="第五种："></a>第五种：</h4><pre><code class="javascript">alert(<span class="string">"非法访问！"</span>);
