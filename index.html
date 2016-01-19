@@ -240,6 +240,114 @@
             
               
                 
+                <a class="post-title-link" href="/2016/01/20/something/" itemprop="url">
+                  something
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-01-20T00:24:42+08:00" content="2016-01-20">
+              2016-01-20
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">javascript</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <h4 id="u7B2C_u4E00_u79CD_uFF1A"><a href="#u7B2C_u4E00_u79CD_uFF1A" class="headerlink" title="第一种："></a>第一种：</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">       <span class="built_in">window</span>.location.href=<span class="string">"index.php"</span>; </span><br><span class="line">        <span class="comment">//比较常用的方法，没什么可解释的，后面直接跟指定要跳转的地方。</span></span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="u7B2C_u4E8C_u79CD_uFF1A"><a href="#u7B2C_u4E8C_u79CD_uFF1A" class="headerlink" title="第二种："></a>第二种：</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">    &lt;script&gt;</span><br><span class="line">		alert("返回");</span><br><span class="line">		window.history.back(-1);</span><br><span class="line">        //类似于按钮，参数是负几，就后退几次。</span><br><span class="line">   &lt;/script&gt;</span><br><span class="line">`</span><br></pre></td></tr></table></figure>
+<h4 id="u7B2C_u4E09_u79CD_uFF1A"><a href="#u7B2C_u4E09_u79CD_uFF1A" class="headerlink" title="第三种："></a>第三种：</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">  &lt;script&gt;</span><br><span class="line"><span class="built_in">window</span>.navigate(<span class="string">"index.jsp"</span>);</span><br><span class="line">       <span class="comment">//navigate对象包含有关浏览器的信息，也可以作为页面跳转，后面直接加要跳转的地方。</span></span><br><span class="line">      <span class="comment">//没有应用于 navigator 对象的公开标准，不过所有浏览器都支持该对象。  </span></span><br><span class="line">   &lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="u7B2C_u56DB_u79CD_uFF1A"><a href="#u7B2C_u56DB_u79CD_uFF1A" class="headerlink" title="第四种："></a>第四种：</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">   self.location.href=index.htm;</span><br><span class="line">   <span class="comment">//self指代当前窗口对象,属于window最上层的对象;</span></span><br><span class="line">   <span class="comment">//location.href 指的是某window对象的URL地址.</span></span><br><span class="line">  <span class="comment">//self.location.href指当前窗口的URL地址,去掉self默认为当前窗口的URL地址.</span></span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="u7B2C_u4E94_u79CD_uFF1A"><a href="#u7B2C_u4E94_u79CD_uFF1A" class="headerlink" title="第五种："></a>第五种：</h4><pre><code class="javascript">&lt;script language=<span class="string">"javascript"</span>&gt;
+   alert(<span class="string">"非法访问！"</span>);
+   top.location=index.jsp;
+    <span class="comment">//top 属性返回最顶层的先辈窗口。</span>
+    <span class="comment">//该属性返回队一个顶级窗口的只读引用。</span>
+    <span class="comment">//如果窗口本身就是一个顶级窗口，top 属性存放对窗口自身的引用。</span>
+   <span class="comment">//如果窗口是一个框架，那么 top 属性引用包含框架的顶层窗口。</span>
+ &lt;<span class="regexp">/script&gt;</span>
+</code></pre>
+
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/01/15/js的默认事件/" itemprop="url">
                   js的默认事件
                 </a>
@@ -651,86 +759,6 @@
           <span itemprop="articleBody">
             
               <h5 id="u867D_u7136_u662F4_u6708_u4EFD_u5199_u7684_uFF0C_u8DD1_u4E868_u4E2A_u591A_u6708_uFF0C_u8FD8_u884C_uFF0C"><a href="#u867D_u7136_u662F4_u6708_u4EFD_u5199_u7684_uFF0C_u8DD1_u4E868_u4E2A_u591A_u6708_uFF0C_u8FD8_u884C_uFF0C" class="headerlink" title="虽然是4月份写的，跑了8个多月，还行，"></a>虽然是4月份写的，跑了8个多月，还行，</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line"> * Created by sihan on 2015/4/20.</span><br><span class="line"> */</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">loadMorn</span>(<span class="params">id,itemId</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.oload = <span class="built_in">document</span>.getElementById(id);</span><br><span class="line">    <span class="keyword">this</span>.oList = <span class="built_in">document</span>.getElementById(itemId);</span><br><span class="line">    <span class="keyword">this</span>.defaults = &#123;</span><br><span class="line">        iPage:<span class="number">1</span>,     <span class="comment">//当前加载页数</span></span><br><span class="line">        url:<span class="string">''</span>,</span><br><span class="line">        data:<span class="string">''</span>,</span><br><span class="line">        sign:<span class="string">''</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">loadMorn.prototype = &#123;</span><br><span class="line">    init:<span class="function"><span class="keyword">function</span>(<span class="params">opts</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> _this = <span class="keyword">this</span>;</span><br><span class="line">        _this.defaults = _this._extend(_this.defaults, opts);</span><br><span class="line">        _this.innerHTML = <span class="string">''</span>;</span><br><span class="line">        _this._showList();</span><br><span class="line">        _this._imgLoad();</span><br><span class="line">        <span class="built_in">window</span>.onscroll = _this._imgLoad;</span><br><span class="line">        <span class="built_in">window</span>.addEventListener(<span class="string">"scroll"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="keyword">var</span> scrollTop = <span class="built_in">document</span>.body.scrollTop || <span class="built_in">document</span>.documentElement.scrollTop;</span><br><span class="line">            <span class="keyword">var</span> scrollHeight = <span class="built_in">document</span>.body.scrollHeight;</span><br><span class="line">            <span class="keyword">var</span> windowHeight = <span class="built_in">window</span>.innerHeight;</span><br><span class="line">            <span class="keyword">if</span>(scrollTop + windowHeight &gt;= scrollHeight)&#123;</span><br><span class="line">                _this.defaults.iPage++;</span><br><span class="line">                _this._showList();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,<span class="literal">false</span>);</span><br><span class="line">    &#125;,</span><br><span class="line">    _showList:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> _this = <span class="keyword">this</span>;</span><br><span class="line">        ajax(&#123;</span><br><span class="line">            url:_this.defaults.url,</span><br><span class="line">            data:_this.defaults.data+_this.defaults.sign+<span class="string">"&amp;page="</span>+_this.defaults.iPage,</span><br><span class="line">            beforeSend:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">                _this.oload.innerHTML = <span class="string">"拼命加载中……请稍后"</span></span><br><span class="line">            &#125;,</span><br><span class="line">            success:<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">                <span class="keyword">var</span> d = <span class="built_in">JSON</span>.parse(data);</span><br><span class="line">                _this._insert(d);</span><br><span class="line">                _this.oload.innerHTML = <span class="string">"加载更多"</span>;</span><br><span class="line">            &#125;,</span><br><span class="line">            error:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">                _this.oload.innerHTML = <span class="string">"网络错误，请重试"</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;,</span><br><span class="line">    _getJsonObjLength:<span class="function"><span class="keyword">function</span>(<span class="params">jsonObj</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> Length = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> item <span class="keyword">in</span> jsonObj)&#123;</span><br><span class="line">            Length++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> Length;</span><br><span class="line">    &#125;,</span><br><span class="line">    _insert:<span class="function"><span class="keyword">function</span>(<span class="params">d</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> _this = <span class="keyword">this</span>;</span><br><span class="line">        <span class="comment">//_this.oList.innerHTML ="";</span></span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">var</span> i =<span class="number">0</span>;i&lt; _this._getJsonObjLength(d)-<span class="number">1</span>;i++)&#123;</span><br><span class="line">                <span class="keyword">var</span> list = <span class="string">'&lt;a href="'</span>+d[i].titleurl +<span class="string">'"  class="pic-text-item"&gt;&lt;dl class="item"&gt;&lt;dt class="item-left"&gt;'</span></span><br><span class="line">                    +<span class="string">'&lt;img src="images/replace.png"  _src="'</span>+d[i].titlepic +<span class="string">'" alt=""/&gt; &lt;/dt&gt;&lt;dd class="item-right"&gt;&lt;p&gt;'</span>+d[i].title +<span class="string">'&lt;/p&gt;'</span></span><br><span class="line">                    +<span class="string">'&lt;span class="tag"&gt;头条&lt;/span&gt;&lt;div class="cl"&gt;&lt;span class="time"&gt;2015-01-12&lt;/span&gt;&lt;span class="comment"&gt;122评论&lt;/span&gt;'</span>;</span><br><span class="line">                        _this.oList.innerHTML += list;</span><br><span class="line">             &#125;</span><br><span class="line">        <span class="keyword">var</span> aImg = <span class="built_in">document</span>.getElementsByTagName(<span class="string">"img"</span>);</span><br><span class="line">        _this._imgLoad(aImg);</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">//覆盖默认参数;</span></span><br><span class="line">    _extend:<span class="function"><span class="keyword">function</span>(<span class="params">defaults, opts</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> key <span class="keyword">in</span> defaults)&#123;</span><br><span class="line">            <span class="keyword">if</span>(opts[key] !== <span class="literal">undefined</span>)&#123;</span><br><span class="line">                defaults[key] = opts[key];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> defaults;</span><br><span class="line">    &#125;,</span><br><span class="line">    _imgLoad:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> scrollTop  = <span class="built_in">document</span>.documentElement.scrollTop || <span class="built_in">document</span>.body.scrollTop;</span><br><span class="line">        <span class="keyword">var</span> imgs = <span class="built_in">document</span>.getElementsByTagName(<span class="string">"img"</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;imgs.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> ( !imgs[i].isLoad &amp;&amp; getTop(imgs[i]) &lt; scrollTop + <span class="built_in">document</span>.documentElement.clientHeight ) &#123;</span><br><span class="line">                <span class="comment">//alert(i);</span></span><br><span class="line">                imgs[i].src = imgs[i].getAttribute(<span class="string">'_src'</span>);</span><br><span class="line">                imgs[i].isLoad = <span class="literal">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">getTop</span>(<span class="params">obj</span>)</span>&#123;</span><br><span class="line">            <span class="keyword">var</span> iTop = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">while</span>(obj) &#123;</span><br><span class="line">                iTop += obj.offsetTop;</span><br><span class="line">                obj = obj.offsetParent;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> iTop;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-            
-          </span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/11/19/something/" itemprop="url">
-                  something
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2015-11-19T22:47:42+08:00" content="2015-11-19">
-              2015-11-19
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-              
             
           </span>
         
