@@ -240,6 +240,101 @@
             
               
                 
+                <a class="post-title-link" href="/2015/08/11/阳历转农历/" itemprop="url">
+                  阳历转农历
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-08-11T00:47:55+08:00" content="2015-08-11">
+              2015-08-11
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/js/" itemprop="url" rel="index">
+                    <span itemprop="name">js</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="title">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">head</span> <span class="attribute">lang</span>=<span class="value">"en"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">title</span>&gt;</span><span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span><br><span class="line">    <span class="tag">div</span><span class="rules">&#123;</span><br><span class="line">        <span class="rule"><span class="attribute">margin-top</span>:<span class="value"> <span class="number">10px</span></span></span>;</span><br><span class="line">    &#125;</span></span><br><span class="line">    <span class="tag">span</span><span class="rules">&#123;</span><br><span class="line">        <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> <span class="number">70px</span></span></span>;</span><br><span class="line">       </span><br><span class="line">    &#125;</span></span><br><span class="line">    <span class="tag">span</span><span class="pseudo">:nth-of-type(1)</span><span class="rules">&#123;</span><br><span class="line">        <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> <span class="number">30px</span></span></span>;</span><br><span class="line">    &#125;</span></span><br><span class="line">    <span class="tag">p</span><span class="rules">&#123;</span><br><span class="line">        <span class="rule"><span class="attribute">margin-top</span>:<span class="value"> <span class="number">30px</span></span></span>;</span><br><span class="line">    &#125;</span></span><br><span class="line"></span><span class="tag">&lt;/<span class="title">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">placeholder</span>=<span class="value">"2015"</span> <span class="attribute">style</span>=<span class="value">"width:80px;height:30px;line-height: 30px;font-size:16px;text-align: center;"</span> <span class="attribute">id</span>=<span class="value">"input01"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">placeholder</span>=<span class="value">"2"</span> <span class="attribute">style</span>=<span class="value">"width:80px;height:30px;line-height: 30px;font-size:16px;text-align: center;"</span> <span class="attribute">id</span>=<span class="value">"input02"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">placeholder</span>=<span class="value">"11"</span> <span class="attribute">style</span>=<span class="value">"width:80px;height:30px;line-height: 30px;font-size:16px;text-align: center;"</span> <span class="attribute">id</span>=<span class="value">"input03"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">span</span>&gt;</span>年<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">span</span>&gt;</span>月<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">span</span>&gt;</span>日<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">p</span>&gt;</span></span><br><span class="line">    请输入阳历，转为农历</span><br><span class="line"><span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"submit"</span> <span class="attribute">value</span>=<span class="value">"转换"</span> <span class="attribute">id</span>=<span class="value">"btn"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">p</span>&gt;</span>您转换后的日历为：<span class="tag">&lt;<span class="title">span</span> <span class="attribute">id</span>=<span class="value">"result"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span><br><span class="line">    <span class="keyword">var</span> LunarDate = &#123;</span><br><span class="line">        madd: <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">0</span>, <span class="number">31</span>, <span class="number">59</span>, <span class="number">90</span>, <span class="number">120</span>, <span class="number">151</span>, <span class="number">181</span>, <span class="number">212</span>, <span class="number">243</span>, <span class="number">273</span>, <span class="number">304</span>, <span class="number">334</span>),</span><br><span class="line">        HsString: <span class="string">'甲乙丙丁戊己庚辛壬癸'</span>,</span><br><span class="line">        EbString: <span class="string">'子丑寅卯辰巳午未申酉戌亥'</span>,</span><br><span class="line">        NumString: <span class="string">"一二三四五六七八九十"</span>,</span><br><span class="line">        MonString: <span class="string">"正二三四五六七八九十冬腊"</span>,</span><br><span class="line">        CalendarData: <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">0xA4B</span>, <span class="number">0x5164B</span>, <span class="number">0x6A5</span>, <span class="number">0x6D4</span>, <span class="number">0x415B5</span>, <span class="number">0x2B6</span>, <span class="number">0x957</span>, <span class="number">0x2092F</span>, <span class="number">0x497</span>, <span class="number">0x60C96</span>, <span class="number">0xD4A</span>, <span class="number">0xEA5</span>, <span class="number">0x50DA9</span>, <span class="number">0x5AD</span>, <span class="number">0x2B6</span>, <span class="number">0x3126E</span>, <span class="number">0x92E</span>, <span class="number">0x7192D</span>, <span class="number">0xC95</span>, <span class="number">0xD4A</span>, <span class="number">0x61B4A</span>, <span class="number">0xB55</span>, <span class="number">0x56A</span>, <span class="number">0x4155B</span>, <span class="number">0x25D</span>, <span class="number">0x92D</span>, <span class="number">0x2192B</span>, <span class="number">0xA95</span>, <span class="number">0x71695</span>, <span class="number">0x6CA</span>, <span class="number">0xB55</span>, <span class="number">0x50AB5</span>, <span class="number">0x4DA</span>, <span class="number">0xA5B</span>, <span class="number">0x30A57</span>, <span class="number">0x52B</span>, <span class="number">0x8152A</span>, <span class="number">0xE95</span>, <span class="number">0x6AA</span>, <span class="number">0x615AA</span>, <span class="number">0xAB5</span>, <span class="number">0x4B6</span>, <span class="number">0x414AE</span>, <span class="number">0xA57</span>, <span class="number">0x526</span>, <span class="number">0x31D26</span>, <span class="number">0xD95</span>, <span class="number">0x70B55</span>, <span class="number">0x56A</span>, <span class="number">0x96D</span>, <span class="number">0x5095D</span>, <span class="number">0x4AD</span>, <span class="number">0xA4D</span>, <span class="number">0x41A4D</span>, <span class="number">0xD25</span>, <span class="number">0x81AA5</span>, <span class="number">0xB54</span>, <span class="number">0xB6A</span>, <span class="number">0x612DA</span>, <span class="number">0x95B</span>, <span class="number">0x49B</span>, <span class="number">0x41497</span>, <span class="number">0xA4B</span>, <span class="number">0xA164B</span>, <span class="number">0x6A5</span>, <span class="number">0x6D4</span>, <span class="number">0x615B4</span>, <span class="number">0xAB6</span>, <span class="number">0x957</span>, <span class="number">0x5092F</span>, <span class="number">0x497</span>, <span class="number">0x64B</span>, <span class="number">0x30D4A</span>, <span class="number">0xEA5</span>, <span class="number">0x80D65</span>, <span class="number">0x5AC</span>, <span class="number">0xAB6</span>, <span class="number">0x5126D</span>, <span class="number">0x92E</span>, <span class="number">0xC96</span>, <span class="number">0x41A95</span>, <span class="number">0xD4A</span>, <span class="number">0xDA5</span>, <span class="number">0x20B55</span>, <span class="number">0x56A</span>, <span class="number">0x7155B</span>, <span class="number">0x25D</span>, <span class="number">0x92D</span>, <span class="number">0x5192B</span>, <span class="number">0xA95</span>, <span class="number">0xB4A</span>, <span class="number">0x416AA</span>, <span class="number">0xAD5</span>, <span class="number">0x90AB5</span>, <span class="number">0x4BA</span>, <span class="number">0xA5B</span>, <span class="number">0x60A57</span>, <span class="number">0x52B</span>, <span class="number">0xA93</span>, <span class="number">0x40E95</span>),</span><br><span class="line">        Year: <span class="literal">null</span>,</span><br><span class="line">        Month: <span class="literal">null</span>,</span><br><span class="line">        Day: <span class="literal">null</span>,</span><br><span class="line">        TheDate: <span class="literal">null</span>,</span><br><span class="line">        GetBit: <span class="function"><span class="keyword">function</span>(<span class="params">m, n</span>)</span>&#123;</span><br><span class="line">            <span class="keyword">return</span> (m &gt;&gt; n) &amp; <span class="number">1</span>;</span><br><span class="line">        &#125;,</span><br><span class="line">        e2c: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="keyword">this</span>.TheDate = (<span class="built_in">arguments</span>.length != <span class="number">3</span>) ? <span class="keyword">new</span> <span class="built_in">Date</span>(): <span class="keyword">new</span> <span class="built_in">Date</span>(<span class="built_in">arguments</span>[<span class="number">0</span>], <span class="built_in">arguments</span>[<span class="number">1</span>], <span class="built_in">arguments</span>[<span class="number">2</span>]);</span><br><span class="line">            <span class="keyword">var</span> total, m, n, k;</span><br><span class="line">            <span class="keyword">var</span> isEnd = <span class="literal">false</span>;</span><br><span class="line">            <span class="keyword">var</span> tmp = <span class="keyword">this</span>.TheDate.getFullYear();</span><br><span class="line">            total = (tmp - <span class="number">1921</span>) * <span class="number">365</span> + <span class="built_in">Math</span>.floor((tmp - <span class="number">1921</span>) / <span class="number">4</span>) + <span class="keyword">this</span>.madd[<span class="keyword">this</span>.TheDate.getMonth()] + <span class="keyword">this</span>.TheDate.getDate() - <span class="number">38</span>;</span><br><span class="line">            <span class="keyword">if</span> (<span class="keyword">this</span>.TheDate.getYear() % <span class="number">4</span> == <span class="number">0</span> &amp;&amp; <span class="keyword">this</span>.TheDate.getMonth() &gt; <span class="number">1</span>) &#123;</span><br><span class="line">                total++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">for</span> (m = <span class="number">0</span>; ; m++) &#123;</span><br><span class="line">                k = (<span class="keyword">this</span>.CalendarData[m] &lt; <span class="number">0xfff</span>) ? <span class="number">11</span>: <span class="number">12</span>;</span><br><span class="line">                <span class="keyword">for</span> (n = k; n &gt;= <span class="number">0</span>; n--) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (total &lt;= <span class="number">29</span> + <span class="keyword">this</span>.GetBit(<span class="keyword">this</span>.CalendarData[m], n)) &#123;</span><br><span class="line">                        isEnd = <span class="literal">true</span>;</span><br><span class="line">                        <span class="keyword">break</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                    total = total - <span class="number">29</span> - <span class="keyword">this</span>.GetBit(<span class="keyword">this</span>.CalendarData[m], n);</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (isEnd)</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">this</span>.Year = <span class="number">1921</span> + m;</span><br><span class="line">            <span class="keyword">this</span>.Month = k - n + <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">this</span>.Day = total;</span><br><span class="line">            <span class="keyword">if</span> (k == <span class="number">12</span>) &#123;</span><br><span class="line">                <span class="keyword">if</span> (<span class="keyword">this</span>.Month == <span class="built_in">Math</span>.floor(<span class="keyword">this</span>.CalendarData[m] / <span class="number">0x10000</span>) + <span class="number">1</span>) &#123;</span><br><span class="line">                    <span class="keyword">this</span>.Month = <span class="number">1</span> - <span class="keyword">this</span>.Month;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (<span class="keyword">this</span>.Month &gt; <span class="built_in">Math</span>.floor(<span class="keyword">this</span>.CalendarData[m] / <span class="number">0x10000</span>) + <span class="number">1</span>) &#123;</span><br><span class="line">                    <span class="keyword">this</span>.Month--;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        GetcDateString: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="keyword">var</span> tmp = <span class="string">""</span>;</span><br><span class="line">            tmp += <span class="keyword">this</span>.HsString.charAt((<span class="keyword">this</span>.Year - <span class="number">4</span>) % <span class="number">10</span>);</span><br><span class="line">            tmp += <span class="keyword">this</span>.EbString.charAt((<span class="keyword">this</span>.Year - <span class="number">4</span>) % <span class="number">12</span>);</span><br><span class="line">            tmp += <span class="string">"年 "</span>;</span><br><span class="line">            <span class="keyword">if</span> (<span class="keyword">this</span>.Month &lt; <span class="number">1</span>) &#123;</span><br><span class="line">                tmp += <span class="string">"(闰)"</span>;</span><br><span class="line">                tmp += <span class="keyword">this</span>.MonString.charAt(-<span class="keyword">this</span>.Month - <span class="number">1</span>);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                tmp += <span class="keyword">this</span>.MonString.charAt(<span class="keyword">this</span>.Month - <span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            tmp += <span class="string">"月"</span>;</span><br><span class="line">            tmp += (<span class="keyword">this</span>.Day &lt; <span class="number">11</span>) ? <span class="string">"初"</span>: ((<span class="keyword">this</span>.Day &lt; <span class="number">20</span>) ? <span class="string">"十"</span>: ((<span class="keyword">this</span>.Day &lt; <span class="number">30</span>) ? <span class="string">"廿"</span>: <span class="string">"三十"</span>));</span><br><span class="line">            <span class="keyword">if</span> (<span class="keyword">this</span>.Day % <span class="number">10</span> != <span class="number">0</span> || <span class="keyword">this</span>.Day == <span class="number">10</span>) &#123;</span><br><span class="line">                tmp += <span class="keyword">this</span>.NumString.charAt((<span class="keyword">this</span>.Day - <span class="number">1</span>) % <span class="number">10</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> tmp;</span><br><span class="line">        &#125;,</span><br><span class="line">        GetLunarDay: <span class="function"><span class="keyword">function</span>(<span class="params">solarYear, solarMonth, solarDay</span>) </span>&#123;</span><br><span class="line">            <span class="keyword">if</span> (solarYear &lt; <span class="number">1921</span> || solarYear &gt; <span class="number">2020</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="string">""</span>;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                solarMonth = (<span class="built_in">parseInt</span>(solarMonth) &gt; <span class="number">0</span>) ? (solarMonth - <span class="number">1</span>): <span class="number">11</span>;</span><br><span class="line">                <span class="keyword">this</span>.e2c(solarYear, solarMonth, solarDay);</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">this</span>.GetcDateString();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">var</span> oResult = <span class="built_in">document</span>.getElementById(<span class="string">"result"</span>);</span><br><span class="line">          <span class="keyword">var</span> oBtn = <span class="built_in">document</span>.getElementById(<span class="string">"btn"</span>);</span><br><span class="line"></span><br><span class="line">            oBtn.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">                oResult.innerHTML =  LunarDate.GetLunarDay(<span class="built_in">document</span>.getElementById(<span class="string">"input01"</span>).value,<span class="built_in">document</span>.getElementById(<span class="string">"input02"</span>).value,<span class="built_in">document</span>.getElementById(<span class="string">"input03"</span>).value)</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2015/07/17/php常用函数/" itemprop="url">
                   php常用函数
                 </a>
@@ -602,101 +697,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/06/15/检测pc和移动浏览器/" itemprop="url">
-                  检测pc和移动浏览器
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2015-06-15T21:31:53+08:00" content="2015-06-15">
-              2015-06-15
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/js/" itemprop="url" rel="index">
-                    <span itemprop="name">js</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-              <h3 id="u5F88_u5E38_u7528_uFF0C_u5F53_u4EE3_u7801_u7247_u6BB5_u5427"><a href="#u5F88_u5E38_u7528_uFF0C_u5F53_u4EE3_u7801_u7247_u6BB5_u5427" class="headerlink" title="很常用，当代码片段吧"></a>很常用，当代码片段吧</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">browserRedirect</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> sUserAgent = navigator.userAgent.toLowerCase();</span><br><span class="line">            <span class="keyword">var</span> bIsIpad = sUserAgent.match(<span class="regexp">/ipad/i</span>) == <span class="string">"ipad"</span>;</span><br><span class="line">            <span class="keyword">var</span> bIsIphoneOs = sUserAgent.match(<span class="regexp">/iphone os/i</span>) == <span class="string">"iphone os"</span>;</span><br><span class="line">            <span class="keyword">var</span> bIsMidp = sUserAgent.match(<span class="regexp">/midp/i</span>) == <span class="string">"midp"</span>;</span><br><span class="line">            <span class="keyword">var</span> bIsUc7 = sUserAgent.match(<span class="regexp">/rv:1.2.3.4/i</span>) == <span class="string">"rv:1.2.3.4"</span>;</span><br><span class="line">            <span class="keyword">var</span> bIsUc = sUserAgent.match(<span class="regexp">/ucweb/i</span>) == <span class="string">"ucweb"</span>;</span><br><span class="line">            <span class="keyword">var</span> bIsAndroid = sUserAgent.match(<span class="regexp">/android/i</span>) == <span class="string">"android"</span>;</span><br><span class="line">            <span class="keyword">var</span> bIsCE = sUserAgent.match(<span class="regexp">/windows ce/i</span>) == <span class="string">"windows ce"</span>;</span><br><span class="line">            <span class="keyword">var</span> bIsWM = sUserAgent.match(<span class="regexp">/windows mobile/i</span>) == <span class="string">"windows mobile"</span>;</span><br><span class="line">            <span class="built_in">document</span>.writeln(<span class="string">"您的浏览设备为："</span>);</span><br><span class="line">            <span class="keyword">if</span> (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) &#123;</span><br><span class="line">                <span class="built_in">document</span>.writeln(<span class="string">"phone"</span>);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="built_in">document</span>.writeln(<span class="string">"pc"</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        browserRedirect();</span><br></pre></td></tr></table></figure>
-            
-          </span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
 
   </section>
 
@@ -743,7 +743,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">31</span>
+              <span class="site-state-item-count">32</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
