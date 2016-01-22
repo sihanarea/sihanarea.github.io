@@ -217,11 +217,101 @@
 
     
     
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/03/25/［转］关键词高亮/" itemprop="url">
+                  [转]关键词高亮
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-03-25T23:34:02+08:00" content="2015-03-25">
+              2015-03-25
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/js/" itemprop="url" rel="index">
+                    <span itemprop="name">js</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
       
       
 
       
-    
+        
+          <span itemprop="articleBody">
+            
+              <h4 id="u4E4B_u524D_u81EA_u5DF1_u5199_u4E86_u4E00_u4E2A_uFF0C_u6CA1_u6709_u5927_u795E_u5199_u7684_u597D_uFF0C_u5F88_u5B9E_u7528_u7684_u4E1C_u897F"><a href="#u4E4B_u524D_u81EA_u5DF1_u5199_u4E86_u4E00_u4E2A_uFF0C_u6CA1_u6709_u5927_u795E_u5199_u7684_u597D_uFF0C_u5F88_u5B9E_u7528_u7684_u4E1C_u897F" class="headerlink" title="之前自己写了一个，没有大神写的好，很实用的东西"></a>之前自己写了一个，没有大神写的好，很实用的东西</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">/ by zhangxixnu <span class="number">2010</span>-<span class="number">06</span>-<span class="number">21</span>  welcome to visit my personal website http:<span class="comment">//www.zhangxinxu.com/</span></span><br><span class="line"><span class="comment">// textSearch.js v1.0 文字，关键字的页面纯客户端搜索</span></span><br><span class="line"><span class="comment">// 2010-06-23 修复多字母检索标签破碎的问题</span></span><br><span class="line"><span class="comment">// 2010-06-29 修复页面注释显示的问题</span></span><br><span class="line"><span class="comment">// 2013-05-07 修复继续搜素关键字包含之前搜索关键字没有结果的问题</span></span><br><span class="line"><span class="comment">// 不论何种情况，务必保留作者署名。 </span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">$</span>)</span>&#123;</span><br><span class="line">    $.fn.textSearch = <span class="function"><span class="keyword">function</span>(<span class="params">str,options</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> defaults = &#123;</span><br><span class="line">            divFlag: <span class="literal">true</span>,</span><br><span class="line">            divStr: <span class="string">" "</span>,</span><br><span class="line">            markClass: <span class="string">""</span>,</span><br><span class="line">            markColor: <span class="string">"red"</span>,</span><br><span class="line">            nullReport: <span class="literal">true</span>,</span><br><span class="line">            callback: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">false</span>;   </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="keyword">var</span> sets = $.extend(&#123;&#125;, defaults, options || &#123;&#125;), clStr;</span><br><span class="line">        <span class="keyword">if</span>(sets.markClass)&#123;</span><br><span class="line">            clStr = <span class="string">"class='"</span>+sets.markClass+<span class="string">"'"</span>;   </span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            clStr = <span class="string">"style='color:"</span>+sets.markColor+<span class="string">";'"</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">//对前一次高亮处理的文字还原     </span></span><br><span class="line">        $(<span class="string">"span[rel='mark']"</span>).each(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> text = <span class="built_in">document</span>.createTextNode($(<span class="keyword">this</span>).text()); </span><br><span class="line">            $(<span class="keyword">this</span>).replaceWith($(text));</span><br><span class="line">        &#125;);</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">        <span class="comment">//字符串正则表达式关键字转化</span></span><br><span class="line">        $.regTrim = <span class="function"><span class="keyword">function</span>(<span class="params">s</span>)</span>&#123;</span><br><span class="line">            <span class="keyword">var</span> imp = <span class="regexp">/[\^\.\\\|\(\)\*\+\-\$\[\]\?]/g</span>;</span><br><span class="line">            <span class="keyword">var</span> imp_c = &#123;&#125;;</span><br><span class="line">            imp_c[<span class="string">"^"</span>] = <span class="string">"\\^"</span>;</span><br><span class="line">            imp_c[<span class="string">"."</span>] = <span class="string">"\\."</span>;</span><br><span class="line">            imp_c[<span class="string">"\\"</span>] = <span class="string">"\\\\"</span>;</span><br><span class="line">            imp_c[<span class="string">"|"</span>] = <span class="string">"\\|"</span>;</span><br><span class="line">            imp_c[<span class="string">"("</span>] = <span class="string">"\\("</span>;</span><br><span class="line">            imp_c[<span class="string">")"</span>] = <span class="string">"\\)"</span>;</span><br><span class="line">            imp_c[<span class="string">"*"</span>] = <span class="string">"\\*"</span>;</span><br><span class="line">            imp_c[<span class="string">"+"</span>] = <span class="string">"\\+"</span>;</span><br><span class="line">            imp_c[<span class="string">"-"</span>] = <span class="string">"\\-"</span>;</span><br><span class="line">            imp_c[<span class="string">"$"</span>] = <span class="string">"\$"</span>;</span><br><span class="line">            imp_c[<span class="string">"["</span>] = <span class="string">"\\["</span>;</span><br><span class="line">            imp_c[<span class="string">"]"</span>] = <span class="string">"\\]"</span>;</span><br><span class="line">            imp_c[<span class="string">"?"</span>] = <span class="string">"\\?"</span>;</span><br><span class="line">            s = s.replace(imp,<span class="function"><span class="keyword">function</span>(<span class="params">o</span>)</span>&#123;</span><br><span class="line">                <span class="keyword">return</span> imp_c[o];                       </span><br><span class="line">            &#125;); </span><br><span class="line">            <span class="keyword">return</span> s;</span><br><span class="line">        &#125;;</span><br><span class="line">        $(<span class="keyword">this</span>).each(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="keyword">var</span> t = $(<span class="keyword">this</span>);</span><br><span class="line">            str = $.trim(str);</span><br><span class="line">            <span class="keyword">if</span>(str === <span class="string">""</span>)&#123;</span><br><span class="line">                alert(<span class="string">"关键字为空"</span>); </span><br><span class="line">                <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                <span class="comment">//将关键字push到数组之中</span></span><br><span class="line">                <span class="keyword">var</span> arr = [];</span><br><span class="line">                <span class="keyword">if</span>(sets.divFlag)&#123;</span><br><span class="line">                    arr = str.split(sets.divStr);   </span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    arr.push(str);  </span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">var</span> v_html = t.html();</span><br><span class="line">            <span class="comment">//删除注释</span></span><br><span class="line">            v_html = v_html.replace(<span class="regexp">/&lt;!--(?:.*)\--&gt;/g</span>,<span class="string">""</span>);</span><br><span class="line">            </span><br><span class="line">            <span class="comment">//将HTML代码支离为HTML片段和文字片段，其中文字片段用于正则替换处理，而HTML片段置之不理</span></span><br><span class="line">            <span class="keyword">var</span> tags = <span class="regexp">/[^&lt;&gt;]+|&lt;(\/?)([A-Za-z]+)([^&lt;&gt;]*)&gt;/g</span>;</span><br><span class="line">            <span class="keyword">var</span> a = v_html.match(tags), test = <span class="number">0</span>;</span><br><span class="line">            $.each(a, <span class="function"><span class="keyword">function</span>(<span class="params">i, c</span>)</span>&#123;</span><br><span class="line">                <span class="keyword">if</span>(!<span class="regexp">/&lt;(?:.|\s)*?&gt;/</span>.test(c))&#123;<span class="comment">//非标签</span></span><br><span class="line">                    <span class="comment">//开始执行替换</span></span><br><span class="line">                    $.each(arr,<span class="function"><span class="keyword">function</span>(<span class="params">index, con</span>)</span>&#123;</span><br><span class="line">                        <span class="keyword">if</span>(con === <span class="string">""</span>)&#123;<span class="keyword">return</span>;&#125;</span><br><span class="line">                        <span class="keyword">var</span> reg = <span class="keyword">new</span> <span class="built_in">RegExp</span>($.regTrim(con), <span class="string">"g"</span>);</span><br><span class="line">                        <span class="keyword">if</span>(reg.test(c))&#123;</span><br><span class="line">                            <span class="comment">//正则替换</span></span><br><span class="line">                            c = c.replace(reg,<span class="string">"♂"</span>+con+<span class="string">"♀"</span>);</span><br><span class="line">                            test = <span class="number">1</span>;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;);</span><br><span class="line">                    c = c.replace(<span class="regexp">/♂/g</span>,<span class="string">"&lt;span rel='mark' "</span>+clStr+<span class="string">"&gt;"</span>).replace(<span class="regexp">/♀/g</span>,<span class="string">"&lt;/span&gt;"</span>);</span><br><span class="line">                    a[i] = c;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;);</span><br><span class="line">            <span class="comment">//将支离数组重新组成字符串</span></span><br><span class="line">            <span class="keyword">var</span> new_html = a.join(<span class="string">""</span>);</span><br><span class="line">            </span><br><span class="line">            $(<span class="keyword">this</span>).html(new_html);</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">if</span>(test === <span class="number">0</span> &amp;&amp; sets.nullReport)&#123;</span><br><span class="line">                alert(<span class="string">"没有搜索结果"</span>);    </span><br><span class="line">                <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            <span class="comment">//执行回调函数</span></span><br><span class="line">            sets.callback();</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;)(jQuery);</span><br></pre></td></tr></table></figure>
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
 
     
       
@@ -612,103 +702,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/02/17/cssTriangle/" itemprop="url">
-                  css triangle
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2015-02-17T11:37:14+08:00" content="2015-02-17">
-              2015-02-17
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/css/" itemprop="url" rel="index">
-                    <span itemprop="name">css</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-              <p><img src="http://www.00lr.com/sihanarea/demo/img/catalog/sanjiaoxing.png" alt="robot"></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br></pre></td><td class="code"><pre><span class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span><br><span class="line">    <span class="class">.triangle_top</span><span class="rules">&#123;</span><br><span class="line">        <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">0px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">0px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">border-left</span>:<span class="value"><span class="number">150px</span> solid transparent</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">border-right</span>:<span class="value"><span class="number">150px</span> solid transparent</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">border-bottom</span>:<span class="value"><span class="number">150px</span> solid green</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">position</span>:<span class="value">absolute</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">top</span>:<span class="value"><span class="number">160px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">left</span>:<span class="value"><span class="number">7px</span></span></span>;</span><br><span class="line">    &#125;</span></span><br><span class="line">    <span class="class">.triangle_right</span><span class="rules">&#123;</span><br><span class="line">        <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">0px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">0px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">border-left</span>:<span class="value"><span class="number">150px</span> solid gold</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">border-top</span>:<span class="value"><span class="number">150px</span> solid transparent</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">border-bottom</span>:<span class="value"><span class="number">150px</span> solid transparent</span></span>;</span><br><span class="line">    &#125;</span></span><br><span class="line">    <span class="class">.triangle_bottom</span><span class="rules">&#123;</span><br><span class="line">        <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">0px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">0px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">border-left</span>:<span class="value"><span class="number">150px</span> solid transparent</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">border-top</span>:<span class="value"><span class="number">150px</span> solid blue</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">border-right</span>:<span class="value"><span class="number">150px</span> solid transparent</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">position</span>:<span class="value">absolute</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">top</span>:<span class="value"><span class="number">10px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">left</span>:<span class="value"><span class="number">7px</span></span></span>;</span><br><span class="line">    &#125;</span></span><br><span class="line">    <span class="class">.triangle_left</span><span class="rules">&#123;</span><br><span class="line">        <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">0px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">0px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">border-bottom</span>:<span class="value"><span class="number">150px</span> solid transparent</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">border-top</span>:<span class="value"><span class="number">150px</span> solid transparent</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">border-right</span>:<span class="value"><span class="number">150px</span> solid red</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">position</span>:<span class="value">absolute</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">top</span>:<span class="value"><span class="number">10px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">left</span>:<span class="value"><span class="number">157px</span></span></span>;</span><br><span class="line">    &#125;</span></span><br><span class="line">    <span class="class">.zhengfangxing</span><span class="rules">&#123;</span><br><span class="line">        <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">138px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">140px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">background</span>:<span class="value"><span class="hexcolor">#000</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">position</span>:<span class="value">absolute</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">top</span>:<span class="value"><span class="number">90px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">left</span>:<span class="value"><span class="number">88px</span></span></span>;</span><br><span class="line">    &#125;</span></span><br><span class="line">    <span class="class">.radius</span><span class="rules">&#123;</span><br><span class="line">        <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">138px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">140px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">border-radius</span>:<span class="value"><span class="number">50%</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">background</span>:<span class="value"><span class="hexcolor">#ccc</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">position</span>:<span class="value">absolute</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">top</span>:<span class="value"><span class="number">90px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">left</span>:<span class="value"><span class="number">88px</span></span></span>;</span><br><span class="line">    &#125;</span></span><br><span class="line">    <span class="class">.triangle_center_top</span><span class="rules">&#123;</span><br><span class="line">        <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">0px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">0px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">border-left</span>:<span class="value"><span class="number">63px</span> solid transparent</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">border-right</span>:<span class="value"><span class="number">63px</span> solid transparent</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">border-bottom</span>:<span class="value"><span class="number">100px</span> solid purple</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">position</span>:<span class="value">absolute</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">top</span>:<span class="value"><span class="number">90px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">left</span>:<span class="value"><span class="number">95px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">opacity</span>:<span class="value"> <span class="number">0.8</span></span></span>;</span><br><span class="line">    &#125;</span></span><br><span class="line">    <span class="class">.triangle_center_bottom</span><span class="rules">&#123;</span><br><span class="line">        <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">0px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">0px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">border-left</span>:<span class="value"><span class="number">63px</span> solid transparent</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">border-right</span>:<span class="value"><span class="number">63px</span> solid transparent</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">border-top</span>:<span class="value"><span class="number">100px</span> solid yellow</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">position</span>:<span class="value">absolute</span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">opacity</span>:<span class="value"> <span class="number">0.8</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">top</span>:<span class="value"><span class="number">130px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">left</span>:<span class="value"><span class="number">95px</span></span></span>;</span><br><span class="line">    &#125;</span></span><br><span class="line"></span><span class="tag">&lt;/<span class="title">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"triangle_top"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"triangle_right"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"triangle_bottom"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"triangle_left"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"zhengfangxing"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"radius"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"triangle_center_top"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"triangle_center_bottom"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-            
-          </span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
 
   </section>
 
@@ -755,7 +748,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">32</span>
+              <span class="site-state-item-count">33</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
