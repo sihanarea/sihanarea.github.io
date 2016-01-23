@@ -240,6 +240,109 @@
             
               
                 
+                <a class="post-title-link" href="/2015/03/05/canvas笔记/" itemprop="url">
+                  canvas笔记
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-03-05T22:35:07+08:00" content="2015-03-05">
+              2015-03-05
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/js/" itemprop="url" rel="index">
+                    <span itemprop="name">js</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <h3 id="getContext__u8FD4_u56DEcanvas_u4E0A_u4E0B_u6587_u5BF9_u8C61_uFF0C_u53EF_u4EE5_u5728canvas_u4E0A_u4F5C_u753B"><a href="#getContext__u8FD4_u56DEcanvas_u4E0A_u4E0B_u6587_u5BF9_u8C61_uFF0C_u53EF_u4EE5_u5728canvas_u4E0A_u4F5C_u753B" class="headerlink" title="getContext  返回canvas上下文对象，可以在canvas上作画"></a>getContext  返回canvas上下文对象，可以在canvas上作画</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">例   oC  = <span class="built_in">document</span>.getElementById(‘canvas1’)</span><br><span class="line">     Var oGc = oC.getContext(‘<span class="number">2</span>d’)   <span class="comment">//获得canvas的2d对象</span></span><br><span class="line"><span class="string">``</span><span class="string">`   </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">### strockRect(‘左’，‘上’,‘宽’，‘高’) //   描边一个矩形    Rect(矩形)</span><br><span class="line">`</span><span class="string">``</span>javascript</span><br><span class="line">例  oGc.strockRect(<span class="number">50.5</span>,<span class="number">50.5</span>,<span class="number">100</span>,<span class="number">100</span>)    <span class="comment">//注：50.5 只有给0.5才能得到1px。不然是2px</span></span><br></pre></td></tr></table></figure>
+<h3 id="strockStyle_//_u987E_u540D_u601D_u4E49_uFF0C_u7ED9_u63CF_u8FB9_u51FA_u6765_u7684_u77E9_u5F62_u52A0_u6837_u5F0F_u7684_uFF0C_u8FB9_u6846_u6837_u5F0F"><a href="#strockStyle_//_u987E_u540D_u601D_u4E49_uFF0C_u7ED9_u63CF_u8FB9_u51FA_u6765_u7684_u77E9_u5F62_u52A0_u6837_u5F0F_u7684_uFF0C_u8FB9_u6846_u6837_u5F0F" class="headerlink" title="strockStyle    //顾名思义，给描边出来的矩形加样式的，边框样式"></a>strockStyle    //顾名思义，给描边出来的矩形加样式的，边框样式</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">例  oGc.strockStyle = ‘red’   <span class="comment">//加红色边框</span></span><br></pre></td></tr></table></figure>
+<h3 id="lineWidth_//_u8FB9_u6846_u7684_u7C97_u7EC6"><a href="#lineWidth_//_u8FB9_u6846_u7684_u7C97_u7EC6" class="headerlink" title="lineWidth  //边框的粗细"></a>lineWidth  //边框的粗细</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">oGc.lineWidth = <span class="number">10</span>;   <span class="comment">//边框10像素</span></span><br></pre></td></tr></table></figure>
+<h3 id="fillRect_28_u2018_u5DE6_u2019_uFF0C_u2018_u4E0A_u2019_2C_u2018_u5BBD_u2019_uFF0C_u2018_u9AD8_u2019_29_//_u586B_u5145_u4E00_u4E2A_u77E9_u5F62"><a href="#fillRect_28_u2018_u5DE6_u2019_uFF0C_u2018_u4E0A_u2019_2C_u2018_u5BBD_u2019_uFF0C_u2018_u9AD8_u2019_29_//_u586B_u5145_u4E00_u4E2A_u77E9_u5F62" class="headerlink" title="fillRect(‘左’，‘上’,‘宽’，‘高’)  //填充一个矩形"></a>fillRect(‘左’，‘上’,‘宽’，‘高’)  //填充一个矩形</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">例 oGc.fillRect(<span class="number">50.5</span>,<span class="number">50.5</span>,<span class="number">100</span>,<span class="number">100</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="fillStyle__u586B_u5145_u989C_u8272"><a href="#fillStyle__u586B_u5145_u989C_u8272" class="headerlink" title="fillStyle  填充颜色"></a>fillStyle  填充颜色</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">例 oGc.fillStyle = ‘green’   <span class="comment">//填充一个绿色</span></span><br></pre></td></tr></table></figure>
+<h3 id="lineJoin_3D_u201Dbevel__7C_round__7C_miter_u201D__u521B_u5EFA__u659C_u89D2__7C__u5706_u89D2__7C__u5C16_u89D2"><a href="#lineJoin_3D_u201Dbevel__7C_round__7C_miter_u201D__u521B_u5EFA__u659C_u89D2__7C__u5706_u89D2__7C__u5C16_u89D2" class="headerlink" title="lineJoin=”bevel | round | miter”  创建  斜角 | 圆角 | 尖角"></a>lineJoin=”bevel | round | miter”  创建  斜角 | 圆角 | 尖角</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">例 oGc.lineJoin = “bevel”;  <span class="comment">//创建斜角</span></span><br></pre></td></tr></table></figure>
+<h3 id="beginPath_28_29__u5F00_u59CB_u7ED8_u5236"><a href="#beginPath_28_29__u5F00_u59CB_u7ED8_u5236" class="headerlink" title="beginPath() 开始绘制"></a>beginPath() 开始绘制</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">例 oGc.beginPath();   <span class="comment">//开始绘制图形</span></span><br></pre></td></tr></table></figure>
+<h3 id="moveTo_uFF08x_2Cy_uFF09__u7B2C_u4E00_u4E2A_u70B9_uFF0C"><a href="#moveTo_uFF08x_2Cy_uFF09__u7B2C_u4E00_u4E2A_u70B9_uFF0C" class="headerlink" title="moveTo（x,y） 第一个点，"></a>moveTo（x,y） 第一个点，</h3><h3 id="lineTo_28x_2Cy_29__u540E_u7EED_u7684_u70B9"><a href="#lineTo_28x_2Cy_29__u540E_u7EED_u7684_u70B9" class="headerlink" title="lineTo(x,y) 后续的点"></a>lineTo(x,y) 后续的点</h3><h3 id="closePath_28_29_u95ED_u5408"><a href="#closePath_28_29_u95ED_u5408" class="headerlink" title="closePath()闭合"></a>closePath()闭合</h3><h3 id="stroke_28_29_u63CF_u8FB9"><a href="#stroke_28_29_u63CF_u8FB9" class="headerlink" title="stroke()描边"></a>stroke()描边</h3><h3 id="oGC-fill_28_29_3B__u586B_u5145"><a href="#oGC-fill_28_29_3B__u586B_u5145" class="headerlink" title="oGC.fill(); 填充"></a>oGC.fill(); 填充</h3> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">例 oGC.beginPath(); </span><br><span class="line">    oGC.moveTo(<span class="number">100</span>,<span class="number">100</span>); </span><br><span class="line">    oGC.lineTo(<span class="number">200</span>,<span class="number">200</span>);</span><br><span class="line">    oGC.lineTo(<span class="number">300</span>,<span class="number">200</span>);</span><br><span class="line">    oGC.closePath();</span><br><span class="line">    oGC.stroke();</span><br><span class="line">oGC.fill();</span><br></pre></td></tr></table></figure>
+
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2015/02/17/cssTriangle/" itemprop="url">
                   css triangle
                 </a>
@@ -563,7 +666,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">33</span>
+              <span class="site-state-item-count">34</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
