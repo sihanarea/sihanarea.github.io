@@ -240,6 +240,101 @@
             
               
                 
+                <a class="post-title-link" href="/2015/03/11/loading图片加载/" itemprop="url">
+                  loading图片加载
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-03-11T23:01:37+08:00" content="2015-03-11">
+              2015-03-11
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/js/" itemprop="url" rel="index">
+                    <span itemprop="name">js</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line"> * Created by sihan on 2015/3/11.</span><br><span class="line"> */</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">view</span>(<span class="params">o</span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        w: (o||<span class="built_in">document</span>.documentElement).clientWidth,</span><br><span class="line">        h: (o||<span class="built_in">document</span>.documentElement).clientHeight</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> oLoadingBox = <span class="built_in">document</span>.getElementById(<span class="string">'loading-box'</span>)</span><br><span class="line">    <span class="keyword">var</span> oLoading = oLoadingBox.getElementsByTagName(<span class="string">'div'</span>)[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">var</span> oLoadNum = <span class="built_in">document</span>.getElementById(<span class="string">'num'</span>);</span><br><span class="line"></span><br><span class="line">    oLoading.style.left = (view().w - oLoading.offsetWidth)/<span class="number">40</span> + <span class="string">'rem'</span>;</span><br><span class="line">    oLoading.style.top = (view().h - oLoading.offsetHeight)/<span class="number">30</span> + <span class="string">'rem'</span>;</span><br><span class="line">    <span class="built_in">document</span>.body.style.overflow = <span class="string">"hidden"</span>;</span><br><span class="line">    <span class="keyword">var</span> aImgSrc = [</span><br><span class="line">        <span class="string">'images/banner.png'</span>,</span><br><span class="line">        <span class="string">'images/close.png'</span>,</span><br><span class="line">        <span class="string">'images/img01.png'</span>,</span><br><span class="line">        <span class="string">'images/img02.png'</span>,</span><br><span class="line">        <span class="string">'images/logo.png'</span></span><br><span class="line">    ];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> iNum = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; aImgSrc.length; i++) &#123;</span><br><span class="line">        loadImg(i);</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">loadImg</span>(<span class="params">i</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> oImage = <span class="keyword">new</span> Image();</span><br><span class="line">        oImage.src = aImgSrc[i];</span><br><span class="line"></span><br><span class="line">        oImage.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            iNum++;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">var</span> iScale = <span class="built_in">parseInt</span>(iNum/aImgSrc.length*<span class="number">100</span>);</span><br><span class="line">            <span class="keyword">if</span> ( iScale &gt; <span class="number">10</span> &amp;&amp; iScale &lt; <span class="number">100</span> ) &#123;</span><br><span class="line">                oLoadNum.style.left = <span class="number">4.2</span> + <span class="string">'rem'</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span> ( iScale == <span class="number">100</span> ) &#123;</span><br><span class="line">                oLoadNum.style.left = <span class="number">4</span> + <span class="string">'rem'</span>;</span><br><span class="line"></span><br><span class="line">                setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">                    oLoading.style.display = <span class="string">'none'</span>;</span><br><span class="line">                    oLoadingBox.style.opacity = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">                    setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">                        oLoadingBox.style.display = <span class="string">'none'</span>;</span><br><span class="line">                        <span class="built_in">document</span>.body.style.overflow = <span class="string">"visible"</span>;</span><br><span class="line">                    &#125;,<span class="number">1000</span>);</span><br><span class="line"></span><br><span class="line">                &#125;,<span class="number">400</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            oLoadNum.innerHTML = iScale + <span class="string">'%'</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2015/03/05/canvas笔记/" itemprop="url">
                   canvas笔记
                 </a>
@@ -666,7 +761,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">34</span>
+              <span class="site-state-item-count">35</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
